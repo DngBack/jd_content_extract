@@ -2,3 +2,4 @@ langchain
 html2text
 langchain-community
 python-dotenv
+beautifulsoup4
