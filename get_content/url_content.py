@@ -1,14 +1,8 @@
 """
-convert_to_md modul
+convert_to_md module
 """
 import html2text
 from urllib.parse import urlparse
-
-import asyncio
-from typing import Any, AsyncIterator, Iterator, List, Optional
-
-from langchain_community.document_loaders.base import BaseLoader
-from langchain_core.documents import Document
 
 from bs4 import BeautifulSoup
 import requests
@@ -30,7 +24,8 @@ def convert_to_md(html: str, url: str = None) -> str:
     Note: All the styles and links are ignored during the conversion. """
 
     h = html2text.HTML2Text()
-    h.ignore_links = False
+    h.ignore_links = True
+    h.ignore_images = True
     h.body_width = 0
     if url is not None:
         parsed_url = urlparse(url)
@@ -39,7 +34,7 @@ def convert_to_md(html: str, url: str = None) -> str:
     
     return h.handle(html)
 
-source = 'https://github.com/DngBack/html_content_extract'
+source = 'https://www.rakus.co.jp/company/map/'
 
 response = requests.get(source)
 soup = BeautifulSoup(response.text, 'html.parser')

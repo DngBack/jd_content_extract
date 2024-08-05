@@ -25,13 +25,13 @@ class HTML2TextWithTiers(HTML2Text):
         """Handle the start of a tag and possibly increase the tier."""
         if tag in ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'th']:
             self.tier = 1
-        elif tag in ['ol', 'ul', 'li', 'dd', 'td']:
+        elif tag in ['ol', 'ul', 'li', 'dd', 'td', 'p']:
             self.tier += 1
         super().handle_starttag(tag, attrs)
 
     def handle_endtag(self, tag):
         """Handle the end of a tag and possibly decrease the tier."""
-        if tag in ['ol', 'ul', 'li', 'dd', 'td']:
+        if tag in ['ol', 'ul', 'li', 'dd', 'td', 'p']:
             self.tier -= 1
         super().handle_endtag(tag)
 
