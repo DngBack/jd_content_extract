@@ -1,0 +1,77 @@
+Cell: OrderSheet!A1, Text: 求人票
+Cell: OrderSheet!A2, Text: 企業名：
+Cell: OrderSheet!E2, Text: エン・ジャパン株式会社
+Cell: OrderSheet!Y2, Text: URL：
+Cell: OrderSheet!AA2, Text: https://corp.en-japan.com
+Cell: OrderSheet!A3, Text: 所在地：
+Cell: OrderSheet!E3, Text: 〒163-1335　東京都新宿区西新宿6-5-1 新宿アイランドタワー
+Cell: OrderSheet!A5, Text: 企業情報
+Cell: OrderSheet!Q5, Text: 求人内容
+Cell: OrderSheet!A6, Text: ■事業内容：
+Cell: OrderSheet!Q6, Text: 求人ポジション：　【新潟】露光装置の機械設計　（5名）
+Cell: OrderSheet!A7, Text: １・電子機器、電子部品の組立機械等一般産業機械、光学機器、半導体製造装置の周辺機器、工作機械、コンピューター等情報処理機器ならびにそれらに関連す る部品の設計、製造、販売、保守
+２．医療機器の設計、製造、販売、保守
+３．上記の各号に関連するソフトウエアの設計、製造、販売、保守
+４．成形用金型の設計、製造、販売、保守
+５．粉末成形用プレス装置の販売、保守
+６．労働者派遣事業
+７．上記各号に付帯関連する一切の業務
+Cell: OrderSheet!Q8, Text: 雇用形態：　正社員
+Cell: OrderSheet!Q9, Text: 職務内容：
+Cell: OrderSheet!Q10, Text: ■新製品の要素技術を含めた、構想設計から詳細設計
+　具体的には、
+　・自動化露光装置のメカ構想設計。装置全体をお客様からの要件を整理し、機能／性能
+　　条件を満たす装置の構想～詳細設計の骨組みを作成致します。
+■設計した製品の仕様確認
+　・電気設計者、ソフト設計者と連動した形で、デザインレビューを行い実機を用いた
+　　検証を行い、結果をフィードバック／デバッグ致します。
+Cell: OrderSheet!Q14, Text: ■必要業務経験：
+Cell: OrderSheet!A15, Text: ■設立年月日：
+Cell: OrderSheet!E15, Text: 1983年10月
+Cell: OrderSheet!Q15, Text: ＦＡ装置の機械設計、機構設計の経験があり構想設計から詳細設計(部品図含む)の
+経験がある方。
+
+Cell: OrderSheet!A16, Text: ■資本金：
+Cell: OrderSheet!E16, Text: 16億6,100万円
+Cell: OrderSheet!A17, Text: ■売上：
+Cell: OrderSheet!E17, Text: 102億7200万円（2020/03予測）
+Cell: OrderSheet!A18, Text: ■従業員数：
+Cell: OrderSheet!E18, Text: 297名
+Cell: OrderSheet!A19, Text: ■上場：
+Cell: OrderSheet!E19, Text: 非上場（ウシオ電機㈱100％子会社）
+Cell: OrderSheet!Q19, Text: 学歴
+Cell: OrderSheet!R19, Text: 不問
+Cell: OrderSheet!AA19, Text: 年齢
+Cell: OrderSheet!AB19, Text: 25～40歳
+Cell: OrderSheet!A20, Text: ■業種：
+Cell: OrderSheet!E20, Text: 産業用自動化装置の製造
+Cell: OrderSheet!Q20, Text: 資格
+Cell: OrderSheet!AA20, Text: 語学
+Cell: OrderSheet!A22, Text: 会社の特長：
+Cell: OrderSheet!Q22, Text: その他
+Cell: OrderSheet!R22, Text: 普通自動車運転免許
+Cell: OrderSheet!A23, Text: 産業用自動化装置の企画・設計・製造・販売・保守を一貫して行っています。創業以来、400種を超える装置を産み出してきましたが、主力製品は、今や電化製 品には必ず組み込まれている「プリント基板」の製造工程で必要となる「自動露光装置」で、世界トップシェアを誇ります。
+Cell: OrderSheet!Q24, Text: 勤務時間
+Cell: OrderSheet!R24, Text: 08:30－17:30
+（休憩昼50分、15：00～10分、計60分）
+Cell: OrderSheet!AA24, Text: 休日等
+Cell: OrderSheet!AB24, Text: 完全週休2日（土日祝）　年間125日/土曜・日曜・祝日　年末年始　夏季休暇　その他会社カレンダーによる　年次有給休暇（入社3ヶ月経過後10日～最高20日 ）　リフレッシュ休暇
+Cell: OrderSheet!Q28, Text: 勤務場所
+Cell: OrderSheet!R28, Text: 1：東京都新宿区西新宿6-5-1 新宿アイランドタワー
+Cell: OrderSheet!AF28, Text: 最寄駅：長岡駅
+Cell: OrderSheet!AF29, Text: 最寄駅：
+Cell: OrderSheet!Q30, Text: 給与
+Cell: OrderSheet!R30, Text: 年齢・経験により基本給22万円～30万円（年収350万円～480万円）スタート
+昇給年１回
+Cell: OrderSheet!Q32, Text: 諸手当
+Cell: OrderSheet!R32, Text: 通勤手当　家族手当（扶養家族について）　役職手当　残業手当は残業実績に応じて支給
+Cell: OrderSheet!AA32, Text: 社保
+Cell: OrderSheet!AB32, Text: 健康保険　厚生年金　雇用保険　労災保険
+Cell: OrderSheet!A35, Text: 備考：
+Cell: OrderSheet!Q35, Text: 賞与
+Cell: OrderSheet!R35, Text: 年２回（６月、１２月）　前年度実績合計4.75ヶ月分
+Cell: OrderSheet!A36, Text: 【求人背景】エンジニア職の不足による補充
+Cell: OrderSheet!Q37, Text: 備考
+Cell: OrderSheet!R37, Text: ・退職金あり　定年60歳、65歳までの再雇用制度あり
+・入社後33歳迄若しくは10年の早い方迄で月1万円にて独身寮の提供可能
+Cell: OrderSheet!A39, Text: 選考フロー：書類選考→1次面接→web適性検査→最終面接
