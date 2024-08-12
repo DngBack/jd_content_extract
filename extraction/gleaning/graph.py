@@ -13,7 +13,6 @@ from .prompts import (
 DEFAULT_TUPLE_DELIMITER = "<|>"
 DEFAULT_RECORD_DELIMITER = "##"
 DEFAULT_COMPLETION_DELIMITER = "<|COMPLETE|>"
-DEFAULT_ENTITY_TYPES = ["company", "salary information", "job working hour", "job position", "employee benefit"]
 
 
 class GraphExtractor:
@@ -44,6 +43,7 @@ class GraphExtractor:
         join_descriptions=True,
         encoding_model: str | None = None,
         max_gleanings: int | None = None,
+        entity_types: list[str] = None,
     ):
         """Init method definition."""
         # TODO: streamline construction
@@ -62,6 +62,7 @@ class GraphExtractor:
             if max_gleanings is not None
             else 1
         )
+        self.entity_types = entity_types
 
         # Construct the looping arguments
         encoding = tiktoken.get_encoding(encoding_model or "cl100k_base")
@@ -80,7 +81,7 @@ class GraphExtractor:
             self._tuple_delimiter_key: DEFAULT_TUPLE_DELIMITER,
             self._record_delimiter_key: DEFAULT_RECORD_DELIMITER,
             self._completion_delimiter_key: DEFAULT_COMPLETION_DELIMITER,
-            self._entity_types_key: DEFAULT_ENTITY_TYPES,
+            self._entity_types_key: self.entity_types,
         }
 
         for doc_index, text in enumerate(texts):
@@ -94,18 +95,19 @@ class GraphExtractor:
     def _process_document(
         self, text: str, model: str, prompt_variables: dict[str, str]
     ) -> str:
+        extract_prompt = GRAPH_EXTRACTION_PROMPT.format(
+            input_text=text,
+            tuple_delimiter=prompt_variables["tuple_delimiter"],
+            record_delimiter=prompt_variables["record_delimiter"],
+            completion_delimiter=prompt_variables["completion_delimiter"],
+            entity_types=prompt_variables["entity_types"],
+        )
         messages = [
             {
                 'role': 'user',
                 'content': [
                     {
-                        'text': GRAPH_EXTRACTION_PROMPT.format(
-                            input_text=text,
-                            tuple_delimiter=prompt_variables["tuple_delimiter"],
-                            record_delimiter=prompt_variables["record_delimiter"],
-                            completion_delimiter=prompt_variables["completion_delimiter"],
-                            entity_types=prompt_variables["entity_types"],
-                        ),
+                        'text': extract_prompt,
                     }
                 ],
             },
@@ -133,7 +135,7 @@ class GraphExtractor:
             ]
             system = [
                 {
-                    'text': response_text
+                    'text': f'{extract_prompt}\n{response_text}',
                 },
             ]
             glean_response = self._llm.converse(

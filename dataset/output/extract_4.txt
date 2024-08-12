@@ -1,0 +1,19 @@
+{0: '("entity"<|>"Employment Type"<|>"emplyment_type_period_attributes"<|>"The position is for second-career graduates (第二新卒) in the Third Sales Headquarters. It involves a full-time, permanent position with a specific age range requirement of 24-27 years old.")##\n
+("entity"<|>"Selection Process"<|>"emplyment_type_period_attributes"<|>"The selection process includes document screening, first interview, executive interview, and final interview. The number of interviews may be reduced to two if the candidate\'s experience is highly relevant.")##\n
+("entity"<|>"Work Location"<|>"emplyment_type_period_attributes"<|>"The work location is specified as Tokyo only.")##\n
+("entity"<|>"Salary Range"<|>"emplyment_type_period_attributes"<|>"The expected annual salary range is 3,600,000 to 4,500,000 yen.")##\n
+("entity"<|>"Required Experience"<|>"emplyment_type_period_attributes"<|>"Candidates must have experience in tangible product sales.")##\n
+("entity"<|>"Preferred Skills"<|>"emplyment_type_period_attributes"<|>"Business experience in English or Chinese is welcomed.")##\n
+("entity"<|>"Department Assignment"<|>"emplyment_type_period_attributes"<|>"After the job offer, candidates will be notified of their assigned department within the Third Sales Headquarters, based on their aptitude, preferences, and relevant experience.")\n
+\n
+<|COMPLETE|>I apologize for missing some entities. You\'re right, there were more that should have been included. I\'ll add the missing entities using the same format:\n
+\n
+("entity"<|>"Third Sales Headquarters"<|>"emplyment_type_period_attributes"<|>"The department where the recruitment is taking place, consisting of four teams: Electronics Materials Team, Medical Device Team, Automotive Electronics Team, and Energy Device Team.")##\n
+("entity"<|>"Electronics Materials Team"<|>"emplyment_type_period_attributes"<|>"A team within the Third Sales Headquarters handling products such as LED, power supplies, OA, lighting, and solar cells.")##\n
+("entity"<|>"Medical Device Team"<|>"emplyment_type_period_attributes"<|>"A team within the Third Sales Headquarters dealing with products like silicone, medical device adhesives, 3D monitor eye shields, and face shields.")##\n
+("entity"<|>"Automotive Electronics Team"<|>"emplyment_type_period_attributes"<|>"A team within the Third Sales Headquarters focusing on automotive-related electronic materials.")##\n
+("entity"<|>"Energy Device Team"<|>"emplyment_type_period_attributes"<|>"A team within the Third Sales Headquarters specializing in lithium-ion batteries.")##\n
+("entity"<|>"Age Requirement"<|>"emplyment_type_period_attributes"<|>"The job requires candidates to be between 24 and 27 years old.")##\n
+("entity"<|>"Company Briefing"<|>"emplyment_type_period_attributes"<|>"Pre-application company explanations are available upon request from candidates.")\n
+\n
+<|COMPLETE|>'}

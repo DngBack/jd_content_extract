@@ -1,3 +1,8 @@
+# Copyright (c) 2024 Microsoft Corporation.
+# Licensed under the MIT License
+
+"""A file containing prompts definition."""
+
 GRAPH_EXTRACTION_PROMPT = """
 -Goal-
 Given a text document that is potentially relevant to this activity and a list of entity types, identify all entities of those types from the text.
@@ -39,16 +44,16 @@ Example 2:
 
 Entity_types: [person, technology, mission, organization, location]
 Text:
-They were no longer mere operatives; they had become guardians of a threshold, keepers of a message from a realm beyond stars and stripes. This elevation in their mission could not be shackled by regulations and established protocols—it demanded a new perspective, a new resolve.
+彼らはもはや単なる工作員ではなく、境界の守護者、星条旗の向こうの領域からのメッセージを守る者となった。彼らの任務のこの高みは、規則や確立されたプロトコルに縛られることはなく、新しい視点、新しい決意を必要とした。
 
-Tension threaded through the dialogue of beeps and static as communications with Washington buzzed in the background. The team stood, a portentous air enveloping them. It was clear that the decisions they made in the ensuing hours could redefine humanity's place in the cosmos or condemn them to ignorance and potential peril.
+ワシントンとの通信が背景でブンブンと鳴り響く中、ビープ音と雑音の会話に緊張が走った。チームは不吉な雰囲気に包まれて立っていた。その後の数時間で彼らが下した決断が、宇宙における人類の立場を再定義するか、無知と潜在的な危険に陥らせるかは明らかだった。
 
-Their connection to the stars solidified, the group moved to address the crystallizing warning, shifting from passive recipients to active participants. Mercer's latter instincts gained precedence— the team's mandate had evolved, no longer solely to observe and report but to interact and prepare. A metamorphosis had begun, and Operation: Dulce hummed with the newfound frequency of their daring, a tone set not by the earthly
+星とのつながりが強まり、グループは受動的な受け手から能動的な参加者へと移行し、結晶化する警告に対処するために動いた。マーサーの後者の本能が優先された。チームの任務は進化し、もはや観察と報告だけでなく、対話と準備にまで及んだ。変態が始まり、オペレーション・ドゥルセは彼らの大胆さの新たな周波数で鳴り響き、地上の音色によって設定された音色ではない。
 #############
 Output:
-("entity"{tuple_delimiter}"Washington"{tuple_delimiter}"location"{tuple_delimiter}"Washington is a location where communications are being received, indicating its importance in the decision-making process."){record_delimiter}
-("entity"{tuple_delimiter}"Operation: Dulce"{tuple_delimiter}"mission"{tuple_delimiter}"Operation: Dulce is described as a mission that has evolved to interact and prepare, indicating a significant shift in objectives and activities."){record_delimiter}
-("entity"{tuple_delimiter}"The team"{tuple_delimiter}"organization"{tuple_delimiter}"The team is portrayed as a group of individuals who have transitioned from passive observers to active participants in a mission, showing a dynamic change in their role."){record_delimiter}
+("entity"{tuple_delimiter}"ワシントン"{tuple_delimiter}"location"{tuple_delimiter}"ワシントンは通信が受信される場所であり、意思決定プロセスにおけるその重要性を示しています。"){record_delimiter}
+("entity"{tuple_delimiter}"オペレーション: ドゥルセ"{tuple_delimiter}"mission"{tuple_delimiter}"オペレーション: ドゥルセは、対話と準備へと進化したミッションとして説明されており、目的と活動の大きな変化を示しています。"){record_delimiter}
+("entity"{tuple_delimiter}"チーム"{tuple_delimiter}"organization"{tuple_delimiter}"チームは、ミッションにおいて受動的な観察者から能動的な参加者へと移行した個人のグループとして描かれており、役割のダイナミックな変化を示しています。"){record_delimiter}
 #############################
 Example 3:
 
