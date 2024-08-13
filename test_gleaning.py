@@ -6,6 +6,9 @@ import os
 import boto3
 from botocore.exceptions import ClientError
 
+import json
+import ast
+
 load_dotenv('.env')
 ACCESS_KEY = os.environ.get('ACCESS_KEY')
 SECRET_KEY = os.environ.get('SECRET_KEY')
@@ -69,16 +72,29 @@ extractor = GraphExtractor(
     )
 
 # Open the HTML file and read its content as a string
-with open('test1.html', 'r', encoding='utf-8') as file:
-    html_content = file.read()
+with open('data\HRMOS\【confidential】管理本部長候補.json', 'r', encoding='utf-8') as file:
+    html_content = json.load(file)
 
-# content_output = scrape_html(html_content)
-chunk_list = character_chunking(content_output)
-# print(chunk_list)
+# print(html_content)
+print(type(html_content))
 
-results = extractor(
-    texts = chunk_list,
-    model = model_id
-)
+# print(json.dumps(html_content))
+# print(type(json.dumps(html_content)))
+test = str(html_content)
+# print(test)
+# # print(test)
+# # print(type(test))
 
-print(results)
+# print(ast.literal_eval(test))
+# print(type(ast.literal_eval(test)))
+
+# # content_output = scrape_html(html_content)
+# chunk_list = character_chunking(content_output)
+# # print(chunk_list)
+
+# results = extractor(
+#     texts = chunk_list,
+#     model = model_id
+# )
+
+# print(results)
