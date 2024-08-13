@@ -1,0 +1,100 @@
+0:
+("entity"<|>"Recruitment and Hiring"<|>"recruiment and hiring"<|>"This entity covers various aspects of the job posting, including job title, employment type, salary, work location, and required qualifications for a Data Engineer position in Tokyo.")##
+
+("entity"<|>"Work Hours and Holidays"<|>"holidays and leaves"<|>"This entity encompasses information about working hours (9:00-18:00), weekends off (Saturday and Sunday), public holidays, year-end holidays, summer holidays, paid leave (with over 93% utilization rate), and special leave for events like marriage (7 days).")##
+
+("entity"<|>"Employee Benefits"<|>"welfare insurance"<|>"This entity includes various welfare benefits such as health insurance, employment insurance, pension, worker's compensation insurance, casual dress code, family allowance, work-from-home options, flexible shifts, qualification support, childcare leave, babysitter subsidy, internal clubs, and social events.")##
+
+("entity"<|>"Salary and Compensation"<|>"recruiment and hiring"<|>"This entity covers the annual salary range (5,493,636 - 7,687,392 yen), breakdown of monthly salary components, overtime pay, various allowances (family, overtime, night shift, holiday work, commuting, relocation, business trip), and bi-annual bonuses.")##
+
+("entity"<|>"Work Environment"<|>"recruiment and hiring"<|>"This entity describes the work location in Shibuya, Tokyo, with potential for changes within company-designated areas, and mentions a non-smoking indoor policy.")##
+
+("entity"<|>"Career Development"<|>"recruiment and hiring"<|>"This entity includes information about annual salary increases in May and opportunities for skill development through qualification support programs.")
+
+<|COMPLETE|>I apologize for missing entities. I'll add the additional entities using the same format:
+
+("entity"<|>"Trial Period"<|>"recruiment and hiring"<|>"A 6-month trial period with no changes in conditions during this time.")##
+
+("entity"<|>"Maternity Leave"<|>"holidays and leaves"<|>"Maternity leave before and after childbirth with a 100% return-to-work rate.")##
+
+("entity"<|>"Flextime System"<|>"holidays and leaves"<|>"Timely shift system and monthly shift system allowing for flexible work hours.")##
+
+("entity"<|>"RAKUS Smile System"<|>"welfare insurance"<|>"A company-specific welfare program, though details are not provided.")##
+
+("entity"<|>"Backup Leave"<|>"holidays and leaves"<|>"A type of leave offered, though specific details are not provided.")##
+
+("entity"<|>"Childcare Nursing Leave"<|>"holidays and leaves"<|>"Leave provided for nursing sick children.")##
+
+("entity"<|>"Job Requirements"<|>"recruiment and hiring"<|>"Essential requirements include experience in database design and implementation, and data extraction using SQL. Preferred skills include experience with big data and data analysis infrastructure, and using IT for business improvement.")##
+
+("entity"<|>"Commuting Allowance"<|>"welfare insurance"<|>"Transportation costs covered up to 100,000 yen per month.")##
+
+("entity"<|>"Work-from-Home Policy"<|>"holidays and leaves"<|>"Every Wednesday, employees can choose between office work and working from home.")
+
+<|COMPLETE|>
+========================
+1:
+("entity"<|>"Salary Increase"<|>"welfare insurance"<|>"Annual salary increase occurs in May.")##
+("entity"<|>"Bonuses"<|>"welfare insurance"<|>"Bonuses are given twice a year, in June and December.")##
+("entity"<|>"Social Insurance"<|>"welfare insurance"<|>"Comprehensive social insurance coverage including employment, workers' compensation, health, and pension insurance.")##
+("entity"<|>"Transportation Allowance"<|>"welfare insurance"<|>"Monthly transportation allowance provided, with a maximum limit of 100,000 yen.")##
+("entity"<|>"Casual Dress Code"<|>"welfare insurance"<|>"Employees are allowed to wear casual clothes to work.")##
+("entity"<|>"Family Allowance"<|>"welfare insurance"<|>"Monthly allowance provided for children up to 18 years old, with varying amounts based on the number of children.")##
+("entity"<|>"Work From Home Day"<|>"welfare insurance"<|>"Every Wednesday, employees can choose between office work or working from home.")##
+("entity"<|>"Flexible Work Hours"<|>"welfare insurance"<|>"Timely Shift and Monthly Shift systems allow employees to adjust their work hours within a certain range.")##
+("entity"<|>"Rakus Smile System"<|>"welfare insurance"<|>"A system allowing employees with children to choose work hours and evaluation styles that suit their needs.")##
+("entity"<|>"Child Care Leave"<|>"holidays and leaves"<|>"5 days of paid leave per child for nursing care, separate from regular paid leave.")##
+("entity"<|>"Babysitter Subsidy"<|>"welfare insurance"<|>"Financial assistance provided for babysitting services.")##
+("entity"<|>"Backup Leave"<|>"holidays and leaves"<|>"Additional leave option available to employees.")##
+("entity"<|>"Company Clubs"<|>"welfare insurance"<|>"Various social clubs within the company for activities like baseball, futsal, music, and Gunpla.")##
+("entity"<|>"Company Social Events"<|>"welfare insurance"<|>"Events organized to promote interaction among employees.")##
+("entity"<|>"Smoking Policy"<|>"welfare insurance"<|>"Indoor smoking is prohibited to prevent passive smoking.")##
+("entity"<|>"Data Analysis Team"<|>"recruiment and hiring"<|>"A team responsible for consolidating various company data into a BigQuery-based data infrastructure.")##
+("entity"<|>"Data Lake Construction"<|>"recruiment and hiring"<|>"Building a data lake by integrating data from internal sales management systems, accounting systems, and various SaaS products.")##
+("entity"<|>"Data Warehouse And Mart Design"<|>"recruiment and hiring"<|>"Designing and constructing data warehouses and data marts using ETL tools to provide necessary data to each department.")##
+("entity"<|>"Data Visualization Support"<|>"recruiment and hiring"<|>"Providing support for data visualization using BI tools and dashboards.")##
+("entity"<|>"Data Utilization Improvement"<|>"recruiment and hiring"<|>"Proposing improvements for data input operations and supporting business improvements through data utilization.")
+
+<|COMPLETE|>I apologize for missing some entities. I'll add the additional entities below using the same format:
+
+("entity"<|>"Data Collection and Infrastructure"<|>"recruiment and hiring"<|>"Collecting data from internal systems and SaaS products, and building load processes for the data infrastructure using tools like Embulk, Digdag, and Airflow.")##
+("entity"<|>"Data Preprocessing and Modeling"<|>"recruiment and hiring"<|>"Preprocessing data and designing/implementing data models for data warehouses and marts using ETL tools like dbt.")##
+("entity"<|>"Data Quality Assurance"<|>"recruiment and hiring"<|>"Checking data quality and establishing operational rules for quality maintenance using tools like Great Expectations.")##
+("entity"<|>"BI Tool Usage"<|>"recruiment and hiring"<|>"Using BI tools such as Looker and Tableau for data visualization support.")##
+("entity"<|>"BigQuery"<|>"recruiment and hiring"<|>"A data infrastructure tool used by the company's data analysis team to consolidate various internal data.")##
+("entity"<|>"Embulk"<|>"recruiment and hiring"<|>"A tool used for data collection and loading processes.")##
+("entity"<|>"Digdag"<|>"recruiment and hiring"<|>"A tool used for data collection and loading processes.")##
+("entity"<|>"Airflow"<|>"recruiment and hiring"<|>"A tool used for data collection and loading processes.")##
+("entity"<|>"dbt"<|>"recruiment and hiring"<|>"An ETL tool used for data preprocessing and data model implementation.")##
+("entity"<|>"Great Expectations"<|>"recruiment and hiring"<|>"A tool used for checking and maintaining data quality.")##
+("entity"<|>"Looker"<|>"recruiment and hiring"<|>"A BI tool used for data visualization support.")##
+("entity"<|>"Tableau"<|>"recruiment and hiring"<|>"A BI tool used for data visualization support.")
+
+<|COMPLETE|>
+========================
+2:
+("entity"<|>"Data Quality Assurance"<|>"recruiment and hiring"<|>"A key responsibility involving checking data quality and establishing operational rules for quality maintenance, using tools like Great Expectations.")##
+("entity"<|>"Data Visualization Support"<|>"recruiment and hiring"<|>"A role that involves supporting data visualization using BI tools and dashboards, such as Looker and Tableau.")##
+("entity"<|>"Data Utilization Improvement"<|>"recruiment and hiring"<|>"A position focused on proposing efficiency improvements for data input processes and supporting business improvements through data utilization.")##
+("entity"<|>"Data Analysis Team"<|>"recruiment and hiring"<|>"A team responsible for centralized management of diverse company data, providing it in accessible formats for various departments.")##
+("entity"<|>"Cloud Technology"<|>"recruiment and hiring"<|>"The use of cloud technologies like BigQuery and various SaaS product APIs for data collection and processing.")##
+("entity"<|>"Teamwork"<|>"recruiment and hiring"<|>"An emphasis on close collaboration with different departments, including data provision and proposing data utilization improvements.")##
+("entity"<|>"Onboarding Process"<|>"recruiment and hiring"<|>"The initial phase after joining the company, involving understanding the current data infrastructure and providing data to various departments.")##
+("entity"<|>"Recruitment Process"<|>"recruiment and hiring"<|>"The hiring procedure including document screening, first interview with department and HR representatives, aptitude test, and final interview with executives.")
+
+<|COMPLETE|>I apologize for missing some entities. You're right, there were more that should have been included. I'll add the additional entities using the same format:
+
+("entity"<|>"Great Expectations"<|>"recruiment and hiring"<|>"A tool example mentioned for checking data quality and maintaining quality standards.")##
+("entity"<|>"Looker"<|>"recruiment and hiring"<|>"A BI tool example mentioned for data visualization support.")##
+("entity"<|>"Tableau"<|>"recruiment and hiring"<|>"Another BI tool example mentioned for data visualization support.")##
+("entity"<|>"BigQuery"<|>"recruiment and hiring"<|>"A cloud technology mentioned as being used for data collection and processing.")##
+("entity"<|>"ETL Tools"<|>"recruiment and hiring"<|>"Tools mentioned as being used in conjunction with BI tools for data analysis tasks.")##
+("entity"<|>"Data Preprocessing"<|>"recruiment and hiring"<|>"A potential future responsibility for the hired individual, involving preparing data for analysis.")##
+("entity"<|>"Data Model Design and Implementation"<|>"recruiment and hiring"<|>"Another potential future responsibility for the hired individual, involving creating and implementing data structures.")##
+("entity"<|>"Document Screening"<|>"recruiment and hiring"<|>"The first step in the recruitment process, involving review of applicant documents.")##
+("entity"<|>"First Interview"<|>"recruiment and hiring"<|>"The second step in the recruitment process, conducted by department and HR representatives.")##
+("entity"<|>"Aptitude Test"<|>"recruiment and hiring"<|>"The third step in the recruitment process, assessing the candidate's suitability for the role.")##
+("entity"<|>"Final Interview"<|>"recruiment and hiring"<|>"The last step in the recruitment process, conducted by executives.")
+
+<|COMPLETE|>
+========================
