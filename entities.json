@@ -1,0 +1,136 @@
+{
+    "salary_informations_attributes": {
+      "salary_fixed_allowances_attributes": {},
+      "salary_variable_allowances_attributes": {},
+      "min_basic_salary": null,
+      "max_basic_salary": null,
+      "overtime_salary_min": null,
+      "overtime_salary_max": null,
+      "allowance_flag": null,
+      "allowance_detail": null,
+      "min_monthly_salary": null,
+      "max_monthly_salary": null,
+      "salary_detail": null,
+      "salary_payment_method_detail": null,
+      "daily_salary": null,
+      "hourly_salary": null,
+      "hybrid_payment_method_memo": null,
+      "skip_entry_flag": null,
+      "max_annual_income": null,
+      "min_annual_income": null,
+      "allowance_commute_flag": null,
+      "allowance_commute_money_value": null,
+      "allowance_commute_detail": null,
+      "bonus_flag": null,
+      "bonus": null,
+      "salary_railse_memo": null,
+      "salary_model": null
+    },
+    "job_posting_attributes": {
+      "confirmation_date": null,
+      "comment": null,
+      "occupational_category_ids": [],
+      "position": null,
+      "position_tail": null,
+      "offer_background": null,
+      "job_description": null,
+      "job_charm_details1": null,
+      "job_charm_details2": null,
+      "job_charm_details3": null,
+      "future_job_description_detail": null
+    },
+    "location_details_attributes": {
+      "prefecture_ids": [],
+      "area_details": null,
+      "future_workplace_detail": null,
+      "transfer_detail": null
+    },
+    "job_working_hours_attributes": {
+      "working_hours_partterns_attributes": {},
+      "scheduled_working_hours_start": null,
+      "scheduled_working_hours_end": null,
+      "actual_working_hour": null,
+      "actual_working_minute": null,
+      "break_time_hour": null,
+      "break_time_minute": null,
+      "overtime_working_flag": null,
+      "working_hours_detail": null,
+      "min_ave_month_overtime_hour": null,
+      "min_ave_month_overtime_minute": null,
+      "max_ave_month_overtime_hour": null,
+      "max_ave_month_overtime_minute": null,
+      "deemed_working_hour": null,
+      "deemed_working_minute": null,
+      "ave_working_hour": null,
+      "ave_working_minute": null,
+      "standard_working_hour": null,
+      "standard_working_minute": null,
+      "core_time_flag": null,
+      "regular_week_working_hour": null,
+      "regular_week_working_minute": null,
+      "core_time_hours_start": null,
+      "core_time_hours_end": null,
+      "flex_time_hours_start": null,
+      "flex_time_hours_end": null,
+      "second_flex_time_hours_start": null,
+      "second_flex_time_hours_end": null,
+      "overtime_max_hour": null,
+      "overtime_min_hour": null,
+      "overtime_max_minute": null,
+      "overtime_min_minute": null,
+      "working_hours_condition": null
+    },
+    "remote_work_details_attributes": {
+      "remote_flag": null,
+      "remote_type_ids": [],
+      "remote_day_min": null,
+      "remote_day_max": null,
+      "remote_detail": null
+    },
+    "smoking_prevention_details_attributes": {
+      "smoking_prevention_flag": null,
+      "smoking_prevention_detail": null
+    },
+    "age_and_gender_attributes": {
+      "age_genders": null
+    },
+    "recruiment_and_hiring_attributes": {
+      "number_hired": null,
+      "prerequisite": null,
+      "strictness": null,
+      "selection_process": null,
+      "inexperience_field": null,
+      "inexperience_job": null,
+      "english_ids": []
+    },
+    "holidays_and_leaves_attributes": {
+      "holidays_breakdown_ids": [],
+      "holidays": null,
+      "holidays_remarks": null
+    },
+    "welfare_insurance_attributes": {
+      "welfare": null,
+      "insurance_ids": []
+    },
+    "employment_type_period_attributes": {
+      "employment_type_ids": [],
+      "employment_type_remarks": null,
+      "employment_period_detail": null
+    },
+    "trial_preiod_attributes": {
+      "trial_period_length": null,
+      "trial_period_working_conditions": null,
+      "trial_period_memo": null
+    },
+    "contract_renewal_attributes": {
+      "contract_renewal_flag": null,
+      "contract_renewal_detail": null,
+      "employment_promotion_flag": null,
+      "contract_renewal_criteria": null,
+      "contract_renewal_limit_flag": null,
+      "contract_renewal_limit_detail_day": null,
+      "contract_renewal_limit_detail_month": null,
+      "contract_renewal_limit_detail_type": null,
+      "contract_renewal_limit_detail_year": null
+    }
+}

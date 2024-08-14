@@ -1,0 +1,260 @@
+{
+    "job posting": [
+        {
+            "attribute": "社内SEデータエンジニア/メンバー 東京",
+            "description": "This is a job posting for an internal SE data engineer/member position in Tokyo. It's a full-time permanent position with Rakus company."
+        },
+        {
+            "attribute": "正社員",
+            "description": "This is the employment type for the position, indicating it's a full-time, permanent employee role."
+        },
+        {
+            "attribute": "期間の定め無し",
+            "description": "This indicates that the employment contract has no fixed term, meaning it's a permanent position."
+        },
+        {
+            "attribute": "東京都渋谷区千駄ヶ谷5-27-11 アグリスクエア新宿",
+            "description": "This is the specific work location for the position, situated in Shinjuku, Tokyo."
+        },
+        {
+            "attribute": "私服通勤",
+            "description": "Employees are allowed to wear casual clothes to work."
+        },
+        {
+            "attribute": "資格取得サポート",
+            "description": "The company provides support for obtaining professional qualifications."
+        },
+        {
+            "attribute": "健康保険雇用保険厚生年金労災保険",
+            "description": "The company provides health insurance, employment insurance, welfare pension, and workers' compensation insurance."
+        },
+        {
+            "attribute": "屋内禁煙",
+            "description": "Smoking is prohibited indoors as part of the company's passive smoking prevention measures."
+        },
+        {
+            "attribute": "Data Analysis Team Position",
+            "description": "A job posting for a position in the company's data analysis team, responsible for collecting and managing data from various internal systems and SaaS products, building data infrastructure, and supporting data visualization and utilization across different departments."
+        },
+        {
+            "attribute": "Casual Dress Code",
+            "description": "Employees are allowed to wear casual clothes to work."
+        },
+        {
+            "attribute": "Company Clubs",
+            "description": "Various company clubs are available including baseball, futsal, light music, and Gunpla."
+        },
+        {
+            "attribute": "Company Social Events",
+            "description": "The company organizes internal social events for employees."
+        },
+        {
+            "attribute": "Smoking Policy",
+            "description": "Smoking is prohibited indoors as a measure to prevent passive smoking."
+        },
+        {
+            "attribute": "Data Infrastructure",
+            "description": "The team uses BigQuery to consolidate various internal data into a data infrastructure."
+        },
+        {
+            "attribute": "ETL Tools",
+            "description": "The team uses ETL tools to design and build data warehouses and data marts."
+        },
+        {
+            "attribute": "Data Visualization Tools",
+            "description": "The team uses BI tools like Looker and Tableau for data visualization support."
+        },
+        {
+            "attribute": "Data Collection and Infrastructure Building",
+            "description": "One of the main responsibilities involving collecting data from internal systems and SaaS products, and building data infrastructure using tools like Embulk, Digdag, and Airflow."
+        },
+        {
+            "attribute": "Data Preprocessing and Model Design",
+            "description": "Another key responsibility involving data preprocessing and designing/implementing data warehouses and data marts using tools like dbt."
+        },
+        {
+            "attribute": "Data Quality Assurance",
+            "description": "Responsibility for checking data quality and establishing operational rules for quality maintenance, using tools like Great Expectations."
+        },
+        {
+            "attribute": "Data Utilization Support",
+            "description": "Providing support for improving data input processes and business improvements through data utilization."
+        },
+        {
+            "attribute": "Data Quality Assurance And Operation",
+            "description": "This role involves checking data quality and establishing operational rules for quality maintenance, using tools like Great Expectations."
+        },
+        {
+            "attribute": "Data Visualization Support",
+            "description": "This position includes supporting data visualization using BI tools and dashboards, with examples like Looker and Tableau."
+        },
+        {
+            "attribute": "Data Utilization Improvement",
+            "description": "This role involves proposing efficiency improvements for data input tasks and supporting business improvements through data utilization."
+        },
+        {
+            "attribute": "Data Analysis Team",
+            "description": "The data analysis team manages diverse data from across the company, providing it in an easily usable format for various departments. The role involves analyzing data from multiple perspectives."
+        },
+        {
+            "attribute": "Technology Utilization",
+            "description": "The position involves using cloud technologies like BigQuery and APIs from various SaaS products for data collection and processing. It also includes using the latest technologies necessary for data analysis, such as ETL and BI tools."
+        },
+        {
+            "attribute": "Teamwork",
+            "description": "The role emphasizes working closely with various departments, providing data, and proposing data utilization and improvements based on departmental needs."
+        },
+        {
+            "attribute": "Post-Hiring Process",
+            "description": "After joining, the employee will first understand the current data infrastructure and be responsible for providing data to various departments. Later, depending on aptitude and preferences, they may be involved in data preprocessing, data model design and implementation, and data visualization support."
+        },
+        {
+            "attribute": "Recruitment Process",
+            "description": "The hiring process includes document screening, first interview with department and HR representatives, aptitude test, and final interview with executives."
+        },
+        {
+            "attribute": "Data Preprocessing",
+            "description": "This role involves preprocessing data as part of the data analysis team's responsibilities."
+        },
+        {
+            "attribute": "Data Model Design And Implementation",
+            "description": "This position includes designing and implementing data models for effective data analysis and management."
+        },
+        {
+            "attribute": "Cloud Technology",
+            "description": "The role involves working with cloud technologies, specifically mentioning BigQuery for data collection and processing."
+        },
+        {
+            "attribute": "SaaS Product APIs",
+            "description": "The position requires working with APIs from various SaaS products for data collection and processing."
+        },
+        {
+            "attribute": "ETL Tools",
+            "description": "The job involves using ETL (Extract, Transform, Load) tools for data analysis and management."
+        },
+        {
+            "attribute": "BI Tools",
+            "description": "The role requires proficiency in Business Intelligence (BI) tools for data analysis and visualization."
+        },
+        {
+            "attribute": "Data Infrastructure",
+            "description": "Understanding and working with the company's current data infrastructure is a key part of this role."
+        },
+        {
+            "attribute": "Data Provision",
+            "description": "A primary responsibility of this role is providing data to various departments within the company."
+        },
+        {
+            "attribute": "Document Screening",
+            "description": "The first step in the recruitment process for this position is document screening."
+        },
+        {
+            "attribute": "First Interview",
+            "description": "The second step in the recruitment process involves an interview with department and HR representatives."
+        },
+        {
+            "attribute": "Aptitude Test",
+            "description": "An aptitude test is part of the recruitment process for this position."
+        },
+        {
+            "attribute": "Final Interview",
+            "description": "The last step in the recruitment process is a final interview with company executives."
+        }
+    ],
+    "salary information": [
+        {
+            "attribute": "年収 5,493,636 円 -7,687,392円",
+            "description": "The annual salary range for this position is between 5,493,636 yen and 7,687,392 yen. This includes a basic salary, overtime pay, and other allowances."
+        },
+        {
+            "attribute": "時間外手当",
+            "description": "Overtime pay is provided, with a guaranteed 20 hours worth of overtime pay per month regardless of actual overtime worked."
+        },
+        {
+            "attribute": "家族手当",
+            "description": "Family allowance is provided, ranging from 30,000 yen per month for one child to 60,000 yen per month for three or more children."
+        },
+        {
+            "attribute": "昇給",
+            "description": "Salary increases occur once a year in May."
+        },
+        {
+            "attribute": "賞与",
+            "description": "Bonuses are paid twice a year, in June and December."
+        },
+        {
+            "attribute": "交通費支給",
+            "description": "Commuting expenses are reimbursed up to 100,000 yen per month."
+        },
+        {
+            "attribute": "Annual Salary Increase",
+            "description": "Annual salary increase occurs once a year in May."
+        },
+        {
+            "attribute": "Bonuses",
+            "description": "Bonuses are given twice a year, in June and December."
+        },
+        {
+            "attribute": "Transportation Allowance",
+            "description": "Transportation allowance is provided with a monthly limit of 100,000 yen."
+        },
+        {
+            "attribute": "Family Allowance",
+            "description": "Family allowance is provided for children up to 18 years old, with 30,000 yen per month for one child, 50,000 yen for two children, and 60,000 yen for three or more children. Assistant managers and managers are not eligible."
+        },
+        {
+            "attribute": "Social Insurance",
+            "description": "Full social insurance coverage including employment, workers' compensation, health, and pension insurance."
+        },
+        {
+            "attribute": "Babysitter Subsidy",
+            "description": "A subsidy system for babysitting services is provided."
+        }
+    ],
+    "job working hour": [
+        {
+            "attribute": "9:00-18:00",
+            "description": "The standard working hours for this position are from 9:00 AM to 6:00 PM."
+        },
+        {
+            "attribute": "完全週休二日制",
+            "description": "The job offers a complete two-day weekend system (Saturdays and Sundays off), along with public holidays, year-end and New Year holidays, and summer holidays."
+        },
+        {
+            "attribute": "水曜在宅ワークデー",
+            "description": "Every Wednesday, employees have the option to choose between office work or working from home."
+        },
+        {
+            "attribute": "タイムリーシフト制度",
+            "description": "The company offers a timely shift system and a monthly shift system, providing flexibility in working hours."
+        },
+        {
+            "attribute": "有給休暇",
+            "description": "Paid leave is provided, with a usage rate of over 93% as of March 2023."
+        },
+        {
+            "attribute": "産前産後休暇",
+            "description": "Maternity leave is provided, with a 100% return-to-work rate after taking the leave."
+        },
+        {
+            "attribute": "Work From Home Day",
+            "description": "Every Wednesday, employees can choose between office work and working from home."
+        },
+        {
+            "attribute": "Flexible Shift System",
+            "description": "Employees can adjust their working hours by up to 1 hour before or after the standard time, in 30-minute increments, on a daily or monthly basis."
+        },
+        {
+            "attribute": "Raku Smile System",
+            "description": "This system allows employees with children to choose working hours and evaluation styles that suit them, available after one year of employment."
+        },
+        {
+            "attribute": "Child Nursing Leave",
+            "description": "5 days of paid leave per child for nursing, separate from regular paid leave."
+        },
+        {
+            "attribute": "Backup Leave",
+            "description": "A system of backup leave is available to employees."
+        }
+    ]
+}

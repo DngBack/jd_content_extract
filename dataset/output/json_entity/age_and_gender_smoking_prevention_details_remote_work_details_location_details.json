@@ -1,0 +1,286 @@
+{
+    "location details": [
+        {
+            "attribute": "Tokyo",
+            "description": "The job position is located in Tokyo, specifically in Shibuya-ku, Sendagaya. The office is situated at Agri Square Shinjuku."
+        }
+    ],
+    "remote work details": [
+        {
+            "attribute": "Remote Work",
+            "description": "The company offers a 'Wednesday Work from Home Day' where employees can choose between office work and remote work every Wednesday. There's also a Timely Shift System and Monthly Shift System for flexible working arrangements."
+        },
+        {
+            "attribute": "Work Hours",
+            "description": "The standard work hours are from 9:00 AM to 6:00 PM."
+        },
+        {
+            "attribute": "Days Off",
+            "description": "The company offers a complete two-day weekend (Saturday and Sunday), public holidays, New Year's holidays, summer holidays, and paid leave with a usage rate of over 93% (as of March 2023)."
+        },
+        {
+            "attribute": "Salary Range",
+            "description": "The annual salary range is from 5,493,636 yen to 7,687,392 yen."
+        },
+        {
+            "attribute": "Dress Code",
+            "description": "The company allows casual dress for commuting."
+        },
+        {
+            "attribute": "Insurance Coverage",
+            "description": "Employees are covered by health insurance, employment insurance, welfare pension, and workers' compensation insurance."
+        },
+        {
+            "attribute": "Salary Structure",
+            "description": "For an example annual salary of 5.49 million yen, the monthly breakdown is: 344,563 yen total, with 268,000 yen base salary, 46,563 yen overtime allowance, and 30,000 yen other allowances."
+        },
+        {
+            "attribute": "Overtime Pay",
+            "description": "The company pays for 20 hours of overtime per month regardless of actual overtime worked."
+        },
+        {
+            "attribute": "Trial Period",
+            "description": "There is a 6-month trial period with no change in conditions during this time."
+        },
+        {
+            "attribute": "Allowances",
+            "description": "The company offers various allowances including family allowance, overtime pay, late-night work allowance, holiday work allowance, commuting allowance, relocation allowance, and business trip allowance."
+        },
+        {
+            "attribute": "Salary Increases",
+            "description": "Salary increases occur once a year in May."
+        },
+        {
+            "attribute": "Bonuses",
+            "description": "Bonuses are paid twice a year, in June and December."
+        },
+        {
+            "attribute": "Job Requirements",
+            "description": "Essential requirements include experience in database design and implementation, and experience in data extraction and manipulation using SQL. Desirable requirements include experience with big data or data analysis infrastructure construction, and experience contributing to business improvement using IT."
+        },
+        {
+            "attribute": "Annual Salary Increase",
+            "description": "Salary increase occurs once a year in May."
+        },
+        {
+            "attribute": "Bonuses",
+            "description": "Bonuses are given twice a year, in June and December."
+        },
+        {
+            "attribute": "Social Insurance",
+            "description": "Full social insurance coverage including employment, workers' compensation, health, and pension insurance."
+        },
+        {
+            "attribute": "Transportation Allowance",
+            "description": "Transportation costs are covered up to 100,000 yen per month."
+        },
+        {
+            "attribute": "Casual Dress Code",
+            "description": "Employees are allowed to wear casual clothes to work."
+        },
+        {
+            "attribute": "Family Allowance",
+            "description": "Monthly allowance for children up to 18 years old: 30,000 yen for one child, 50,000 yen for two children, 60,000 yen for three or more children. Assistant managers and above are not eligible."
+        },
+        {
+            "attribute": "Work From Home Day",
+            "description": "Every Wednesday, employees can choose between office work or working from home."
+        },
+        {
+            "attribute": "Flexible Work Hours",
+            "description": "Employees can adjust their work hours by up to 1 hour before or after the standard time, in 30-minute increments, on a daily or monthly basis."
+        },
+        {
+            "attribute": "Rakus Smile System",
+            "description": "Allows employees with children to choose working hours and evaluation style that suit them, available after one year of employment."
+        },
+        {
+            "attribute": "Additional Work Support",
+            "description": "Includes child nursing leave, babysitter subsidy, backup leave, company clubs, and social events."
+        },
+        {
+            "attribute": "Data Analysis Team",
+            "description": "Team responsible for consolidating various company data into a BigQuery-based data infrastructure and providing it in a usable format for each business division."
+        },
+        {
+            "attribute": "Data Infrastructure",
+            "description": "Includes data lake construction, data warehouse and data mart design and construction using ETL tools, covering a wide range of data from sales information to customer contract details."
+        },
+        {
+            "attribute": "Data Visualization Support",
+            "description": "Provides support for data visualization using BI tools and dashboards."
+        },
+        {
+            "attribute": "Data Quality Assurance",
+            "description": "Involves checking data quality and establishing operational rules for maintaining quality."
+        },
+        {
+            "attribute": "Data Utilization Improvement",
+            "description": "Offers proposals for improving data input operations and support for business improvements using data."
+        },
+        {
+            "attribute": "Timely Shift System",
+            "description": "A system allowing employees to change their working hours by up to 1 hour before or after the standard time, in 30-minute increments, on a daily or monthly basis."
+        },
+        {
+            "attribute": "Monthly Shift System",
+            "description": "A system allowing employees to change their working hours on a monthly basis."
+        },
+        {
+            "attribute": "Child Nursing Leave",
+            "description": "5 days of leave per child, separate from regular paid leave."
+        },
+        {
+            "attribute": "Babysitter Subsidy System",
+            "description": "A system providing financial support for employees using babysitting services."
+        },
+        {
+            "attribute": "Backup Leave",
+            "description": "A type of leave available to employees, though specific details are not provided."
+        },
+        {
+            "attribute": "Company Clubs",
+            "description": "Internal social groups for activities such as baseball, futsal, light music, and Gunpla (Gundam plastic models)."
+        },
+        {
+            "attribute": "Company Social Events",
+            "description": "Events organized to promote interaction among employees."
+        },
+        {
+            "attribute": "BigQuery",
+            "description": "The data infrastructure platform used by the company for data analysis and storage."
+        },
+        {
+            "attribute": "Embulk",
+            "description": "A tool used for data collection and loading into the data infrastructure."
+        },
+        {
+            "attribute": "Digdag",
+            "description": "A tool used for data collection and loading into the data infrastructure."
+        },
+        {
+            "attribute": "Airflow",
+            "description": "A tool used for data collection and loading into the data infrastructure."
+        },
+        {
+            "attribute": "dbt",
+            "description": "An ETL tool used for data preprocessing and data model design and implementation."
+        },
+        {
+            "attribute": "Great Expectations",
+            "description": "A tool used for checking and maintaining data quality."
+        },
+        {
+            "attribute": "Looker",
+            "description": "A BI tool used for data visualization support."
+        },
+        {
+            "attribute": "Tableau",
+            "description": "A BI tool used for data visualization support."
+        },
+        {
+            "attribute": "Data Quality Assurance",
+            "description": "Involves checking data quality and establishing operational rules for quality maintenance, using tools like Great Expectations."
+        },
+        {
+            "attribute": "Data Visualization Support",
+            "description": "Involves supporting data visualization using BI tools and dashboards, with examples like Looker and Tableau."
+        },
+        {
+            "attribute": "Data Utilization Improvement",
+            "description": "Includes proposing efficiency improvements for data input tasks and supporting business improvements through data utilization."
+        },
+        {
+            "attribute": "Data Analysis Team",
+            "description": "A team that manages diverse data centrally and provides it in an easily usable form for various departments."
+        },
+        {
+            "attribute": "Cloud Technology",
+            "description": "Utilizes cloud technologies like BigQuery and APIs of various SaaS products for data collection and processing."
+        },
+        {
+            "attribute": "ETL Tools",
+            "description": "Used alongside BI tools as part of the latest technology for data analysis."
+        },
+        {
+            "attribute": "Interdepartmental Collaboration",
+            "description": "The data analysis team works closely with various departments, providing data and proposing data utilization improvements."
+        },
+        {
+            "attribute": "Onboarding Process",
+            "description": "New hires start by understanding the current data infrastructure and handling data provision tasks, later moving into data preprocessing, data model design, and visualization support based on aptitude and preferences."
+        },
+        {
+            "attribute": "Recruitment Process",
+            "description": "Includes document screening, first interview with department and HR representatives, aptitude test, and final interview with executives."
+        },
+        {
+            "attribute": "Great Expectations",
+            "description": "A tool example used for data quality checking and maintaining quality."
+        },
+        {
+            "attribute": "Looker",
+            "description": "A BI tool example used for data visualization support."
+        },
+        {
+            "attribute": "Tableau",
+            "description": "Another BI tool example used for data visualization support."
+        },
+        {
+            "attribute": "BigQuery",
+            "description": "A cloud technology used for data collection and processing."
+        },
+        {
+            "attribute": "SaaS Products",
+            "description": "Various software-as-a-service products whose APIs are used for data collection and processing."
+        },
+        {
+            "attribute": "Data Infrastructure",
+            "description": "The current system that new hires need to understand as part of their onboarding process."
+        },
+        {
+            "attribute": "Data Provision Tasks",
+            "description": "Initial responsibilities for new hires in the data analysis team."
+        },
+        {
+            "attribute": "Data Preprocessing",
+            "description": "A potential future task for new hires based on aptitude and preferences."
+        },
+        {
+            "attribute": "Data Model Design",
+            "description": "Another potential future task for new hires based on aptitude and preferences."
+        },
+        {
+            "attribute": "Document Screening",
+            "description": "The first step in the recruitment process."
+        },
+        {
+            "attribute": "First Interview",
+            "description": "The second step in the recruitment process, conducted by department and HR representatives."
+        },
+        {
+            "attribute": "Aptitude Test",
+            "description": "The third step in the recruitment process."
+        },
+        {
+            "attribute": "Final Interview",
+            "description": "The last step in the recruitment process, conducted by executives."
+        }
+    ],
+    "smoking prevention details": [
+        {
+            "attribute": "Smoking Prevention",
+            "description": "The company has implemented a no-smoking policy indoors as part of their passive smoking prevention measures."
+        },
+        {
+            "attribute": "Smoking Prevention",
+            "description": "Indoor smoking is prohibited as a measure to prevent passive smoking."
+        }
+    ],
+    "age and gender details": [
+        {
+            "attribute": "Age And Gender Considerations",
+            "description": "The company provides various benefits that consider age and gender, such as maternity leave with a 100% return-to-work rate, childcare leave, and family allowance for children up to 18 years old. They also offer nursing care leave for children and a babysitter subsidy system."
+        }
+    ]
+}

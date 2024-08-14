@@ -56,24 +56,24 @@ class AzureOpenAI:
             return response_data
 
 
-client = AzureOpenAI(
-    api_key=api_key ,
-    base_url=base_url
-    )
+# client = AzureOpenAI(
+#     api_key=api_key ,
+#     base_url=base_url
+#     )
 
-generated_text = client.generate_text(
-    model_name="gpt-4o-2024-05-13",
-    messages=[
-        {"role": "system", "content": "あなたはAIアシスタントです。"},
-        {"role": "user", "content": "こんにちは"},
-    ],
-)
+# generated_text = client.generate_text(
+#     model_name="gpt-4o-2024-05-13",
+#     messages=[
+#         {"role": "system", "content": "あなたはAIアシスタントです。"},
+#         {"role": "user", "content": "こんにちは"},
+#     ],
+# )
 
-print(generated_text['choices'][0]['message']['content'])
+# print(generated_text['choices'][0]['message']['content'])
 
-generate_embedding = client.generate_embedding(
-    model_name="text-embedding-3-small",
-    input="こんにちは"
-)
+# generate_embedding = client.generate_embedding(
+#     model_name="text-embedding-3-small",
+#     input="こんにちは"
+# )
 
-print(generate_embedding["data"][0]["embedding"])
+# print(generate_embedding["data"][0]["embedding"])

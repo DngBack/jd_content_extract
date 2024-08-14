@@ -1,0 +1,112 @@
+{
+    "emplyment type period": [
+        {
+            "attribute": "期間の定め無し",
+            "description": "This refers to an indefinite employment period, indicating a permanent position without a fixed end date."
+        },
+        {
+            "attribute": "正社員",
+            "description": "This refers to full-time, permanent employment status in Japan."
+        },
+        {
+            "attribute": "契約期間",
+            "description": "This term refers to the duration of the employment contract."
+        },
+        {
+            "attribute": "年収 5,493,636 円 -7,687,392円",
+            "description": "This represents the annual salary range for the position, indicating the potential earnings over a year-long period."
+        },
+        {
+            "attribute": "例年収549万の場合",
+            "description": "This is an example of a specific annual salary (5.49 million yen) and its monthly breakdown, representing a typical employment period of one year."
+        },
+        {
+            "attribute": "月額344,563円",
+            "description": "This is the monthly salary amount, representing the payment for a standard employment period of one month."
+        },
+        {
+            "attribute": "時間外労働の有無に関わらず月20時間相当分の時間外手当を支給します",
+            "description": "This indicates that overtime pay equivalent to 20 hours per month will be provided regardless of actual overtime worked, representing a consistent monthly benefit throughout the employment period."
+        },
+        {
+            "attribute": "9:00-18:00",
+            "description": "These are the standard working hours, representing the daily employment period."
+        },
+        {
+            "attribute": "完全週休二日制土日",
+            "description": "This indicates a full two-day weekend (Saturday and Sunday off), representing the weekly employment period structure."
+        },
+        {
+            "attribute": "年末年始休暇",
+            "description": "This refers to the New Year's holiday period, a specific time off during the annual employment cycle."
+        },
+        {
+            "attribute": "夏期休暇",
+            "description": "This refers to the summer holiday period, another specific time off during the annual employment cycle."
+        },
+        {
+            "attribute": "有給休暇",
+            "description": "This refers to paid leave, a benefit accrued over the employment period."
+        },
+        {
+            "attribute": "産前産後休暇",
+            "description": "This refers to maternity leave, a specific period of leave during employment."
+        },
+        {
+            "attribute": "年1回5月",
+            "description": "Annual salary increase occurs once a year in May."
+        },
+        {
+            "attribute": "年2回(6月12月)",
+            "description": "Bonuses are given twice a year, in June and December."
+        },
+        {
+            "attribute": "毎週水曜日",
+            "description": "Every Wednesday, employees can choose between office work and remote work."
+        },
+        {
+            "attribute": "タイムリーシフト制度マンスリーシフト制度",
+            "description": "A flexible working hours system that allows employees to adjust their work hours by up to 1 hour before or after the standard time, in 30-minute increments, on a daily or monthly basis."
+        },
+        {
+            "attribute": "入社後",
+            "description": "This refers to the period after joining the company, during which new employees will be integrated into the data analysis team and learn about the current data infrastructure."
+        }
+    ],
+    "trial preiod": [
+        {
+            "attribute": "試用期間6ヵ月",
+            "description": "This is a 6-month probationary period for new employees. The conditions remain unchanged during this period."
+        },
+        {
+            "attribute": "入社1年後",
+            "description": "The Rakusmile system, which allows flexible working arrangements for employees with children, becomes available after one year of employment."
+        },
+        {
+            "attribute": "書類選考",
+            "description": "This is the initial screening process for job applicants, where their documents are reviewed."
+        },
+        {
+            "attribute": "1次面接",
+            "description": "This is the first interview stage in the hiring process, conducted by the department manager and HR representative."
+        },
+        {
+            "attribute": "適性テスト",
+            "description": "This is an aptitude test that candidates must take as part of the hiring process."
+        },
+        {
+            "attribute": "最終面接",
+            "description": "This is the final interview stage in the hiring process, conducted by company executives."
+        }
+    ],
+    "contract renewal": [
+        {
+            "attribute": "年1回5月",
+            "description": "This refers to an annual salary increase that occurs in May, which can be considered a form of contract renewal or update."
+        },
+        {
+            "attribute": "年2回(6月12月)",
+            "description": "This refers to bi-annual bonuses in June and December, which can be seen as a form of regular contract renewal or update."
+        }
+    ]
+}
