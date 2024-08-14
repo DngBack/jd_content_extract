@@ -89,12 +89,12 @@ test = str(html_content)
 # print(type(ast.literal_eval(test)))
 
 # # content_output = scrape_html(html_content)
-# chunk_list = character_chunking(content_output)
-# # print(chunk_list)
+chunk_list = character_chunking(content_output)
+print(chunk_list)
 
-# results = extractor(
-#     texts = chunk_list,
-#     model = model_id
-# )
+results = extractor(
+    texts = chunk_list,
+    model = model_id
+)
 
-# print(results)
+print(results)
