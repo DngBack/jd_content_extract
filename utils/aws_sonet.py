@@ -22,11 +22,10 @@ class AwsSonet35():
         )
 
 
-    def chat(self, target, content, examples):
+    def chat(self, target, content):
 
         user_message = TEMP_MATCHING_ENTITTY.replace("{target}", target)
         user_message = user_message.replace("{content}", content)
-        user_message = user_message.replace("{example}", examples)
 
         messages = [
             {

@@ -46,15 +46,11 @@ with open('entities.json', 'r', encoding="utf-8") as file:
     entities_dict = json.load(file)
 
 # Replace 'data.json' with your file path
-with open('test.json', 'r', encoding='utf-8') as file:
+with open('test(1).json', 'r', encoding='utf-8') as file:
     info_extration = json.load(file)
 
-classified_entities = classify_entities(info_extration)
+result = {item['type']['en']: item['detail'] for item in info_extration}
 
-# # Convert and write JSON object to file
-# with open("cc.json", "w", encoding="utf-8") as outfile: 
-#     json.dump(classified_entities, outfile)
-# exit()
 
 output = {}
 
@@ -63,8 +59,8 @@ for i in range(len(categories)):
     entities_key = target_categories[i]
 
     response = llm.chat(target=str(entities_dict[entities_key]),
-                        content=str(classified_entities[output_key]),
-                        examples=str(example_dict[entities_key]))
+                        content=str(result[output_key]),
+                    )
 
     
     response = eval(response)
@@ -72,5 +68,5 @@ for i in range(len(categories)):
 
 
 # Convert and write JSON object to file
-with open("sample_v2.json", "w", encoding="utf-8") as outfile: 
+with open("sample_v3.json", "w", encoding="utf-8") as outfile: 
     json.dump(output, outfile)

@@ -1,152 +1,150 @@
 {
-  "salary_informations": {
-      "salary_fixed_allowances_attributes": {
-          "fixed_allowance_id": "",
-          "fixed_allowance_memo": null,
-          "fixed_allowance_min": null,
-          "fixed_allowance_max": null
-      },
-      "salary_variable_allowances_attributes": {
-          "variable_allowance_id": null,
-          "variable_allowance_memo": null,
-          "variable_allowance_content": null
-      },
-      "min_basic_salary": null,
-      "max_basic_salary": null,
-      "overtime_salary_min": null,
-      "overtime_salary_max": null,
-      "allowance_flag": null,
-      "allowance_detail": null,
-      "min_monthly_salary": null,
-      "max_monthly_salary": null,
-      "salary_detail": null,
-      "salary_payment_method_detail": null,
-      "daily_salary": null,
-      "hourly_salary": null,
-      "hybrid_payment_method_memo": null,
-      "skip_entry_flag": null,
-      "max_annual_income": null,
-      "min_annual_income": null,
-      "allowance_commute_flag": null,
-      "allowance_commute_money_value": null,
-      "allowance_commute_detail": null,
-      "bonus_flag": null,
-      "bonus": null,
-      "salary_railse_memo": null,
-      "salary_model": null
-  },
-  "job_posting": {
-      "confirmation_date": null,
-      "comment": null,
-      "occupational_category_ids": "list: ",
-      "position": null,
-      "position_tail": null,
-      "offer_background": null,
-      "job_description": null,
-      "job_charm_details1": null,
-      "job_charm_details2": null,
-      "job_charm_details3": null,
-      "future_job_description_detail": null
-  },
-  "location_details": {
-      "prefecture_ids": [],
-      "area_details": null,
-      "future_workplace_detail": null,
-      "transfer_detail": null
-  },
-  "job_working_hours": {
-      "working_hours_partterns_attributes": {
-          "working_pattern_start": null,
-          "working_pattern_end": null,
-          "working_pattern_break_hour": null,
-          "working_pattern_break_minute": null,
-          "working_pattern_actual_work_hour": null,
-          "working_pattern_actual_work_minute": null
-      },
-      "scheduled_working_hours_start": null,
-      "scheduled_working_hours_end": null,
-      "actual_working_hour": null,
-      "actual_working_minute": null,
-      "break_time_hour": null,
-      "break_time_minute": null,
-      "overtime_working_flag": null,
-      "working_hours_detail": null,
-      "min_ave_month_overtime_hour": null,
-      "min_ave_month_overtime_minute": null,
-      "max_ave_month_overtime_hour": null,
-      "max_ave_month_overtime_minute": null,
-      "deemed_working_hour": null,
-      "deemed_working_minute": null,
-      "ave_working_hour": null,
-      "ave_working_minute": null,
-      "standard_working_hour": null,
-      "standard_working_minute": null,
-      "core_time_flag": null,
-      "regular_week_working_hour": null,
-      "regular_week_working_minute": null,
-      "core_time_hours_start": null,
-      "core_time_hours_end": null,
-      "flex_time_hours_start": null,
-      "flex_time_hours_end": null,
-      "second_flex_time_hours_start": null,
-      "second_flex_time_hours_end": null,
-      "overtime_max_hour": null,
-      "overtime_min_hour": null,
-      "overtime_max_minute": null,
-      "overtime_min_minute": null,
-      "working_hours_condition": null
-  },
-  "remote_work_details": {
-      "remote_flag": null,
-      "remote_type_ids": [],
-      "remote_day_min": null,
-      "remote_day_max": null,
-      "remote_detail": null
-  },
-  "smoking_prevention_details": {
-      "smoking_prevention_flag": null,
-      "smoking_prevention_detail": null
-  },
-  "age_and_gender": {
-      "age_genders": null
-  },
-  "recruiment_and_hiring": {
-      "number_hired": null,
-      "prerequisite": null,
-      "strictness": null,
-      "selection_process": null,
-      "inexperience_field": null,
-      "inexperience_job": null,
-      "english_ids": []
-  },
-  "holidays_and_leaves": {
-      "holidays_breakdown_ids": [],
-      "holidays": null,
-      "holidays_remarks": null
-  },
-  "welfare_insurance": {
-      "welfare": null,
-      "insurance_ids": []
-  },
-  "employment_type_period": {
-      "employment_type_ids": [],
-      "employment_type_remarks": null,
-      "employment_period_detail": null
-  },
-  "trial_preiod": {
-      "trial_period_length": null,
-      "trial_period_working_conditions": null,
-      "trial_period_memo": null
-  },
-  "contract_renewal": {
-      "contract_renewal_flag": null,
-      "contract_renewal_detail": null,
-      "employment_promotion_flag": null,
-      "contract_renewal_criteria": null,
-      "contract_renewal_limit_flag": null,
-      "contract_renewal_limit_detail_day": null,
-      "contract_renewal_limit_detail_month": null,
-      "contract_renewal_limit_detail_type": null,
-      "contract_renewal_limit_detail_year": null
-  }
+    "salary_informations": {
+        "salary_fixed_allowances_attributes": {
+            "fixed_allowance_memo": "string: Record of Uniform (fixed) allowance",
+            "fixed_allowance_min": "string: An interger of min uniform (fixed) allowance",
+            "fixed_allowance_max": "string: An interger of max uniform (fixed) allowance"
+        },
+        "salary_variable_allowances_attributes": {
+            "variable_allowance_memo": "string: Record of variable allowance",
+            "variable_allowance_content": "string: Content of variable allowance"
+        },
+        "min_basic_salary": "string: Interger of min basic salary",
+        "max_basic_salary": "string: Interger of max basic salary",
+        "overtime_salary_min": "string: Interger of min overtime salary",
+        "overtime_salary_max": "string: Interger of max overtime salary",
+        "allowance_flag": "string: boolean Indicates whether any type of allowance is provided (true or false)",
+        "allowance_detail": "string: Provides specific details about any allowances offered (e.g., type of allowance, conditions).",
+        "min_monthly_salary": "string: The integer of The minimum monthly salary offered for a job or employee.",
+        "max_monthly_salary": "string: The integer of The maximum monthly salary offered for a job or employee.",
+        "salary_detail": "string: Additional details or breakdown of the salary offered, such as components, conditions, or bonuses.",
+        "salary_payment_method_detail": "string: Information on how the salary is paid ",
+        "daily_salary": "string: The amount of salary calculated on a daily basis",
+        "hourly_salary": "string: The amount of salary calculated on a hourly basis",
+        "hybrid_payment_method_memo": "string: Notes or details about a mixed or hybrid salary payment method",
+        "skip_entry_flag": "string:  Likely a boolean flag to indicate whether to skip entry or processing for this record or a specific section.",
+        "max_annual_income": "string: Interger of The maximum annual income that can be earned",
+        "min_annual_income": "string: Interger of The minimum annual income that can be earned",
+        "allowance_commute_flag": "string: The boolean Indicates whether a commuting allowance is provided",
+        "allowance_commute_money_value": "string: Integer of The monetary value of the commuting allowance, if provided.",
+        "allowance_commute_detail": "string: Additional details about the commuting allowance ",
+        "bonus_flag": "string: boolean that whether a bonus is provided",
+        "bonus": "string: The amount or details of the bonus offered.",
+        "salary_railse_memo": "string: Notes or information about salary increases or raises",
+        "salary_model": "string: Describes the salary structure or model (e.g., fixed, commission-based, mixed)."
+    },
+    "job_posting": {
+        "confirmation_date": "string: date type data, The date when the job posting or offer was confirmed or finalized.",
+        "comment": "strings: Any additional comments or notes related to the job posting, possibly including special instructions or remarks.",
+        "occupational_category_+": "List(int): Choose one or more element in here {1: 営業系, 2: 企画・事務・マーケティング・管理系, 3: 販売・サービス系（ファッション、フード、小売, 4: 専門サービス系（医療、福祉、教育、その他, 5: 専門職系（コンサルタント、金融、不動産, 6: クリエイティブ系 7 エンジニア系（IT・Web・ゲーム・通信), 8: 技術系（電気、電子、機械, 9: 技術系（建築、土木）, 10: 技術系（医薬、化学、素材、食品, 11: 施設・設備管理、技能工、運輸・物流系, 12: 公務員、団体職員、その他} ",
+        "position": "string: job title position",
+        "position_tail": "string:  Additional text or detail that may follow the main position title,",
+        "offer_background": "string: recruiment background",
+        "job_description": "string: A detailed description of the job responsibilities, duties, and expectations",
+        "job_charm_details1": "string: A highlight or detail that makes the job attractive or unique,",
+        "job_charm_details2": "string: The second detail highlighting something attractive about the job.",
+        "job_charm_details3": "string: The third detail highlighting something attractive about the job.",
+        "future_job_description_detail": "Details regarding potential future responsibilities, tasks, or growth opportunities that may be associated with the position."
+    },
+    "location_details": {
+        "prefecture_ids": "List(int): A list of identifiers (IDs) corresponding to the prefectures (regions) where the job is located. Choose one or more element in here {1 北海道 2 青森県 3 岩手県 4 宮城県 5 秋田県 6 山形県 7 福島県 8 茨城県 9 栃木県 10 群馬県 11 埼玉県 12 千葉県 13 東京都 14 神奈川県 15 新潟県 16 富山県 17 石川県 18 福井県 19 山梨県 20 長野県 21 岐阜県 22 静岡県 23 愛知県 24 三重県 25 滋賀県 26 京都府 27 大阪府 28 兵庫県 29 奈良県 30 和歌山県 31 鳥取県 32 島根県 33 岡山県 34 広島県 35 山口県 36 徳島県 37 香川県 38 愛媛県 39 高知県 40 福岡県 41 佐賀県 42 長崎県 43 熊本県 44 大分県 45 宮崎県 46 鹿児島県 47 沖縄県 99 その他}",
+        "area_details": "string: Specific details about the area or location of the workplace (e.g., neighborhood, district).",
+        "future_workplace_detail": "string: Information about potential future workplaces or locations where the employee might be required to work.",
+        "transfer_detail": "string: Details regarding the possibility or requirements for transfers, including conditions, frequency, or locations."
+    },
+    "job_working_hours": {
+        "working_hours_partterns_attributes": {
+            "working_pattern_start": "string: Interger of The start time of a specific working pattern.",
+            "working_pattern_end": "string: Interger of The end time of a specific working pattern.",
+            "working_pattern_break_hour": "string: integer of The number of break hours in the working pattern.",
+            "working_pattern_break_minute": "string: integer of the number break minutes in the working pattern.",
+            "working_pattern_actual_work_hour": "string : integer: The number of actual working hours in the pattern, excluding breaks.",
+            "working_pattern_actual_work_minute": "string: integer: The number of actual working minutes in the pattern, excluding breaks."
+        },
+        "scheduled_working_hours_start": "string: integer The scheduled start time of the working hours",
+        "scheduled_working_hours_end": "string: integer the scheduled end time of the working hours",
+        "actual_working_hour": "string: integer The actual number of working hours recorded.",
+        "actual_working_minute": "string: integer: The actual number of working minutes recorded.",
+        "break_time_hour": "string: :integer: The number of hours allocated for breaks.",
+        "break_time_minute": "string: integer: The number of minutes allocated for breaks.",
+        "overtime_working_flag": "string: boolean: Indicates whether overtime work is required or expected.",
+        "working_hours_detail": "string: Additional details or notes about the working hours, including any special conditions or arrangements.",
+        "min_ave_month_overtime_hour": "string: integer: The minimum average number of overtime hours per month.",
+        "min_ave_month_overtime_minute": "string: integer: The minimum average number of overtime minutes per month.",
+        "max_ave_month_overtime_hour": "string: integer: The maximum average number of overtime hours per month.",
+        "max_ave_month_overtime_minute": "string: integer: The maximum average number of overtime minutes per month.",
+        "deemed_working_hour": "string: integer: The number of deemed or assumed working hours, used in cases like flexible working arrangements.",
+        "deemed_working_minute": "string: integer: The number of deemed or assumed working minutes.",
+        "ave_working_hour": "string: integer: The average number of working hours per period (e.g., week, month).",
+        "ave_working_minute": "string: integer: The average number of working minutes per period.",
+        "standard_working_hour": "string integer: The standard or expected number of working hours per period.",
+        "standard_working_minute": "string integer: The standard or expected number of working minutes per period.",
+        "core_time_flag": "string: boolean: Indicates whether core working hours (mandatory presence hours) are in place.",
+        "regular_week_working_hour": "string integer: The total number of regular working hours in a week.",
+        "regular_week_working_minute": "string integer: The total number of regular working minutes in a week.",
+        "core_time_hours_start": "string: interger :The start time of core working hours.",
+        "core_time_hours_end": "string: interger: The end time of core working hours.",
+        "flex_time_hours_start": "string: interger: The start time of flexible working hours.",
+        "flex_time_hours_end": "string: integer: The end time of flexible working hours.",
+        "second_flex_time_hours_start": "string: integer The start time of a second flexible working period, if applicable.",
+        "second_flex_time_hours_end": "string: integer The end time of a second flexible working period, if applicable.",
+        "overtime_max_hour": "string: integer: The maximum number of overtime hours allowed.",
+        "overtime_min_hour": "string: integer: The miniimum number of overtime hours allowed.",
+        "overtime_max_minute": "string: integer: The maximum number of overtime minutes allowed.",
+        "overtime_min_minute": "string: integer: The minimum number of overtime minutes expected.",
+        "working_hours_condition": "string: Conditions or special circumstances related to working hours, such as seasonal variations, shifts, or special projects."
+    },
+    "remote_work_details": {
+        "remote_flag": "string: boolean: Indicates whether remote work is allowed or available.",
+        "remote_type_ids": "list(int): A list of identifiers (IDs) corresponding to the types of remote work available (e.g., fully remote, hybrid). Choose one or more of the following: {1: フルリモートワーク出社不要, 2: 一部リモートOK（出社要）}",
+        "remote_day_min": "string: integer: The minimum number of days per week that remote work is permitted.",
+        "remote_day_max": "string: integer: The maximum number of days per week that remote work is permitted.",
+        "remote_detail": "string: Additional details or notes about the remote work policy, including conditions or limitations."
+    },
+    "smoking_prevention_details": {
+        "smoking_prevention_flag": "string: boolean: Indicates whether there are any smoking prevention measures or policies in place.",
+        "smoking_prevention_detail": "string: Specific details about the smoking prevention policy or measures, such as designated smoking areas or non-smoking premises."
+    },
+    "age_and_gender": {
+        "age_genders": "sting: age and gender composition of department"
+    },
+    "recruiment_and_hiring": {
+        "number_hired": "string: integer: The number of positions available for hiring.",
+        "prerequisite": "string: Any prerequisites or required qualifications for the job, such as education or experience.",
+        "strictness": "string: Describes the level of strictness or flexibility in meeting the prerequisites or job requirements.",
+        "selection_process": "string: Details about the recruitment and selection process, including steps such as interviews, tests, or assessments.",
+        "inexperience_field": "sting: boolean: Indicates whether candidates with no experience in the field are considered.",
+        "inexperience_job": "string: boolean: Indicates whether candidates with no experience in the specific job role are considered",
+        "english_ids": "list(int): A list of identifiers (IDs) specifying the required level of English proficiency, if applicable. Choose one or more of the following:1 上級（専門的な話題でも会話ができ、複雑な文章もスピーディに読み書きできる） 2 中級（ビジネス場面での会話、文章は支障なくやりとりができる） 3 初級（日常会話及び文章を読んで要点をつかむことができる）"
+    },
+    "holidays_and_leaves": {
+        "holidays_breakdown_ids": "list(int): Choose one or more of the following: (4 シフト制 5 土曜日 6 日曜日 7 月曜日 8 火曜日 9 水曜日 10 木曜日 11 金曜日 12 祝日 13 夏季休暇 14 年末年始休暇 15 GW休暇 16 産前・産後休暇 17 育児休暇 18 介護休暇 19 特別休暇)",
+        "holidays": "string: Annual of holidays of company",
+        "holidays_remarks": "string: Holiday vacation details"
+    },
+    "welfare_insurance": {
+        "welfare": "string: treatment and benefit of company",
+        "insurance_ids": "list(int): A list of identifiers (IDs) specifying the insurance, if applicable. Choose one or more of the following: (1 健康保険 2 厚生年金 3 雇用保険 4 労災保険)"
+    },
+    "employment_type_period": {
+        "employment_type_ids": "list(int): A list of identifiers (IDs) specifying the insurance, if applicable. Choose one or more of the following: (1 正社員 2 契約社員 3 その他)",
+        "employment_type_remarks": "string Additional remarks or notes about the employment type, such as specific terms or conditions.",
+        "employment_period_detail": "string: : Details regarding the employment period, including contract length, renewal conditions, or probationary period"
+    },
+    "trial_preiod": {
+        "trial_period_length": "string: integer: The length of the trial or probationary period, typically measured in months.",
+        "trial_period_working_conditions": "string: The working conditions during the trial period, which may differ from the regular conditions (e.g., salary, working hours).",
+        "trial_period_memo": "string: Additional notes or details regarding the trial period, such as performance expectations or evaluation criteria."
+    },
+    "contract_renewal": {
+        "contract_renewal_flag": "string: boolean: Indicates whether the contract is eligible for renewal.",
+        "contract_renewal_detail": "string: Additional details about the contract renewal process, such as conditions or timelines.",
+        "employment_promotion_flag": "string: boolean: Indicates whether there is a possibility of promotion to permanent employment upon contract renewal.",
+        "contract_renewal_criteria": "string: Criteria or conditions that must be met for the contract to be renewed, such as performance metrics or company needs.",
+        "contract_renewal_limit_flag": "string: boolean: Indicates whether there is a limit to the number of times the contract can be renewed.",
+        "contract_renewal_limit_detail_day": "string: integer: Specifies the day limit for the contract renewal, if applicable.",
+        "contract_renewal_limit_detail_month": "string: integer: Specifies the month limit for the contract renewal, if applicable.",
+        "contract_renewal_limit_detail_type": "string: Type of limit applied to the contract renewal (e.g., time-based, occurrence-based).",
+        "contract_renewal_limit_detail_year": "string: integer: Specifies the year limit for the contract renewal, if applicable."
+    }
 }
