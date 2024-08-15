@@ -27,3 +27,16 @@ def groups_entity(data: str = ""):
     dict_output_json = json.loads(str_output_json)
 
     return str_output_json, dict_output_json
+
+def classify_entities(data: list = ""):
+    classified_data = {}
+
+    for item in data:
+        type_en = item["type"]["en"]
+        if type_en not in classified_data:
+            classified_data[type_en] = []
+        classified_data[type_en].append({
+            "entity_name": item["entity_name"],
+            "description": item["description"]
+        })
+    return classified_data

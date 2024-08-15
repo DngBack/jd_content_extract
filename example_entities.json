@@ -1,0 +1,240 @@
+{
+    "salary_informations": {
+        "salary_fixed_allowances_attributes": [
+            {
+                "fixed_allowance_memo": "",
+                "fixed_allowance_min": 1000,
+                "fixed_allowance_max": 2000
+            },
+            {
+                "fixed_allowance_memo": "",
+                "fixed_allowance_min": 20000,
+                "fixed_allowance_max": 40000
+            }
+        ],
+        "salary_variable_allowances_attributes": [
+            {
+                "variable_allowance_memo": "",
+                "variable_allowance_content": "1111111111111111111111111111111111a"
+            }
+        ],
+        "min_basic_salary": 100000,
+        "max_basic_salary": 20000000,
+        "overtime_salary_min": 20000,
+        "overtime_salary_max": 30000,
+        "allowance_flag": true,
+        "allowance_detail": "",
+        "min_monthly_salary": 184000,
+        "max_monthly_salary": 20185000,
+        "salary_detail": "",
+        "salary_payment_method_detail": null,
+        "daily_salary": null,
+        "hourly_salary": null,
+        "hybrid_payment_method_memo": null,
+        "skip_entry_flag": null,
+        "max_annual_income": null,
+        "min_annual_income": null,
+        "allowance_commute_flag": null,
+        "allowance_commute_money_value": null,
+        "allowance_commute_detail": null,
+        "bonus_flag": null,
+        "bonus": null,
+        "salary_railse_memo": null,
+        "salary_model": null
+    },
+    "job_posting": {
+        "confirmation_date": null,
+        "comment": "11  選考情報11111111111111111111111111111111111111111111111111111111\n\n 選考情報\n 選考情報\n 選考情報\n 選考情報\n 選考情報\n 選考情報\n 選考情報\n 選考情報\n 選考情報 選考情報 選考情報 選考情報\n 選考情報\n 選考考情報fff",
+        "occupational_category_ids": [
+            1
+        ],
+        "position": "lytest_kthaotac_29",
+        "position_tail": "",
+        "offer_background": "1募集背景1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n募集背景\n募集背景募集背景募集背景\n募集背景募集背景募集背景募集背景募集背景\n募集背景募集背景\n募集背景\n募集背景\n募集背景\n募集背景\n募集背\n募集背景\n募集背景\n募集背景\n募集背景\n募集背景\n募集背景\n募集背景\n募集背景\n募集背景\n募集背景\n募集背景\n募集背景\n募集背景\n募集背景\n募集背景\n募集背景\n募集背景\n募集背景\n募集背景\n募集背景\n募集背景\n募集背景\n募集背景\n募集背景\n募集背景\n募2",
+        "job_description": "1仕事内容\n仕事内容\n仕事内容\n仕事内容仕事内容仕事内容仕事内容\n仕事内容\n仕事内容\n仕事内容\n仕事内容\n仕事内容\n仕事内容\n仕事内容仕事内容仕事内容仕事内容\n仕事内容\n仕事内容\n仕事内容\n仕事内容\n仕事内容\n仕事内容\n仕事内容仕事内容仕事内容仕事内容\n仕事内容\n仕事内容\n仕事内容\n仕事内容\n仕事内容\n仕事内容\n仕事内容仕事内容仕事内容仕事内容\n仕事内容\n仕事内容\n仕事内容\n仕事内容\n仕事内容\n仕事内容\n仕事内容仕事内容仕事内容仕事内容\n111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n\n11\n仕事内容\n仕事内容\n仕事内容仕事内容仕事内容仕事内容\n仕事内容\n仕事内容\n仕事内容\n仕事内容\n仕事内容\n仕事内容\n仕事内容仕事内容仕事内容仕事内容\n仕事内容\n仕事内容\n仕事内容\n仕事内容\n仕事内容\n仕事内容\n仕事内容仕事内容仕事内容仕事内容\n仕事内容\n仕事内容\n仕事内容\n仕事内容\n仕事内容\n仕事内容\n仕事内容仕事内容仕事内容仕事内容\n仕事内容\n仕事内容\n仕事内容仕事内容\n仕事内容\n仕事内容\n仕事内容仕事内容仕事内容仕事内容\n仕事内容\n仕事内容\n仕事内容仕事内容\n仕事内容\n仕事内容\n仕事内容仕事内容仕事内容仕事内容\n仕事内容\n仕事内容\n仕事内容仕事内容\n仕事内容\n仕事内容\n仕事内容仕事内容仕事内容仕事内容\n仕事内容\n仕事内容\n仕事内容仕事内容\n仕事内容\n仕事内容\n仕事内容仕事内容仕事内容仕事内容\n仕事内容\n仕事内容\n仕事内容仕事内容\n仕事内容\n仕事内容\n仕事内容仕事内容仕事内容仕事内容\n仕事内容\n仕事内容\n仕事内容仕事内容\n仕事内容\n仕事内容\n仕事内容仕事内容仕事内容仕事内容\n仕事内容\n仕事内容\n仕事内容仕事内容\n仕事内容\n仕事内容\n仕事内容仕事内容仕事内容仕事内容\n仕事内容\n仕事内容\n仕事内容仕事内容\n仕事内容\n仕事内容\n仕事内容仕事内容仕事内容仕事内容\n仕事内容\n仕事内容\n仕事内容仕事内容\n仕事内容\n仕事内容\n仕事内容仕事内容仕事内容仕事内容\n仕事内容\n仕事内容\n仕事内容仕事内容\n仕事内容\n仕事内容\n仕事内容仕事2",
+        "job_charm_details1": "11  選考情報11111111111111111111111111111111111111111111111111111111\n\n 選考情報\n 選考情報\n 選考情報\n 選考情報\n 選考情報\n 選考情報\n 選考情報\n 選考情報\n 選考情報 選考情報 選考情報 選考情報\n 選考情報\n 選考考情報fff",
+        "job_charm_details2": "11  選考情報11111111111111111111111111111111111111111111111111111111\n\n 選考情報\n 選考情報\n 選考情報\n 選考情報\n 選考情報\n 選考情報\n 選考情報\n 選考情報\n 選考情報 選考情報 選考情報 選考情報\n 選考情報\n 選考考情報fff",
+        "job_charm_details3": "11  選考情報11111111111111111111111111111111111111111111111111111111\n\n 選考情報\n 選考情報\n 選考情報\n 選考情報\n 選考情報\n 選考情報\n 選考情報\n 選考情報\n 選考情報 選考情報 選考情報 選考情報\n 選考情報\n 選考考情報fff",
+        "future_job_description_detail": "1将来的に従事する可能性のある仕事内容詳細\n将来的に従事する可能性のある仕事内容詳細\n将来的に従事する可能性のある仕事内容詳細\n将来的に従事する可能性のある仕事内容詳細\n将来的に従事する可能性のある仕事内容詳細\n将来的に従事する可能性のある仕事内容詳細\n将来的に従事する可能性のある仕事内容詳細123"
+    },
+    "location_details": {
+        "prefecture_ids": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47
+        ],
+        "area_details": "1",
+        "future_workplace_detail": 1,
+        "transfer_detail": 1
+    },
+    "job_working_hours": {
+        "working_hours_partterns_attributes": [
+            {
+                "working_pattern_start": 540,
+                "working_pattern_end": 600,
+                "working_pattern_break_hour": 1,
+                "working_pattern_break_minute": 20,
+                "working_pattern_actual_work_hour": 4,
+                "working_pattern_actual_work_minute": 5
+            }
+        ],
+        "scheduled_working_hours_start": null,
+        "scheduled_working_hours_end": null,
+        "actual_working_hour": null,
+        "actual_working_minute": null,
+        "break_time_hour": null,
+        "break_time_minute": null,
+        "overtime_working_flag": true,
+        "working_hours_detail": "1給与詳細\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n1111111111111111111111111111111111111111111111111\n給与詳細給与詳細\n給与詳細\n給与詳細\n給与詳細\n給与詳細\n給与詳細\n11111111111111\n給与詳細給与詳細\n給与詳細\n給与詳細\n給与詳細\n給与詳細\n給与詳細\n11111111111111\n給与詳細給与詳細\n給与詳細\n給与詳細\n給与詳細\n給与詳細\n給与詳細\n11111111111111\n給与詳細給与詳細\n給与詳細\n給与詳細\n給与詳細\n給与詳細\n給与詳細\n11111111111111\n給与詳細給与詳細\n給与詳細\n給与詳細\n給与詳細\n給与詳細\n給与詳細\n11111111111111\n給与詳細給与詳細\n給与詳細\n給与詳細\n給与詳細\n給与詳細\n給与詳細\n11111111111111\n給与詳細給与詳細\n給与詳細\n給与詳細\n給与詳細\n給与詳細\n給与詳細\n11111111111111\n給与詳細給与詳細\n給与詳細\n給与詳細\n給与詳細\n給与詳細\n給与詳細\n11111111111111\n給与詳細給与詳細\n給与詳細\n給与詳細\n給与詳細\n給与詳細\n給与詳細\n11111111111111\n給与詳細給与詳細\n給与詳細\n給与詳細\n給与詳細\n給与詳細\n給与詳細11111111111111\n給与詳細給与詳細\n給与詳細\n給与詳細\n給与詳細\n給与詳細\n給与詳細11111111111111\n給与詳細給与詳細\n給与詳細\n給与詳細\n給与詳細\n給与詳細\n給与詳細11111111111111\n給与詳細給与詳細\n給与詳細\n給与詳細\n給与詳細\n給与詳細\n給与詳細11111111111111\n給与詳細給与詳細\n給与詳細\n給与詳細\n給与詳細\n給与詳細\n給与詳細11111111111111\n給与詳細給与詳細\n給与詳細\n給与詳細\n給与詳細\n給与詳細\n給与詳細11111111111111\n給与詳細給与詳細\n給与詳細\n給与詳細\n給与詳細\n給与詳細\n給与詳細11111111111111\n給与詳細給与詳細\n給与詳細\n給与詳細\n給与詳細\n給与詳細\n給与詳細11111111111111\n給与詳細給与詳細\n給与詳細\n給与詳細\n\n2",
+        "min_ave_month_overtime_hour": 1,
+        "min_ave_month_overtime_minute": 5,
+        "max_ave_month_overtime_hour": 3,
+        "max_ave_month_overtime_minute": 15,
+        "deemed_working_hour": null,
+        "deemed_working_minute": null,
+        "ave_working_hour": 10,
+        "ave_working_minute": 55,
+        "standard_working_hour": null,
+        "standard_working_minute": null,
+        "core_time_flag": null,
+        "regular_week_working_hour": null,
+        "regular_week_working_minute": null,
+        "core_time_hours_start": null,
+        "core_time_hours_end": null,
+        "flex_time_hours_start": null,
+        "flex_time_hours_end": null,
+        "second_flex_time_hours_start": null,
+        "second_flex_time_hours_end": null,
+        "overtime_max_hour": "3",
+        "overtime_min_hour": "1",
+        "overtime_max_minute": "20",
+        "overtime_min_minute": "5",
+        "working_hours_condition": "1労働時間制度併用時の働き方1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n1\n労働時間制度併用時の働き方\n労働時間制度併用時の働き方\n労働時間制度併用時の働き方\n労働時間制度併用時の働き方\n労働時間制度併用時の働き方労働時間制度併用時の働き方労働時間制度併用時の働き方\n労働時間制度併用時の働き方労働時間制度併用時の働き方労働時間制度併用時の働き方労働時間制度併用時の働き方労働時間制度併用時の働き方労働時間制度併用時の働き方\n労働時間制度併用時の働き方\n労働時間制度併用時の働き方労働時間制度併用時の働き方労働時間制度併用時の働き方労働時間制度併用時の働き方労働時間制度併用時の働き方111111111111111112"
+    },
+    "remote_work_details": {
+        "remote_flag": true,
+        "remote_type_ids": [
+            2,
+            1
+        ],
+        "remote_day_min": 2,
+        "remote_day_max": 3,
+        "remote_detail": "1 リモートワーク詳細1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111112"
+    },
+    "smoking_prevention_details": {
+        "smoking_prevention_flag": true,
+        "smoking_prevention_detail": "1 受動喫煙防止策詳細1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111112"
+    },
+    "age_and_gender": {
+        "age_genders": "1所属部署の年齢・性別構成1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111所属部署の年齢・性別構成所属部署の年齢・性別構\n所属部署2"
+    },
+    "recruiment_and_hiring": {
+        "number_hired": 1,
+        "prerequisite": "1  対象となる方（応募要件）\n 対象となる方（応募要件）\n 対象となる方（応募要件）\n 対象となる方（応募要件）\n1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n\n\n 対象となる方（応募要件）\n 対象となる方（応募要件）\n 対象となる方（応募要件）\n 対象となる方（応募要件）\n 対象となる方（応募要件）\n 対象となる方（応募要件）\n 対象となる方（応募要件）\n 対象となる方（応募要件）\n 対象となる方（応募要件） 対象となる方（応募要件） 対象となる方（応募要件）\n\n 対象となる方（応募要件） 対象となる方（応募要件）\n 対象となる方（応募要件） 対象となる方（応募要件）\n\n 対象となる方（応募要件）\n 対象となる方（応募要件）\n 対象となる方（応募要件）\n 対象となる方（応募要件）\n 対象となる方（応募要件）\n 対象となる方（応募要件）\n 対象となる方（応募要件）\n 対象となる方（応募要件）\n 対象となる方（応募要件）\n 対象となる方（応募要件）\n 対象となる方（応募要件）\n 対象となる方（応募要件）\n 対象となる方（応募要件）\n 対象となる方（応募要件）\n 対象となる方（応募要件）\n 対象となる方（応募要件）\n 対象となる方（応募要件）\n 対象となる方（応募要件） 対象となる方（応募要件） 対象となる方（応募要件） 対象となる方（応募要件） 対象となる方（応募要件） 対象となる方（応募要件） 対象\n2",
+        "strictness": "111111111111111111111111111\n1111111111111111111111111111111111111111111111111\n111111111111111111111111111111111111111111111111111111111111111111111112",
+        "selection_process": "1選考情報11111111111111111111111111111111111111111111111111111111\n\n 選考情報\n 選考情報\n 選考情報\n 選考情報\n 選考情報\n 選考情報\n 選考情報\n 選考情報\n 選考情報 選考情報 選考情報 選考情報\n 選考情報\n 選考情報\n 選考情報\n 選考情報選考情報 選考情報 選考情報 選考情報fff",
+        "inexperience_field": false,
+        "inexperience_job": true,
+        "english_ids": [
+            1
+        ]
+    },
+    "holidays_and_leaves": {
+        "holidays_breakdown_ids": [
+            5,
+            6,
+            12,
+            4,
+            7,
+            8,
+            9,
+            10,
+            11,
+            19,
+            18,
+            17,
+            16,
+            13,
+            14,
+            15
+        ],
+        "holidays": "125",
+        "holidays_remarks": null
+    },
+    "welfare_insurance": {
+        "welfare": "",
+        "insurance_ids": [
+            1,
+            2,
+            3,
+            4
+        ]
+    },
+    "employment_type_period": {
+        "employment_type_ids": [
+            4
+        ],
+        "employment_type_remarks": "1雇用期間●年111111111111111111111111111111112",
+        "employment_period_detail": "1 雇用形態詳細1111111111111111111111111111111112"
+    },
+    "trial_preiod": {
+        "trial_period_length": "1試用期間の長さ111111111111",
+        "trial_period_working_conditions": true,
+        "trial_period_memo": "1 試用期間中は●●が変更になります。22222222222222222222222"
+    },
+    "contract_renewal": {
+        "contract_renewal_flag": true,
+        "contract_renewal_detail": "1 契約の更新詳細111111111111111111111111111111111",
+        "employment_promotion_flag": true,
+        "contract_renewal_criteria": "1 更新の判断軸1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111112",
+        "contract_renewal_limit_flag": true,
+        "contract_renewal_limit_detail_day": null,
+        "contract_renewal_limit_detail_month": 2,
+        "contract_renewal_limit_detail_type": 1,
+        "contract_renewal_limit_detail_year": 1
+    }
+}

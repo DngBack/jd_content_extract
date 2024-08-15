@@ -1,9 +1,10 @@
 from utils.aws_sonet import AwsSonet35
-from utils.groups import groups_entity, classify_entities
+from utils.groups import classify_entities
 
 import ast
 import json
 from pathlib import Path
+import pprint
 
 import os
 from dotenv import load_dotenv
@@ -20,7 +21,7 @@ llm.setup(ACCESS_KEY, SECRET_KEY, model_id)
 # list all categories
 categories = [
     'location details', 'remote work details', 'smoking prevention details',
-    'age and gender details', 'emplyment type period', 'trial preiod',
+    'age and gender', 'employment type period', 'trial period',
     'contract renewal', 'job posting', 'salary information',
     'job working hour', 'recruiment and hiring', 'holidays and leaves',
     'welfare insurance'
@@ -34,16 +35,26 @@ target_categories = [
     'welfare_insurance'
 ]
 
-# Get data 
-data = Path("enti_extraction.txt").read_text(encoding="utf-8")
-str_output_json, dict_output_json = groups_entity(data)
-
-print(dict_output_json)
+# Get Example
+with open('example_entities.json', 'r', encoding="utf-8") as file:
+    # Load the dictionary from the JSON file
+    example_dict = json.load(file)
 
 # Open and read the JSON file
 with open('entities.json', 'r', encoding="utf-8") as file:
     # Load the dictionary from the JSON file
     entities_dict = json.load(file)
+
+# Replace 'data.json' with your file path
+with open('test.json', 'r', encoding='utf-8') as file:
+    info_extration = json.load(file)
+
+classified_entities = classify_entities(info_extration)
+
+# # Convert and write JSON object to file
+# with open("cc.json", "w", encoding="utf-8") as outfile: 
+#     json.dump(classified_entities, outfile)
+# exit()
 
 output = {}
 
@@ -51,12 +62,15 @@ for i in range(len(categories)):
     output_key = categories[i]
     entities_key = target_categories[i]
 
-    response = llm.chat(attributes=str(entities_dict[entities_key]),
-                        context=str(dict_output_json[output_key]))
+    response = llm.chat(target=str(entities_dict[entities_key]),
+                        content=str(classified_entities[output_key]),
+                        examples=str(example_dict[entities_key]))
+
+    
     response = eval(response)
     output[output_key] = response
 
 
 # Convert and write JSON object to file
-with open("sample.json", "w") as outfile: 
+with open("sample.json", "w", encoding="utf-8") as outfile: 
     json.dump(output, outfile)

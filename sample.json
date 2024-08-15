@@ -3,55 +3,43 @@
         "prefecture_ids": [
             13
         ],
-        "area_details": "Shibuya-ku, Sendagaya, Agri Square Shinjuku",
-        "future_workplace_detail": null,
-        "transfer_detail": null
+        "area_details": "The main work location is Agri Square Shinjuku, 5-27-11 Sendagaya, Shibuya-ku, Tokyo. Office work is generally required on days other than Wednesdays at the office in Shibuya-ku, Tokyo.",
+        "future_workplace_detail": 1,
+        "transfer_detail": 1
     },
     "remote work details": {
         "remote_flag": true,
         "remote_type_ids": [
-            1,
-            2
+            1
         ],
         "remote_day_min": 1,
         "remote_day_max": 1,
-        "remote_detail": "The company offers a 'Wednesday Work from Home Day' where employees can choose between office work and remote work every Wednesday. There's also a Timely Shift System and Monthly Shift System for flexible working arrangements."
+        "remote_detail": "Remote work is available every Wednesday. Employees can choose between office work or working from home on Wednesdays. The company also offers flexible working arrangements through Timely Shift and Monthly Shift systems. The basic working hours are 9:00-18:00, but can be adjusted by up to 1 hour before or after in 30-minute increments using the Timely Shift system."
     },
     "smoking prevention details": {
         "smoking_prevention_flag": true,
-        "smoking_prevention_detail": "Indoor smoking is prohibited as a measure to prevent passive smoking. The company has implemented a no-smoking policy indoors."
+        "smoking_prevention_detail": "Indoor smoking ban policy adopted. No smoking areas are provided inside the office. Passive smoking prevention measures are in place."
     },
-    "age and gender details": {
-        "age_genders": {
-            "maternity_leave": true,
-            "return_to_work_rate": 100,
-            "childcare_leave": true,
-            "family_allowance": {
-                "available": true,
-                "age_limit": 18
-            },
-            "nursing_care_leave": true,
-            "babysitter_subsidy": true
-        }
+    "age and gender": {
+        "age_genders": "There is no clear description of age restrictions, but since it is full-time employment, it is assumed to target the general working age range. There is no mention of gender restrictions or preferences. It is presumed that applicants of any gender can apply."
     },
-    "emplyment type period": {
+    "employment type period": {
         "employment_type_ids": [
-            1,
-            2
+            1
         ],
-        "employment_type_remarks": "Full-time, permanent position (\u6b63\u793e\u54e1) with no fixed end date (\u671f\u9593\u306e\u5b9a\u3081\u7121\u3057)",
-        "employment_period_detail": "Indefinite employment period with standard working hours of 9:00-18:00, full two-day weekend (Saturday and Sunday off), annual leave including New Year's holiday, summer holiday, and paid leave. Maternity leave is also provided."
+        "employment_type_remarks": "Full-time employee with no fixed term.",
+        "employment_period_detail": "Employment as a full-time employee with no fixed term."
     },
-    "trial preiod": {
+    "trial period": {
         "trial_period_length": "6 months",
-        "trial_period_working_conditions": "Unchanged from regular employment conditions",
-        "trial_period_memo": "Probationary period for new employees"
+        "trial_period_working_conditions": false,
+        "trial_period_memo": "There is a 6-month trial period with no changes in conditions during this time."
     },
     "contract renewal": {
-        "contract_renewal_flag": true,
-        "contract_renewal_detail": "Annual salary increase in May",
-        "employment_promotion_flag": true,
-        "contract_renewal_criteria": "Performance and skill development",
+        "contract_renewal_flag": false,
+        "contract_renewal_detail": null,
+        "employment_promotion_flag": false,
+        "contract_renewal_criteria": null,
         "contract_renewal_limit_flag": false,
         "contract_renewal_limit_detail_day": null,
         "contract_renewal_limit_detail_month": null,
@@ -62,40 +50,40 @@
         "confirmation_date": null,
         "comment": null,
         "occupational_category_ids": [],
-        "position": "Internal SE Data Engineer/Member",
-        "position_tail": "Tokyo",
-        "offer_background": "This is a full-time permanent position with Rakus company for an internal SE data engineer/member in Tokyo. The role involves working in the Data Analysis Team, responsible for collecting and managing data from various internal systems and SaaS products, building data infrastructure, and supporting data visualization and utilization across different departments.",
-        "job_description": "The position involves collecting data from internal systems and SaaS products, building data infrastructure using tools like Embulk, Digdag, and Airflow, data preprocessing, designing and implementing data warehouses and data marts using tools like dbt, ensuring data quality, and supporting data visualization using BI tools like Looker and Tableau.",
-        "job_charm_details1": "The company offers a casual dress code, various company clubs including baseball, futsal, light music, and Gunpla, and organizes internal social events for employees.",
-        "job_charm_details2": "The company provides support for obtaining professional qualifications and offers health insurance, employment insurance, welfare pension, and workers' compensation insurance.",
-        "job_charm_details3": "The work environment is located in Shinjuku, Tokyo, with a non-smoking indoor policy to prevent passive smoking.",
-        "future_job_description_detail": "After joining, the employee will first understand the current data infrastructure and be responsible for providing data to various departments. Later, depending on aptitude and preferences, they may be involved in data preprocessing, data model design and implementation, and data visualization support."
+        "position": "In-house SE Data Engineer/Member Tokyo",
+        "position_tail": null,
+        "offer_background": "Full-time position in Shibuya, Tokyo. Experience in database design, implementation, and data manipulation using SQL is required.",
+        "job_description": "Work in a data analysis team that centrally manages various internal data and provides it in a format easily accessible to each business division. Responsibilities include data quality checks, visualization support, and proposing data utilization improvements. Use cloud technologies like BigQuery and APIs of various SaaS products for data collection and processing. Utilize the latest technologies such as ETL tools and BI tools for data analysis.",
+        "job_charm_details1": "Use cutting-edge tools and technologies: Employ tools like Great Expectations for data quality checks, Looker and Tableau for data visualization, and BigQuery for cloud-based data processing.",
+        "job_charm_details2": "Collaborative work environment: Work closely with various business divisions, offering data utilization proposals and improvement suggestions.",
+        "job_charm_details3": "Diverse responsibilities: Engage in tasks ranging from data quality maintenance, visualization support, to proposing efficiency improvements in data input processes and data-driven business enhancements.",
+        "future_job_description_detail": "After joining, you may be involved in understanding the company's data management system, data preprocessing, and designing and implementing data models."
     },
     "salary information": {
-        "salary_fixed_allowances_attributes": {
-            "family_allowance": {
-                "one_child": 30000,
-                "two_children": 50000,
-                "three_or_more_children": 60000
-            },
-            "commute_allowance": {
-                "max_amount": 100000
+        "salary_fixed_allowances_attributes": [
+            {
+                "fixed_allowance_id": null,
+                "fixed_allowance_memo": "Family allowance",
+                "fixed_allowance_min": 30000,
+                "fixed_allowance_max": 60000
             }
-        },
-        "salary_variable_allowances_attributes": {
-            "overtime_pay": {
-                "guaranteed_hours": 20
+        ],
+        "salary_variable_allowances_attributes": [
+            {
+                "variable_allowance_id": null,
+                "variable_allowance_memo": "Overtime, night work, holiday work allowances",
+                "variable_allowance_content": "Overtime allowance equivalent to 20 hours per month regardless of actual overtime work"
             }
-        },
+        ],
         "min_basic_salary": null,
         "max_basic_salary": null,
         "overtime_salary_min": null,
         "overtime_salary_max": null,
         "allowance_flag": true,
-        "allowance_detail": "Family allowance and commuting allowance are provided.",
+        "allowance_detail": "Family allowance, overtime allowance, night work allowance, holiday work allowance, commuting allowance, relocation allowance, business trip allowance",
         "min_monthly_salary": null,
         "max_monthly_salary": null,
-        "salary_detail": "Annual salary range includes basic salary, overtime pay, and other allowances.",
+        "salary_detail": "Annual income ranges from 5,493,636 yen to 7,687,392 yen, including basic salary, overtime allowance, and other allowances.",
         "salary_payment_method_detail": null,
         "daily_salary": null,
         "hourly_salary": null,
@@ -105,33 +93,29 @@
         "min_annual_income": 5493636,
         "allowance_commute_flag": true,
         "allowance_commute_money_value": 100000,
-        "allowance_commute_detail": "Commuting expenses are reimbursed up to 100,000 yen per month.",
+        "allowance_commute_detail": "Commuting allowance provided up to 100,000 yen per month",
         "bonus_flag": true,
-        "bonus": "Bonuses are paid twice a year, in June and December.",
-        "salary_railse_memo": "Salary increases occur once a year in May.",
+        "bonus": "Paid twice a year (June, December)",
+        "salary_railse_memo": "Conducted once a year in May",
         "salary_model": null
     },
     "job working hour": {
         "working_hours_partterns_attributes": {
-            "standard_hours": "9:00-18:00",
-            "weekly_off": "Complete two-day weekend system (Saturdays and Sundays off)",
-            "work_from_home": "Every Wednesday",
-            "shift_system": "Timely shift system and monthly shift system",
-            "paid_leave": "Available with over 93% usage rate",
-            "maternity_leave": "Available with 100% return-to-work rate",
-            "flexible_hours": "Adjustable by up to 1 hour before or after standard time",
-            "raku_smile_system": "Available after one year of employment",
-            "child_nursing_leave": "5 days of paid leave per child",
-            "backup_leave": "Available"
+            "working_pattern_start": 540,
+            "working_pattern_end": 1080,
+            "working_pattern_break_hour": null,
+            "working_pattern_break_minute": null,
+            "working_pattern_actual_work_hour": 9,
+            "working_pattern_actual_work_minute": 0
         },
-        "scheduled_working_hours_start": "09:00",
-        "scheduled_working_hours_end": "18:00",
-        "actual_working_hour": 8,
+        "scheduled_working_hours_start": 540,
+        "scheduled_working_hours_end": 1080,
+        "actual_working_hour": 9,
         "actual_working_minute": 0,
-        "break_time_hour": 1,
-        "break_time_minute": 0,
-        "overtime_working_flag": true,
-        "working_hours_detail": "Standard 9:00 AM to 6:00 PM with flexible options",
+        "break_time_hour": null,
+        "break_time_minute": null,
+        "overtime_working_flag": null,
+        "working_hours_detail": "Working hours are from 9:00 to 18:00. With the Timely Shift system, employees can adjust their working hours by up to 1 hour before or after, in 30-minute increments.",
         "min_ave_month_overtime_hour": null,
         "min_ave_month_overtime_minute": null,
         "max_ave_month_overtime_hour": null,
@@ -140,74 +124,57 @@
         "deemed_working_minute": null,
         "ave_working_hour": null,
         "ave_working_minute": null,
-        "standard_working_hour": 8,
+        "standard_working_hour": 9,
         "standard_working_minute": 0,
-        "core_time_flag": true,
-        "regular_week_working_hour": 40,
+        "core_time_flag": null,
+        "regular_week_working_hour": 45,
         "regular_week_working_minute": 0,
         "core_time_hours_start": null,
         "core_time_hours_end": null,
-        "flex_time_hours_start": "08:00",
-        "flex_time_hours_end": "10:00",
-        "second_flex_time_hours_start": "17:00",
-        "second_flex_time_hours_end": "19:00",
+        "flex_time_hours_start": 480,
+        "flex_time_hours_end": 1140,
+        "second_flex_time_hours_start": null,
+        "second_flex_time_hours_end": null,
         "overtime_max_hour": null,
         "overtime_min_hour": null,
         "overtime_max_minute": null,
         "overtime_min_minute": null,
-        "working_hours_condition": "Flexible shift system allowing adjustments up to 1 hour before or after standard time in 30-minute increments"
+        "working_hours_condition": "1. Timely Shift system: Employees can adjust their working hours by up to 1 hour before or after, in 30-minute increments, on a daily or monthly basis. Examples: 8:00-17:00, 8:30-17:30, 9:30-18:30, 10:00-19:00.\n2. Work from Home Day: Every Wednesday, employees can choose between office work or working from home.\n3. Monthly Shift system: Employees can adjust their working hours by up to 1 hour before or after, in 30-minute increments, on a monthly basis.\n4. Rakus Smile system: Employees with children can choose working hours and evaluation styles that suit them. Available after 1 year of employment.\n5. Child nursing leave: 5 days of leave per child, separate from regular paid leave.\n6. Backup leave: Additional leave for emergencies or special situations."
     },
     "recruiment and hiring": {
-        "number_hired": 1,
-        "prerequisite": "Experience in database design and implementation, and data extraction using SQL",
-        "strictness": "Moderate",
-        "selection_process": [
-            "Document Screening",
-            "First Interview",
-            "Aptitude Test",
-            "Final Interview"
-        ],
-        "inexperience_field": "Data analysis infrastructure",
+        "number_hired": null,
+        "prerequisite": "Experience in database design and implementation, and experience in data extraction and manipulation using SQL are required. Experience in big data or data analysis infrastructure construction, and experience in business improvement using IT are welcome.",
+        "strictness": "There is a 6-month probationary period with no change in conditions.",
+        "selection_process": "The selection process consists of document screening, first interview (with field staff and HR personnel), aptitude test, and final interview (with executives).",
+        "inexperience_field": false,
         "inexperience_job": false,
         "english_ids": []
     },
     "holidays and leaves": {
         "holidays_breakdown_ids": [
-            "weekends",
-            "public_holidays",
-            "year_end_holidays",
-            "summer_holidays"
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
         ],
-        "holidays": "Weekends (Saturday and Sunday), public holidays, year-end holidays, summer holidays",
-        "holidays_remarks": "Paid leave with over 93% utilization rate, special leave for events like marriage (7 days)"
+        "holidays": "Complete two-day weekend (Saturday and Sunday), public holidays, New Year's holidays, summer holidays, paid leave (consumption rate over 93%), maternity leave, special leave (e.g., 7 days for marriage)",
+        "holidays_remarks": "Paid leave consumption rate is over 93% (as of March 2023). Maternity leave return rate is 100%. Wednesday is optional work-from-home day. Time shift system allows changing work hours by 30 minutes up to 1 hour before or after, daily or monthly. Monthly shift system allows changing work hours on a monthly basis. Child care leave provides 5 days per child, separate from paid leave. Backup leave is available for emergencies or special circumstances."
     },
     "welfare insurance": {
-        "welfare": {
-            "health_insurance": true,
-            "employment_insurance": true,
-            "pension": true,
-            "workers_compensation_insurance": true,
-            "casual_dress_code": true,
-            "family_allowance": true,
-            "work_from_home_options": true,
-            "flexible_shifts": true,
-            "qualification_support": true,
-            "childcare_leave": true,
-            "babysitter_subsidy": true,
-            "internal_clubs": true,
-            "social_events": true,
-            "commuting_allowance": true,
-            "annual_salary_increase": true,
-            "biannual_bonuses": true,
-            "rakus_smile_system": true,
-            "transportation_allowance": true,
-            "indoor_smoking_prohibited": true
-        },
+        "welfare": "Casual dress code, family allowance, work-from-home days, timely shift system, qualification acquisition support, child nursing leave, babysitter subsidy system, backup leave, in-house clubs, in-house social events, and smoking prevention measures (indoor smoking ban) are provided. Transportation allowance up to 100,000 yen per month. Family allowance: 30,000 yen/month for 1 child, 50,000 yen/month for 2 children, 60,000 yen/month for 3 or more children until age 18 (excluding assistant managers and above).",
         "insurance_ids": [
-            "employment_insurance",
-            "workers_compensation_insurance",
-            "health_insurance",
-            "pension_insurance"
+            1,
+            2,
+            3,
+            4
         ]
     }
 }

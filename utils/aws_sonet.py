@@ -1,22 +1,5 @@
 import boto3
-
-TEMP_MATCHING_ENTITY = """
-Please fill in the following recruitment and hiring attributes with relevant information based on the provided descriptions. 
-The input attributes include (json format):
-{attributes}
-
-Context (json format):
-{context}
-
-The recruitment and hiring process covers various aspects such as the job title, employment type, salary, work location, and required qualifications for a Data Engineer position in Tokyo. The job offers an annual salary range of 5,493,636 - 7,687,392 yen and includes several allowances and bonuses. The work environment is located in Shibuya, Tokyo, with a non-smoking indoor policy. Opportunities for skill development and salary increases are provided annually in May.
-
-Task: Based on the above context, fill in the details for the attributes listed.
-Requirements:
-- Only give me json format
-- Answer with Enlish
-- If you don not fill infor, instead null by None
-- Using "True" or "False" for boolean
-"""
+from .prompt import TEMP_MATCHING_ENTITTY
 
 class AwsSonet35():
     def __init__(self):
@@ -39,9 +22,11 @@ class AwsSonet35():
         )
 
 
-    def chat(self, attributes, context):
-        user_message = TEMP_MATCHING_ENTITY.replace("{attributes}", attributes)
-        user_message = user_message.replace("{context}", context)
+    def chat(self, target, content, examples):
+
+        user_message = TEMP_MATCHING_ENTITTY.replace("{target}", target)
+        user_message = user_message.replace("{content}", content)
+        user_message = user_message.replace("{example}", examples)
 
         messages = [
             {
