@@ -10,6 +10,7 @@ Filiing all content
 - Convert Japanese to English
 - If you don not fill infor, instead null by None
 - Using "True" or "False" for boolean
+- Convert all other datatype to string
 
 -Example Output-
 {example}

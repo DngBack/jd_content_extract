@@ -72,5 +72,5 @@ for i in range(len(categories)):
 
 
 # Convert and write JSON object to file
-with open("sample.json", "w", encoding="utf-8") as outfile: 
+with open("sample_v2.json", "w", encoding="utf-8") as outfile: 
     json.dump(output, outfile)
