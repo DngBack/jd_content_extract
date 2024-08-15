@@ -1,7 +1,7 @@
 {
   "salary_informations": {
       "salary_fixed_allowances_attributes": {
-          "fixed_allowance_id": null,
+          "fixed_allowance_id": "",
           "fixed_allowance_memo": null,
           "fixed_allowance_min": null,
           "fixed_allowance_max": null
@@ -38,7 +38,7 @@
   "job_posting": {
       "confirmation_date": null,
       "comment": null,
-      "occupational_category_ids": [],
+      "occupational_category_ids": "list: ",
       "position": null,
       "position_tail": null,
       "offer_background": null,
