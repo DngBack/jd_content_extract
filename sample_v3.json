@@ -1,30 +1,25 @@
 {
     "location details": {
-        "prefecture_ids": "[13]",
-        "area_details": "Shibuya-ku, Sendagaya 5-27-11 Agri Square Shinjuku",
-        "future_workplace_detail": "The main workplace is the office in Shibuya-ku, Tokyo, but office work is basically required on days other than Wednesday.",
-        "transfer_detail": "There is a possibility of changing the place of work to a place designated by the company."
+        "area_details": "string: The main workplace is located in Agri Square Shinjuku, 5-27-11 Sendagaya, Shibuya-ku, Tokyo.",
+        "future_workplace_detail": "string: The basic work arrangement involves office work on days other than Wednesday at the office in Shibuya-ku, Tokyo.",
+        "transfer_detail": "string: There is a possibility of changing the workplace to locations designated by the company."
     },
     "remote work details": {
         "remote_flag": "True",
-        "remote_type_ids": [
-            "2"
-        ],
         "remote_day_min": "1",
         "remote_day_max": "1",
-        "remote_detail": "Every Wednesday, employees can choose between office work or remote work. There's a flexible working system called 'Timely Shift' that allows adjusting work hours by up to 1 hour before or after the standard 9:00-18:00 schedule, in 30-minute increments. Additionally, there's a 'Monthly Shift' system for more flexible work arrangements. The 'Rakusmile' system allows employees to choose suitable working hours and evaluation styles during child-rearing periods, available after one year of employment."
+        "remote_detail": "Remote work is available every Wednesday. Employees can choose between office work or working from home on Wednesdays. There's also a Timely Shift system and Monthly Shift system allowing for flexible work arrangements. The remote work policy specifically mentions Wednesday as a work-from-home option, but there's no clear information about remote work on other days."
     },
     "smoking prevention details": {
         "smoking_prevention_flag": "True",
-        "smoking_prevention_detail": "Indoor smoking ban policy has been adopted. It is presumed that there are no smoking areas within the office due to the indoor smoking ban policy."
+        "smoking_prevention_detail": "Indoor smoking ban policy is adopted. It is presumed that there are no smoking areas within the office due to the indoor smoking ban policy."
     },
     "age and gender": {
-        "age_genders": "No specific age or gender restrictions mentioned. The position appears to be open to all working-age adults regardless of gender."
+        "age_genders": "No specific age or gender restrictions mentioned. The position appears to be open to all eligible working-age adults regardless of gender."
     },
     "employment type period": {
-        "employment_type_ids": "[1]",
         "employment_type_remarks": "Full-time employee with no fixed term of employment.",
-        "employment_period_detail": "No fixed term of employment as a full-time employee."
+        "employment_period_detail": "Employment as a full-time employee with no fixed term."
     },
     "trial period": {
         "trial_period_length": "6",
@@ -45,35 +40,34 @@
     "job posting": {
         "confirmation_date": "None",
         "comment": "None",
-        "occupational_category_ids": "['7']",
-        "position": "In-house SE Data Engineer/Member Tokyo",
+        "position": "Internal SE Data Engineer/Member Tokyo",
         "position_tail": "None",
         "offer_background": "None",
-        "job_description": "This is a full-time position in Shibuya, Tokyo. Experience in database design, implementation, and data manipulation using SQL is required. The role involves data quality checks, establishing operational rules for quality maintenance using tools like Great Expectations, supporting data visualization using BI tools like Looker and Tableau, proposing efficiency improvements for data input processes, and supporting business improvements using data. The team manages a wide range of internal data, providing it in an easily accessible format for various departments. The job also involves data collection and processing using cloud technologies like BigQuery and APIs of various SaaS products.",
-        "job_charm_details1": "Opportunity to work with the latest data analysis technologies including ETL and BI tools",
-        "job_charm_details2": "Chance to collaborate closely with various departments and propose data utilization improvements",
-        "job_charm_details3": "Exposure to a wide range of data and the opportunity to perform analyses from various perspectives",
-        "future_job_description_detail": "After joining, you may be involved in tasks such as understanding the company's data management system, data preprocessing, and designing and implementing data models."
+        "job_description": "Full-time position in Shibuya, Tokyo. Experience in database design, implementation, and data manipulation using SQL is required. The job involves data quality checks and establishing operational rules for quality maintenance using tools like Great Expectations. It also includes supporting data visualization using BI tools like Looker and Tableau, proposing improvements for data input efficiency, and supporting business improvements using data. The role is part of an internal data analysis team that centrally manages various company data and provides it in a user-friendly format for each business division. The team uses cloud technologies like BigQuery and APIs of various SaaS products for data collection and processing. They utilize the latest technologies necessary for data analysis, such as ETL tools and BI tools. The team works closely with each business division, proposing data utilization and improvements.",
+        "job_charm_details1": "Opportunity to work with cutting-edge data analysis technologies and tools",
+        "job_charm_details2": "Collaborative work environment with close cooperation between departments",
+        "job_charm_details3": "Chance to contribute to business improvements through data analysis and visualization",
+        "future_job_description_detail": "After joining, you may be involved in understanding the company's data management system, data preprocessing, and designing and implementing data models."
     },
     "salary information": {
         "salary_fixed_allowances_attributes": {
-            "fixed_allowance_memo": "Monthly overtime allowance equivalent to 20 hours regardless of actual overtime worked",
+            "fixed_allowance_memo": "None",
             "fixed_allowance_min": "None",
             "fixed_allowance_max": "None"
         },
         "salary_variable_allowances_attributes": {
-            "variable_allowance_memo": "Family allowance based on number of children",
-            "variable_allowance_content": "1 child: 30,000 yen/month, 2 children: 50,000 yen/month, 3 or more children: 60,000 yen/month until age 18. Not applicable for Assistant Managers and above."
+            "variable_allowance_memo": "Family allowance, overtime allowance, late-night allowance, holiday work allowance, commuting allowance, relocation allowance, business trip allowance are included.",
+            "variable_allowance_content": "Family allowance is provided based on the number of children. 30,000 yen/month for 1 child, 50,000 yen/month for 2 children, 60,000 yen/month for 3 or more children, paid until the age of 18. Assistant managers and above are not eligible."
         },
         "min_basic_salary": "None",
         "max_basic_salary": "None",
         "overtime_salary_min": "None",
         "overtime_salary_max": "None",
         "allowance_flag": "True",
-        "allowance_detail": "Family allowance, overtime allowance, night shift allowance, holiday work allowance, commuting allowance, relocation allowance, business trip allowance",
+        "allowance_detail": "Family allowance, overtime allowance, late-night allowance, holiday work allowance, commuting allowance, relocation allowance, business trip allowance are provided.",
         "min_monthly_salary": "457803",
         "max_monthly_salary": "640616",
-        "salary_detail": "Annual income range from 5,493,636 yen to 7,687,392 yen. Includes basic salary, overtime allowance, and other allowances.",
+        "salary_detail": "Annual income ranges from 5,493,636 yen to 7,687,392 yen. Includes basic salary, overtime pay, and other allowances.",
         "salary_payment_method_detail": "None",
         "daily_salary": "None",
         "hourly_salary": "None",
@@ -83,10 +77,10 @@
         "min_annual_income": "5493636",
         "allowance_commute_flag": "True",
         "allowance_commute_money_value": "100000",
-        "allowance_commute_detail": "Commuting allowance provided up to 100,000 yen per month",
+        "allowance_commute_detail": "Commuting allowance provided up to 100,000 yen per month.",
         "bonus_flag": "True",
-        "bonus": "Paid twice a year (June, December)",
-        "salary_railse_memo": "Annual salary increase implemented in May",
+        "bonus": "Paid twice a year (June, December).",
+        "salary_railse_memo": "Salary increase conducted once a year in May.",
         "salary_model": "None"
     },
     "job working hour": {
@@ -105,7 +99,7 @@
         "break_time_hour": "1",
         "break_time_minute": "0",
         "overtime_working_flag": "False",
-        "working_hours_detail": "Working hours are from 9:00 to 18:00. The Timely Shift system allows changes up to 1 hour before or after in 30-minute increments.",
+        "working_hours_detail": "Working hours from 9:00 to 18:00. Timely Shift System allows changes up to 1 hour before or after in 30-minute increments.",
         "min_ave_month_overtime_hour": "None",
         "min_ave_month_overtime_minute": "None",
         "max_ave_month_overtime_hour": "None",
@@ -129,24 +123,21 @@
         "overtime_min_hour": "None",
         "overtime_max_minute": "None",
         "overtime_min_minute": "None",
-        "working_hours_condition": "Timely Shift system allows changing work hours up to 1 hour before or after in 30-minute increments daily or monthly. Examples: 8:00-17:00, 8:30-17:30, 9:30-18:30, 10:00-19:00. Every Wednesday, employees can choose between office work or remote work. The Rakusmile system allows employees to choose suitable working hours and evaluation styles during child-rearing periods, available after one year of employment."
+        "working_hours_condition": "Timely Shift System allows changing work hours up to 1 hour before or after in 30-minute increments daily or monthly. Examples: 8:00-17:00, 8:30-17:30, 9:30-18:30, 10:00-19:00. Every Wednesday, employees can choose between office work or remote work. Rakusmile system allows employees to choose suitable working hours and evaluation styles during child-rearing periods, available after 1 year of employment."
     },
     "recruiment and hiring": {
         "number_hired": "None",
         "prerequisite": "Experience in database design and implementation, and experience in data extraction and manipulation using SQL are required. Experience in big data or data analysis infrastructure construction, and experience in business improvement using IT are welcome.",
         "strictness": "None",
-        "selection_process": "The selection process consists of document screening, first interview (with field staff and HR personnel), aptitude test, and final interview (with executives), in that order.",
+        "selection_process": "The selection process consists of document screening, first interview (with field staff and HR staff), aptitude test, and final interview (with executives), in that order.",
         "inexperience_field": "False",
-        "inexperience_job": "False",
-        "english_ids": "None"
+        "inexperience_job": "False"
     },
     "holidays and leaves": {
-        "holidays_breakdown_ids": "5,6,12,13,14,16",
-        "holidays": "Complete two-day weekend system (Saturday and Sunday), public holidays, New Year's holidays, summer holidays, paid leave (consumption rate over 93%), maternity leave, special leave (e.g. 7 days for marriage)",
-        "holidays_remarks": "Annual paid leave is granted with a consumption rate of over 93% (as of March 2023). Maternity leave is provided with a 100% return rate after taking it. Special leave is granted, for example, 7 days of leave for marriage. Every Wednesday, employees can choose between office work or working from home. There's a Timely Shift system allowing changes to working hours up to 1 hour before or after in 30-minute units daily/monthly. A Monthly Shift system allows changing working hours on a monthly basis. Child nursing leave is available, with 5 days per child, separate from regular paid leave. Backup leave is an additional leave system for emergencies or special circumstances."
+        "holidays": "Full two-day weekend system (Saturday and Sunday), public holidays, New Year's holidays, summer holidays, paid leave (utilization rate over 93%), maternity leave, special leave (e.g. 7 days for marriage)",
+        "holidays_remarks": "Annual paid leave is granted with a utilization rate of over 93% (as of March 2023). Maternity leave is provided with a 100% return rate after taking leave. Special leave is granted, for example, 7 days of leave for marriage. Every Wednesday, employees can choose between office work or remote work. There's a Timely Shift system allowing changes to working hours up to 1 hour before or after in 30-minute increments daily or monthly. A Monthly Shift system allows changing working hours on a monthly basis. Child nursing leave is available, with 5 days per child, separate from regular paid leave. Backup leave is an additional leave system for emergencies or special circumstances."
     },
     "welfare insurance": {
-        "welfare": "Casual dress code for commuting, family allowance, work-from-home days, timely shift system, qualification acquisition support, child care leave, babysitter subsidy system, backup leave, in-house clubs, in-house social events, transportation allowance up to 100,000 yen per month, family allowance (30,000 yen/month for 1 child, 50,000 yen/month for 2 children, 60,000 yen/month for 3 or more children until age 18, excluding assistant managers and managers), qualification acquisition support system, babysitter subsidy system, in-house clubs (baseball, futsal, light music, Gunpla, etc.), in-house social events, and indoor smoking ban measures are provided.",
-        "insurance_ids": "[\"1\", \"2\", \"3\", \"4\"]"
+        "welfare": "string: Casual dress code for commuting, family allowance, work-from-home days, timely shift system, qualification acquisition support, nursing leave for children, babysitter subsidy system, backup leave, in-house clubs, in-company social events are provided. Health insurance, employment insurance, welfare pension, and workers' compensation insurance are covered. Social insurance including employment, workers' compensation, health, and welfare pension is fully provided. Transportation expenses are provided up to 100,000 yen per month. Family allowance is provided until the child reaches 18 years old: 30,000 yen/month for 1 child, 50,000 yen/month for 2 children, 60,000 yen/month for 3 or more children (excluding assistant managers and managers). There is a system to support employees' qualification acquisition. A babysitter subsidy system is available as childcare support. In-house clubs such as baseball, futsal, light music, and Gunpla are supported. Events are held to promote interaction among employees. Indoor smoking is prohibited to protect employees' health."
     }
 }

@@ -9,9 +9,7 @@
     },
     "remote work details": {
         "remote_flag": true,
-        "remote_type_ids": [
-            1
-        ],
+
         "remote_day_min": 1,
         "remote_day_max": 1,
         "remote_detail": "Remote work is available every Wednesday. Employees can choose between office work or working from home on Wednesdays. The company also offers flexible working arrangements through Timely Shift and Monthly Shift systems. The basic working hours are 9:00-18:00, but can be adjusted by up to 1 hour before or after in 30-minute increments using the Timely Shift system."
@@ -24,9 +22,6 @@
         "age_genders": "There is no clear description of age restrictions, but since it is full-time employment, it is assumed to target the general working age range. There is no mention of gender restrictions or preferences. It is presumed that applicants of any gender can apply."
     },
     "employment type period": {
-        "employment_type_ids": [
-            1
-        ],
         "employment_type_remarks": "Full-time employee with no fixed term.",
         "employment_period_detail": "Employment as a full-time employee with no fixed term."
     },
