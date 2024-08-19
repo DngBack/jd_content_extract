@@ -22,10 +22,12 @@ class AwsSonet35():
         )
 
 
-    def chat(self, target, content):
+    def chat(self, target, content, prompt_add):
 
         user_message = TEMP_MATCHING_ENTITTY.replace("{target}", target)
         user_message = user_message.replace("{content}", content)
+        user_message = user_message.replace("{prompt_add}", prompt_add)
+
 
         messages = [
             {

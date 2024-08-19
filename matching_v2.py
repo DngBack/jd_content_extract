@@ -57,11 +57,12 @@ output = {}
 for i in range(len(categories)):
     output_key = categories[i]
     entities_key = target_categories[i]
+    
 
     response = llm.chat(target=str(entities_dict[entities_key]),
                         content=str(result[output_key]),
                     )
-
+    print(response)
     
     response = eval(response)
     output[output_key] = response
