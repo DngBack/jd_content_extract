@@ -1,13 +1,13 @@
 {
     "salary_informations": {
-        "salary_fixed_allowances_attributes": {
-            "fixed_allowance_id": "Information of Fixed Allowances. Choose one in  salary_fixed_allowances_attributes",
+        "salary_fixed_allowances": {
+            "fixed_allowance_id": "Information of Fixed Allowances. Choose one in  salary_fixed_allowances",
             "fixed_allowance_memo": "string: Record of Uniform (fixed) allowance",
             "fixed_allowance_min": "string: An interger of min uniform (fixed) allowance",
             "fixed_allowance_max": "string: An interger of max uniform (fixed) allowance"
         },
-        "salary_variable_allowances_attributes": {
-            "variable_allowance_id": "Information of variable_allowance. Choose one in salary_variable_allowances_attributes",
+        "salary_variable_allowances": {
+            "variable_allowance_id": "Information of variable_allowance. Choose one in salary_variable_allowances",
             "variable_allowance_memo": "string: Record of variable allowance",
             "variable_allowance_content": "string: Content of variable allowance"
         },
@@ -39,17 +39,18 @@
         "bonus_flag": "string: boolean that whether a bonus is provided",
         "bonus": "string: The amount or details of the bonus offered.",
         "salary_raise_id": "Choose one in salary_raise_id",
-        "salary_raise_memo": "string: Notes or information about salary increases or raises",
+        "salary_railse_memo": "string: Notes or information about salary increases or raises",
         "salary_model": "string: Describes the salary structure or model (e.g., fixed, commission-based, mixed)."
     },
     "job_posting": {
         "confirmation_date": "string: date type data, The date when the job posting or offer was confirmed or finalized.",
         "comment": "strings: Any additional comments or notes related to the job posting, possibly including special instructions or remarks.",
+        "job_name_main_id": "Job categories. Choose one or more in job_name_main_id",
         "occupational_category_ids": " different occupational categories or job classifications. Choose one or more in occupational_category_ids",
         "position": "string: job title position",
         "position_tail": "string:  Additional text or detail that may follow the main position title,",
         "offer_background": "string: recruiment background",
-        "ids": "Possible future job opportunities. Choose one or more in ids",
+        "future_job_description_id": "Possible future job opportunities. Choose one in future_job_description_id",
         "job_description": "string: A detailed description of the job responsibilities, duties, and expectations",
         "job_charm_details1": "string: A highlight or detail that makes the job attractive or unique,",
         "job_charm_details2": "string: The second detail highlighting something attractive about the job.",
@@ -68,7 +69,7 @@
         "transfer_detail": "string: Details regarding the possibility or requirements for transfers, including conditions, frequency, or locations."
     },
     "job_working_hours": {
-        "working_hours_partterns_attributes": {
+        "working_hours_partterns": {
             "working_pattern_start": "string: Interger of The start time of a specific working pattern.",
             "working_pattern_end": "string: Interger of The end time of a specific working pattern.",
             "working_pattern_break_hour": "string: integer of The number of break hours in the working pattern.",
@@ -115,6 +116,7 @@
         "working_hours_condition": "string: Conditions or special circumstances related to working hours, such as seasonal variations, shifts, or special projects."
     },
     "remote_work_details": {
+        "remote_type_ids": "Remote type. Choose one or more in remote_type_ids",
         "remote_flag": "string: boolean: Indicates whether remote work is allowed or available.",
         "remote_day_min": "string: integer: The minimum number of days per week that remote work is permitted.",
         "remote_day_max": "string: integer: The maximum number of days per week that remote work is permitted.",
@@ -153,7 +155,7 @@
         "employment_type_remarks": "string Additional remarks or notes about the employment type, such as specific terms or conditions.",
         "employment_period_detail": "string: : Details regarding the employment period, including contract length, renewal conditions, or probationary period"
     },
-    "trial_preiod": {
+    "trial_period": {
         "trial_period_id": "trial period. Choose one in trial_period_id",
         "trial_period_length": "string: integer: The length of the trial or probationary period, typically measured in months.",
         "trial_period_working_conditions": "string: The working conditions during the trial period, which may differ from the regular conditions (e.g., salary, working hours).",

@@ -39,6 +39,7 @@ class AwsSonet35():
                 ],
             },
         ]
+        
  
         response = self.client.converse(
             modelId=self.model_id,
