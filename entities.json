@@ -1,16 +1,7 @@
 {
     "salary_informations": {
-        "salary_fixed_allowances": {
-            "fixed_allowance_id": "Information of Fixed Allowances. Choose one in  salary_fixed_allowances",
-            "fixed_allowance_memo": "string: Record of Uniform (fixed) allowance",
-            "fixed_allowance_min": "string: An interger of min uniform (fixed) allowance",
-            "fixed_allowance_max": "string: An interger of max uniform (fixed) allowance"
-        },
-        "salary_variable_allowances": {
-            "variable_allowance_id": "Information of variable_allowance. Choose one in salary_variable_allowances",
-            "variable_allowance_memo": "string: Record of variable allowance",
-            "variable_allowance_content": "string: Content of variable allowance"
-        },
+        "salary_fixed_allowances": "List of string that containt all information that  related to the salary fixed allowances.Get information Base on some elements in here: fixed_allowance_id: Information of Fixed Allowances. Choose one in  salary_fixed_allowances, fixed_allowance_memo: string: Record of Uniform (fixed) allowance, fixed_allowance_min: string: An interger of min uniform (fixed) allowance, fixed_allowance_max: string: An interger of max uniform (fixed) allowance",
+        "salary_variable_allowances": "List of string that containt all information that  related to salary variable allowances.Get information Base on some elements in here: variable_allowance_id: Information of variable_allowance. Choose one in salary_variable_allowances, variable_allowance_memo: string: Record of variable allowance, variable_allowance_content: string: Content of variable allowance",
         "salary_type_id": "Type of salary. Choose one in  salary_type_id",
         "min_basic_salary": "string: Interger of min basic salary",
         "max_basic_salary": "string: Interger of max basic salary",
@@ -69,14 +60,7 @@
         "transfer_detail": "string: Details regarding the possibility or requirements for transfers, including conditions, frequency, or locations."
     },
     "job_working_hours": {
-        "working_hours_partterns": {
-            "working_pattern_start": "string: Interger of The start time of a specific working pattern.",
-            "working_pattern_end": "string: Interger of The end time of a specific working pattern.",
-            "working_pattern_break_hour": "string: integer of The number of break hours in the working pattern.",
-            "working_pattern_break_minute": "string: integer of the number break minutes in the working pattern.",
-            "working_pattern_actual_work_hour": "string : integer: The number of actual working hours in the pattern, excluding breaks.",
-            "working_pattern_actual_work_minute": "string: integer: The number of actual working minutes in the pattern, excluding breaks."
-        },
+        "working_hours_partterns": "List of string that containt all information that related to working hourse partterns. Get information based on some elements in here: working_pattern_start: string: Interger of The start time of a specific working pattern., working_pattern_end: string: Interger of The end time of a specific working pattern., working_pattern_break_hour: string: integer of The number of break hours in the working pattern., working_pattern_break_minute: string: integer of the number break minutes in the working pattern., working_pattern_actual_work_hour: string : integer: The number of actual working hours in the pattern, excluding breaks., working_pattern_actual_work_minute: string: integer: The number of actual working minutes in the pattern, excluding breaks.",
         "working_hours_type_id": "Choose the type of woking hourse in here: working_hours_type_id",
         "scheduled_working_hours_start": "string: integer The scheduled start time of the working hours",
         "scheduled_working_hours_end": "string: integer the scheduled end time of the working hours",

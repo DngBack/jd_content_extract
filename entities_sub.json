@@ -1,0 +1,25 @@
+{
+    "salary_informations": {
+        "salary_fixed_allowances": {
+            "fixed_allowance_id": "Information of Fixed Allowances. Choose one in  salary_fixed_allowances",
+            "fixed_allowance_memo": "string: Record of Uniform (fixed) allowance",
+            "fixed_allowance_min": "string: An interger of min uniform (fixed) allowance",
+            "fixed_allowance_max": "string: An interger of max uniform (fixed) allowance"
+        },
+        "salary_variable_allowances": {
+            "variable_allowance_id": "Information of variable_allowance. Choose one in salary_variable_allowances",
+            "variable_allowance_memo": "string: Record of variable allowance",
+            "variable_allowance_content": "string: Content of variable allowance"
+        }
+    },
+    "job_working_hours": {
+        "working_hours_partterns": {
+            "working_pattern_start": "string: Interger of The start time of a specific working pattern.",
+            "working_pattern_end": "string: Interger of The end time of a specific working pattern.",
+            "working_pattern_break_hour": "string: integer of The number of break hours in the working pattern.",
+            "working_pattern_break_minute": "string: integer of the number break minutes in the working pattern.",
+            "working_pattern_actual_work_hour": "string : integer: The number of actual working hours in the pattern, excluding breaks.",
+            "working_pattern_actual_work_minute": "string: integer: The number of actual working minutes in the pattern, excluding breaks."
+        }
+    }
+}

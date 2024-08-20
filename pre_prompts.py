@@ -21,8 +21,6 @@ llm = AwsSonet35()
 llm.setup(ACCESS_KEY, SECRET_KEY, model_id)
 
 list_name_dict = {
-    "salary_fixed_allowances": "m_fixed_allowance",
-    "salary_variable_allowances": "m_variable_allowance",
     "salary_type_id": "m_salary_type",
     "overtime_salary_id": "m_overtime_salary",
     "exceeding_overtime_id": "m_exceeding_overtime",
@@ -55,6 +53,11 @@ list_name_dict = {
     "job_charm_details3": "m_job_charm",
 }
 
+list_sub_fields = {
+    "fixed_allowance_id": "m_fixed_allowance",
+    "variable_allowance_id": "m_variable_allowance"
+}
+
 # list all categories
 categories = [
     'location details', 'remote work details', 'smoking prevention details',
@@ -82,31 +85,20 @@ with open('entities.json', 'r', encoding="utf-8") as file:
     # Load the dictionary from the JSON file
     entities_dict = json.load(file)
 
+# Open and read the JSON file
+with open('entities_sub.json', 'r', encoding="utf-8") as file:
+    # Load the dictionary from the JSON file
+    entities_sub_dict = json.load(file)   
+
 # Replace 'data.json' with your file path
 with open('2.json', 'r', encoding='utf-8') as file:
     info_extration = json.load(file)
 
 result = {item['type']['en']: item['detail'] for item in info_extration["categories"]}
 
-# check = "employment_type_ids" in list_name_dict.keys()
-
-# output = {}
-# # for i in range(len(categories)):
-# i = 4
-# index_target = target_categories[i]
-# index_input = categories[i]
-
-# target = entities_dict[index_target]
-# content = result[index_input]
-
-# prompt_add = ""
-
-# for element in target.keys():
-#     if element in list_name_dict.keys():
-#         prompt_add = prompt_add + (element + ": " + 
-#                         list_name[list_name_dict[element]] + "\n")
-
 output = {}
+
+other_element = result["other"]
 
 for i in range(len(categories)):
     index_target = target_categories[i]
@@ -122,20 +114,47 @@ for i in range(len(categories)):
             
             prompt_add = prompt_add + (element + ": " + 
                             str((master_dict[list_name_dict[element]]).values()) + "\n")
+    
 
     
     response = llm.chat(target=str(target),
-                    content=str(content),
-                prompt_add=str(prompt_add))
+                    content=str(content + other_element),
+                prompt_add=str(prompt_add),
+                task = "field")
 
     response = eval(response)
+
+    # print(response)
     output[index_target] = response
 
-# Convert and write JSON object to file
+# Get attributes has sub filed
+# Get output in attributes
+sub_fields_data = {}
 
-# print(output)
-with open('data.json', 'wb') as fp:
+
+for field in entities_sub_dict.keys():
+    for sub_field in entities_sub_dict[field].keys():
+        content = output[field][sub_field]
+        target = entities_sub_dict[field][sub_field]
+        # check prompt_add 
+        prompt_add = ""
+        for element in entities_sub_dict[field][sub_field].keys():
+
+            if element in list_sub_fields.keys():
+
+                prompt_add = (element + ": " + 
+                            str((master_dict[list_sub_fields[element]]).values()) + "\n")
+                
+        response = llm.chat(target=str(target),
+                    content=str(field + str(content)),
+                prompt_add=str(prompt_add),
+                task = "sub_field")
+        response = eval(response)
+    
+        output[field][sub_field] = response
+
+
+# Save output with json file
+with open('data_v2.json', 'wb') as fp:
     fp.write(json.dumps(output, ensure_ascii=False).encode("utf8"))
-# Check preprompt
-# print(list_name_dict[index_target])
-# print(list_name[list_name_dict[index_target]])
+
