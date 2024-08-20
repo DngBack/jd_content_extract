@@ -20,44 +20,6 @@ model_id = "anthropic.claude-3-5-sonnet-20240620-v1:0"
 llm = AwsSonet35()
 llm.setup(ACCESS_KEY, SECRET_KEY, model_id)
 
-list_name_dict = {
-    "salary_type_id": "m_salary_type",
-    "overtime_salary_id": "m_overtime_salary",
-    "exceeding_overtime_id": "m_exceeding_overtime",
-    "overtime_excluded_object_id": "m_overtime_excluded_object",
-    "salary_payment_method_id": "m_salary_payment_method",
-    "working_hours_type_id": "m_working_hours_type",
-    "job_name_main_id": "m_occupational_category",
-    "discretionary_labor_system_type_id": "m_discretionary_labor_system_type",
-    "office_work_id": "m_office_work",
-    "variable_working_hours_type_id": "m_variable_working_hours_type",
-    "contract_working_hours_system_id": "m_contract_working_hours_system",
-    "occupational_category_ids": "m_occupational_category",
-    "prefecture_ids": "m_prefecture",
-    "future_workplace_id": "m_future_workplace",
-    "transfer_id": "m_transfer",
-    "remote_type_ids": "m_remote_type",
-    "smoking_prevention_content_id": "m_smoking_prevention_content",
-    "future_job_description_id": "m_future_job_description",
-    "allowance_commute_money_type_id": "m_allowance_commute_money_type",
-    "salary_raise_id": "m_salary_raise",
-    "holidays_system_id": "m_holidays_system",
-    "holidays_breakdown_ids": "m_holiday",
-    "english_ids": "m_language_level",
-    "insurance_ids": "m_insurance",
-    "employment_type_ids": "m_employment_type",
-    "employment_period_type_id": "m_employment_period_type",
-    "trial_period_id": "m_trial_period",
-    "job_charm_details1": "m_job_charm",
-    "job_charm_details2": "m_job_charm",
-    "job_charm_details3": "m_job_charm",
-}
-
-list_sub_fields = {
-    "fixed_allowance_id": "m_fixed_allowance",
-    "variable_allowance_id": "m_variable_allowance"
-}
-
 # list all categories
 categories = [
     'location details', 'remote work details', 'smoking prevention details',
@@ -75,8 +37,18 @@ target_categories = [
     'welfare_insurance'
 ]
 
+key_mapping = {categories[i]: target_categories[i] for i in range(len(target_categories))}
+
+def replace_keys(d, mapping):
+    if isinstance(d, dict):
+        return {mapping.get(k, k): replace_keys(v, mapping) for k, v in d.items()}
+    elif isinstance(d, list):
+        return [replace_keys(item, mapping) for item in d]
+    else:
+        return d
+
 # Open and read the JSON file
-with open('master.json', 'r', encoding="utf-8") as file:
+with open('master_data.json', 'r', encoding="utf-8") as file:
     # Load the dictionary from the JSON file
     master_dict = json.load(file)
 
@@ -91,70 +63,61 @@ with open('entities_sub.json', 'r', encoding="utf-8") as file:
     entities_sub_dict = json.load(file)   
 
 # Replace 'data.json' with your file path
-with open('2.json', 'r', encoding='utf-8') as file:
+with open('1.json', 'r', encoding='utf-8') as file:
     info_extration = json.load(file)
 
 result = {item['type']['en']: item['detail'] for item in info_extration["categories"]}
 
+result = replace_keys(result, key_mapping)
 output = {}
 
 other_element = result["other"]
 
 for i in range(len(categories)):
     index_target = target_categories[i]
-    index_input = categories[i]
 
     target = entities_dict[index_target]
-    content = result[index_input]
+    content = result[index_target]
 
     prompt_add = ""
 
     for element in target.keys():
-        if element in list_name_dict.keys():
-            
-            prompt_add = prompt_add + (element + ": " + 
-                            str((master_dict[list_name_dict[element]]).values()) + "\n")
-    
-
-    
+            if element in master_dict.keys():
+                
+                prompt_add = prompt_add + (element + ": " + 
+                                str((master_dict[element]).values()) + "\n")
+        
     response = llm.chat(target=str(target),
                     content=str(content + other_element),
                 prompt_add=str(prompt_add),
                 task = "field")
 
     response = eval(response)
-
-    # print(response)
     output[index_target] = response
 
-# Get attributes has sub filed
-# Get output in attributes
-sub_fields_data = {}
-
-
 for field in entities_sub_dict.keys():
+    content = str(result[field])
     for sub_field in entities_sub_dict[field].keys():
-        content = output[field][sub_field]
+        adding_content = str(output[field][sub_field])
         target = entities_sub_dict[field][sub_field]
         # check prompt_add 
         prompt_add = ""
         for element in entities_sub_dict[field][sub_field].keys():
 
-            if element in list_sub_fields.keys():
-
+            if element in master_dict.keys():
                 prompt_add = (element + ": " + 
-                            str((master_dict[list_sub_fields[element]]).values()) + "\n")
+                            str((master_dict[element]).values()) + "\n")
                 
         response = llm.chat(target=str(target),
-                    content=str(field + str(content)),
-                prompt_add=str(prompt_add),
-                task = "sub_field")
+                    content=str(adding_content + content),
+                    prompt_add=str(prompt_add),
+                    task = "sub_field")
         response = eval(response)
     
         output[field][sub_field] = response
 
 
 # Save output with json file
-with open('data_v2.json', 'wb') as fp:
+with open('data.json', 'wb') as fp:
     fp.write(json.dumps(output, ensure_ascii=False).encode("utf8"))
 

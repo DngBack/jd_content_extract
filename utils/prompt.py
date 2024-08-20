@@ -60,10 +60,12 @@ For example:
 Input: 
 {
   "salary_informations_attributes": [
-    "The employee receives a Housing Allowance with a minimum of 2000 and a maximum of 5000, a Transportation Allowance with a minimum of 500 and a maximum of 1500, and a Medical Allowance with a minimum of 300 and a maximum of 1000.",
-    "The employee receives a Food Allowance with a minimum of 100 and a maximum of 300, an Internet Allowance with a minimum of 50 and a maximum of 200, and Health Insurance with a minimum of 400 and a maximum of 1000."
+    "Houing Allowance",
+    "Transportation Allowance",
+    "Medical Allowance"
   ]
 }
+and a lot of information that are given 
 
 Output: 
 {

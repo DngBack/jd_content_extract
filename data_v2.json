@@ -19,12 +19,12 @@
         "remote_flag": "True",
         "remote_day_min": "None",
         "remote_day_max": "None",
-        "remote_detail": "具体的な記述はありませんが、社内制度や福利厚生の一部として存在する可能性があります。複数の勤務地が挙げられていることから、一部リモートワークの可能性があります。"
+        "remote_detail": "具体的な記述はありませんが、社内制度や福利厚生の一部として存在する可能性があります。家具移転費補助（支給条件あり）が提供されており、リモートワークに関連する可能性があります。時短制度も適用条件ありで提供されており、柔軟な勤務形態の一部としてリモートワークに関連する可能性があります。"
     },
     "smoking_prevention_details": {
         "smoking_prevention_content_id": "屋内全面禁煙、屋外に喫煙所を設置",
         "smoking_prevention_flag": "True",
-        "smoking_prevention_detail": "本社オフィスは完全禁煙、テクノロジーセンターはオフィス内禁煙で喫煙室設置、東北LIMEX工場と横須賀サーキュラー工場はオフィス内禁煙で屋外に喫煙場所設置という受動喫煙防止措置が実施されています。"
+        "smoking_prevention_detail": "本社オフィスは完全禁煙です。テクノロジーセンターはオフィス内禁煙で喫煙室が設置されています。東北LIMEX工場と横須賀サーキュラー工場はオフィス内禁煙で屋外に喫煙場所が設けられています。各施設で受動喫煙防止措置が実施されています。"
     },
     "age_and_gender": {
         "age_genders": "平均年齢38.7歳、女性比率27.9%"
@@ -35,7 +35,7 @@
             "契約社員"
         ],
         "employment_period_type_id": "雇用期間の定めなし",
-        "employment_type_remarks": "正社員と契約社員はTBM CAMPの対象となり、オフサイトミーティングに参加します。工場勤務者はTBM CAMPの対象外です。",
+        "employment_type_remarks": "正社員と契約社員はTBM CAMPの対象となり、オフサイトミーティングに参加します。",
         "employment_period_detail": "None"
     },
     "trial_period": {
@@ -62,18 +62,18 @@
         "occupational_category_ids": [
             "企画・事務・マーケティング・管理系"
         ],
-        "position": "政策渉外部",
+        "position": "政策渉外部 メンバー",
         "position_tail": "None",
-        "offer_background": "TBMは環境配慮型の素材・資源循環ビジネスを展開するGX分野のユニコーンスタートアップであり、サステナビリティ革命を推進し、新素材LIMEXと資源循環モデルの普及を目指しています。",
+        "offer_background": "TBMは環境配慮型の素材・資源循環ビジネスを展開するGX分野のユニコーンスタートアップであり、サステナビリティ革命を推進するために政策渉外部のメンバーを募集しています。",
         "future_job_description_id": "同社業務全般",
         "job_description": "TBMのコーポレート戦略、LIMEX事業、資源循環事業に関連する政策情報の収集・分析、政策提言、パブリックコメント等の業務を行います。また、新規事業推進、一般社団法人資源循環推進協議会の運営、その他政策渉外活動に取り組みます。",
-        "job_charm_details1": "成長性の高いビジネスである",
-        "job_charm_details2": "事業を通じて社会貢献を実感できる",
-        "job_charm_details3": "専門性が身に付く",
-        "job_charm1_id": "成長性の高いビジネスである",
-        "job_charm2_id": "事業を通じて社会貢献を実感できる",
+        "job_charm_details1": "サステナビリティ革命を推進し、環境に配慮された新素材と資源循環モデルを国内外に普及させる業務に携わる機会が得られます。",
+        "job_charm_details2": "ユニコーン企業であるTBMの政策渉外部として、各種事業をグローバルで推進する戦略を実行できます。",
+        "job_charm_details3": "資源循環推進協議会の運営業務全般を担当し、官公庁と連携して国際競争力のあるサーキュラーエコノミー市場の確立に貢献できます。",
+        "job_charm1_id": "事業を通じて社会貢献を実感できる",
+        "job_charm2_id": "成長性の高いビジネスである",
         "job_charm3_id": "専門性が身に付く",
-        "future_job_description_detail": "TBMの政策渉外部として各種事業をグローバルで推進する戦略を実行し、資源循環推進協議会の運営業務全般を担当します。サステナビリティ革命を推進し、環境に配慮された新素材と資源循環モデルを国内外に普及させる業務に携わる機会が得られます。"
+        "future_job_description_detail": "TBMの政策渉外部メンバーとして、環境配慮型ビジネスの推進、新規事業開発、国内外での政策提言活動などに携わる可能性があります。また、資源循環推進協議会の運営を通じて、サーキュラーエコノミーの実現に向けた取り組みをリードする機会があります。"
     },
     "salary_informations": {
         "salary_fixed_allowances": [
@@ -82,18 +82,34 @@
                 "fixed_allowance_memo": "家具移転費補助が支給される条件付きの手当",
                 "fixed_allowance_min": "None",
                 "fixed_allowance_max": "None"
+            },
+            {
+                "fixed_allowance_id": "通勤手当",
+                "fixed_allowance_memo": "上限3万円まで支給される手当",
+                "fixed_allowance_min": "None",
+                "fixed_allowance_max": "30000"
             }
         ],
         "salary_variable_allowances": [
             {
-                "variable_allowance_id": "フリー入力",
-                "variable_allowance_memo": "結婚・出産祝い金制度",
-                "variable_allowance_content": "結婚や出産のお祝い事に5万円が支給される制度"
+                "variable_allowance_id": "住宅手当",
+                "variable_allowance_memo": "家具移転費補助",
+                "variable_allowance_content": "条件付きで支給される"
             },
             {
                 "variable_allowance_id": "フリー入力",
-                "variable_allowance_memo": "Award報奨金制度",
-                "variable_allowance_content": "毎月実施されるAwardで受賞者に報奨金が支給される制度"
+                "variable_allowance_memo": "Memorial Gift",
+                "variable_allowance_content": "結婚や出産のお祝い事に5万円が支給される"
+            },
+            {
+                "variable_allowance_id": "フリー入力",
+                "variable_allowance_memo": "通勤手当",
+                "variable_allowance_content": "上限3万円まで支給される"
+            },
+            {
+                "variable_allowance_id": "フリー入力",
+                "variable_allowance_memo": "表彰制度",
+                "variable_allowance_content": "毎月実施されるAwardで受賞者に報奨金が支給される"
             }
         ],
         "salary_type_id": "月給制",
@@ -104,11 +120,11 @@
         "overtime_salary_max": "None",
         "exceeding_overtime_id": "None",
         "allowance_flag": "True",
-        "allowance_detail": "住宅手当（家具移転費補助）、Memorial Gift（結婚・出産祝い金）、通勤手当、表彰制度による報奨金が支給されます。",
+        "allowance_detail": "家具移転費補助が支給される条件付きの住宅手当、結婚や出産のお祝い事に5万円が支給されるMemorial Gift、上限3万円まで支給される通勤手当、毎月実施されるAwardで受賞者に報奨金が支給される表彰制度があります。",
         "overtime_excluded_object_id": "None",
         "min_monthly_salary": "416000",
         "max_monthly_salary": "750000",
-        "salary_detail": "月給41.6万円から75万円の範囲。年収換算で500万円から900万円。給与は経験、スキル、ポテンシャルを考慮して決定されます。年2回の改定があり、人事評価により昇給または降給の可能性があります。",
+        "salary_detail": "月給制で、月給41.6万円から75万円の範囲。年収換算で500万円から900万円。給与は日給月給制で、経験、スキル、ポテンシャルを考慮して決定されます。年2回の改定があり、人事評価により昇給または降給の可能性があります。",
         "salary_payment_method_id": "None",
         "salary_payment_method_detail": "None",
         "daily_salary": "None",
@@ -120,13 +136,12 @@
         "allowance_commute_money_type_id": "上限",
         "allowance_commute_flag": "True",
         "allowance_commute_money_value": "30000",
-        "allowance_commute_detail": "上限3万円まで支給される手当",
+        "allowance_commute_detail": "上限3万円まで支給される通勤手当",
         "bonus_flag": "None",
         "bonus": "None",
         "salary_raise_id": "あり",
         "salary_railse_memo": "年2回の改定があり、人事評価により昇給または降給の可能性があります。",
-        "salary_model": "None",
-        "transfer_id": "None"
+        "salary_model": "None"
     },
     "job_working_hours": {
         "working_hours_partterns": [
@@ -147,7 +162,7 @@
         "break_time_hour": "1",
         "break_time_minute": "0",
         "overtime_working_flag": "False",
-        "working_hours_detail": "年1回のTBM CAMPのために休日出勤あり",
+        "working_hours_detail": "勤務時間は9:00から18:00までで、60分の休憩時間を含みます。",
         "min_ave_month_overtime_hour": "None",
         "min_ave_month_overtime_minute": "None",
         "max_ave_month_overtime_hour": "None",
@@ -159,12 +174,12 @@
         "variable_working_hours_type_id": "完全週休2日制",
         "ave_working_hour": "None",
         "ave_working_minute": "None",
-        "standard_working_hour": "None",
-        "standard_working_minute": "None",
+        "standard_working_hour": "8",
+        "standard_working_minute": "0",
         "core_time_flag": "None",
         "contract_working_hours_system_id": "固定労働時間制",
-        "regular_week_working_hour": "None",
-        "regular_week_working_minute": "None",
+        "regular_week_working_hour": "40",
+        "regular_week_working_minute": "0",
         "core_time_hours_start": "None",
         "core_time_hours_end": "None",
         "flex_time_hours_start": "None",
@@ -175,7 +190,7 @@
         "overtime_min_hour": "None",
         "overtime_max_minute": "None",
         "overtime_min_minute": "None",
-        "working_hours_condition": "時短制度あり（適用条件付き）"
+        "working_hours_condition": "年1回のTBM CAMPのために休日出勤があります。適用条件付きで労働時間を短縮できる制度があります。"
     },
     "recruiment_and_hiring": {
         "number_hired": "None",
@@ -187,7 +202,7 @@
         "english_ids": "中級（ビジネス場面での会話、文章は支障なくやりとりができる）"
     },
     "holidays_and_leaves": {
-        "holidays_system_id": "完全週休2日制",
+        "holidays_system_id": "週休2日制",
         "holidays": "120",
         "holidays_breakdown_ids": [
             "土曜日",
@@ -195,7 +210,7 @@
             "祝日",
             "年末年始休暇"
         ],
-        "holidays_remarks": "土曜日、日曜日、国民の祝日、年末年始（12月28日から1月5日）が休日として設定されています。年間休日は120日です。入社時に3日間の特別休暇が付与される制度（取得条件あり）があります。また、育児休業、介護休業、産前産後休暇、有給休暇、慶弔休暇などの制度も設けられています。"
+        "holidays_remarks": "土曜日、日曜日、国民の祝日、年末年始（12月28日から1月5日）が休日として設定されています。年間休日は120日です。また、入社時に3日間の特別休暇が付与される制度（取得条件あり）があります。"
     },
     "welfare_insurance": {
         "insurance_ids": [
@@ -204,6 +219,6 @@
             "雇用保険",
             "労災保険"
         ],
-        "welfare": "住宅手当（家具移転費補助）、Memorial Gift（結婚・出産祝い金5万円）、通勤手当（上限3万円）、表彰制度（毎月のAwardで報奨金）、Library（社内共用本棚）"
+        "welfare": "家具移転費補助が支給される条件付きの住宅手当、結婚や出産のお祝い事に5万円を支給するMemorial Gift、上限3万円まで支給される通勤手当、毎月実施されるAwardで受賞者に報奨金が支給される表彰制度、社内共用本棚のLibraryがあります。また、受動喫煙防止措置として、勤務場所によって異なる喫煙規則が設けられています。"
     }
-}
+}   
