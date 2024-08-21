@@ -63,7 +63,7 @@ with open('entities_sub.json', 'r', encoding="utf-8") as file:
     entities_sub_dict = json.load(file)   
 
 # Replace 'data.json' with your file path
-with open('1.json', 'r', encoding='utf-8') as file:
+with open('3.json', 'r', encoding='utf-8') as file:
     info_extration = json.load(file)
 
 result = {item['type']['en']: item['detail'] for item in info_extration["categories"]}
@@ -73,8 +73,8 @@ output = {}
 
 other_element = result["other"]
 
-for i in range(len(categories)):
-    index_target = target_categories[i]
+for i in range(len(entities_dict)):
+    index_target = list(entities_dict.keys())[i]
 
     target = entities_dict[index_target]
     content = result[index_target]
@@ -95,29 +95,36 @@ for i in range(len(categories)):
     response = eval(response)
     output[index_target] = response
 
+# Save output with json file
+with open('pre_data_3.json', 'wb') as fp:
+    fp.write(json.dumps(output, ensure_ascii=False).encode("utf8"))
+
 for field in entities_sub_dict.keys():
     content = str(result[field])
+    target = entities_sub_dict[field]
+    # check prompt_add 
+    prompt_add = ""
     for sub_field in entities_sub_dict[field].keys():
+        content = content + str(str(sub_field) + str(output[field][sub_field]))
         adding_content = str(output[field][sub_field])
-        target = entities_sub_dict[field][sub_field]
-        # check prompt_add 
-        prompt_add = ""
-        for element in entities_sub_dict[field][sub_field].keys():
 
+        for element in entities_sub_dict[field][sub_field].keys():
+            
             if element in master_dict.keys():
                 prompt_add = (element + ": " + 
                             str((master_dict[element]).values()) + "\n")
                 
-        response = llm.chat(target=str(target),
-                    content=str(adding_content + content),
-                    prompt_add=str(prompt_add),
-                    task = "sub_field")
-        response = eval(response)
+    response = llm.chat(target=str(target),
+                content=str(adding_content + content),
+                prompt_add=str(prompt_add),
+                task = "sub_field")
+    response = eval(response)
     
-        output[field][sub_field] = response
+    for sub_field in entities_sub_dict[field].keys(): 
+        output[field][sub_field] = response[sub_field]
 
 
 # Save output with json file
-with open('data.json', 'wb') as fp:
+with open('data_3.json', 'wb') as fp:
     fp.write(json.dumps(output, ensure_ascii=False).encode("utf8"))
 

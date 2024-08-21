@@ -1,0 +1,223 @@
+{
+    "salary_informations": {
+        "salary_fixed_allowances": [
+            {
+                "fixed_allowance_id": "職務手当",
+                "fixed_allowance_memo": "職務手当",
+                "fixed_allowance_min": "74000",
+                "fixed_allowance_max": "74000"
+            },
+            {
+                "fixed_allowance_id": "固定残業代",
+                "fixed_allowance_memo": "固定残業代45時間分",
+                "fixed_allowance_min": "128000",
+                "fixed_allowance_max": "128000"
+            },
+            {
+                "fixed_allowance_id": "Memorial Gift",
+                "fixed_allowance_memo": "結婚や出産のお祝い事",
+                "fixed_allowance_min": "50000",
+                "fixed_allowance_max": "50000"
+            }
+        ],
+        "salary_variable_allowances": [
+            {
+                "variable_allowance_id": "表彰制度",
+                "variable_allowance_memo": "毎月実施されるAward",
+                "variable_allowance_content": "受賞者に報奨金が支給される制度"
+            },
+            {
+                "variable_allowance_id": "住宅手当",
+                "variable_allowance_memo": "家具移転費補助",
+                "variable_allowance_content": "条件付きの手当"
+            }
+        ],
+        "salary_type_id": "月給制",
+        "min_basic_salary": "298000",
+        "max_basic_salary": "None",
+        "overtime_salary_id": "固定残業代制",
+        "overtime_salary_min": "128000",
+        "overtime_salary_max": "None",
+        "exceeding_overtime_id": "超過分は全額支給",
+        "allowance_flag": "True",
+        "allowance_detail": "職務手当、固定残業代、通勤手当、住宅手当（条件付き）、結婚・出産祝い金、表彰制度による報奨金が支給される",
+        "overtime_excluded_object_id": "管理監督者",
+        "min_monthly_salary": "500000",
+        "max_monthly_salary": "710000",
+        "salary_detail": "基本給298,000円、職務手当74,000円、固定残業代45時間分128,000円を含む。固定残業代を超える労働には別途支給あり。管理職には固定残業の代わりに役職手当を支給。",
+        "salary_payment_method_id": "None",
+        "salary_payment_method_detail": "None",
+        "daily_salary": "None",
+        "hourly_salary": "None",
+        "hybrid_payment_method_memo": "None",
+        "skip_entry_flag": "None",
+        "max_annual_income": "8500000",
+        "min_annual_income": "6000000",
+        "allowance_commute_money_type_id": "上限",
+        "allowance_commute_flag": "True",
+        "allowance_commute_money_value": "30000",
+        "allowance_commute_detail": "上限3万円まで支給される",
+        "bonus_flag": "None",
+        "bonus": "None",
+        "salary_raise_id": "あり",
+        "salary_railse_memo": "年2回の改定機会がある",
+        "salary_model": "月給制で、基本給、職務手当、固定残業代を含む"
+    },
+    "job_posting": {
+        "confirmation_date": "None",
+        "comment": "None",
+        "job_name_main_id": "専門職系（コンサルタント、金融、不動産）",
+        "occupational_category_ids": [
+            "専門職系（コンサルタント、金融、不動産）"
+        ],
+        "position": "法務部メンバー",
+        "position_tail": "None",
+        "offer_background": "上場準備に伴い、法務部の組織強化のための増員を図っている。",
+        "future_job_description_id": "同社業務全般",
+        "job_description": "国内の契約審査、新規事業への法的助言、取締役会の運営、コーポレートガバナンスなどを担当。経験に応じて海外事業のリーガルサポートも行う。",
+        "job_charm_details1": "サステナビリティ領域で事業を拡大中の成長企業である。",
+        "job_charm_details2": "プラスチックや紙の代替となる新素材の開発・製造・販売を行う革新的な企業である。",
+        "job_charm_details3": "上場準備中で、法務部の組織強化を図っており、幅広い領域で活躍できる。",
+        "job_charm1_id": "成長性の高いビジネスである",
+        "job_charm2_id": "製品・サービスの優位性が高い",
+        "job_charm3_id": "キャリアパスに多様性がある",
+        "future_job_description_detail": "上場準備や国際展開に伴い、より広範囲な法務業務や海外事業のリーガルサポートを担当する可能性がある。"
+    },
+    "location_details": {
+        "prefecture_ids": [
+            "東京都",
+            "宮城県",
+            "神奈川県",
+            "大阪府"
+        ],
+        "area_details": "東京都千代田区有楽町1-2-2 東宝日比谷ビル15階、荒川区町屋（テクノロジーセンター）、多賀城市（東北LIMEX工場）、横須賀市（横須賀サーキュラー工場）、大阪市淀川区（西日本オフィス）",
+        "future_workplace_id": "条件範囲内の支社、営業所",
+        "future_workplace_detail": "将来的に海外拠点の立ち上げが予定されており、国内外での業務が想定されています。",
+        "transfer_id": "tranfer3",
+        "transfer_detail": "本社、テクノロジーセンター、工場（多賀城、横須賀）での勤務の可能性があります。また、将来的に海外拠点での勤務も想定されています。"
+    },
+    "job_working_hours": {
+        "working_hours_partterns": {
+            "working_pattern_start": "9",
+            "working_pattern_end": "18",
+            "working_pattern_break_hour": "1",
+            "working_pattern_break_minute": "0",
+            "working_pattern_actual_work_hour": "8",
+            "working_pattern_actual_work_minute": "0"
+        },
+        "working_hours_type_id": "固定労働時間制",
+        "scheduled_working_hours_start": "9",
+        "scheduled_working_hours_end": "18",
+        "actual_working_hour": "8",
+        "actual_working_minute": "0",
+        "break_time_hour": "1",
+        "break_time_minute": "0",
+        "overtime_working_flag": "True",
+        "working_hours_detail": "45時間分の固定残業代が含まれており、それを超える労働には別途支給がある。適用条件付きで労働時間を短縮できる制度がある。",
+        "min_ave_month_overtime_hour": "45",
+        "min_ave_month_overtime_minute": "0",
+        "max_ave_month_overtime_hour": "None",
+        "max_ave_month_overtime_minute": "None",
+        "discretionary_labor_system_type_id": "None",
+        "deemed_working_hour": "None",
+        "deemed_working_minute": "None",
+        "office_work_id": "事業場内労働あり",
+        "variable_working_hours_type_id": "完全週休2日制",
+        "ave_working_hour": "None",
+        "ave_working_minute": "None",
+        "standard_working_hour": "None",
+        "standard_working_minute": "None",
+        "core_time_flag": "None",
+        "contract_working_hours_system_id": "固定労働時間制",
+        "regular_week_working_hour": "None",
+        "regular_week_working_minute": "None",
+        "core_time_hours_start": "None",
+        "core_time_hours_end": "None",
+        "flex_time_hours_start": "None",
+        "flex_time_hours_end": "None",
+        "second_flex_time_hours_start": "None",
+        "second_flex_time_hours_end": "None",
+        "overtime_max_hour": "None",
+        "overtime_min_hour": "None",
+        "overtime_max_minute": "None",
+        "overtime_min_minute": "None",
+        "working_hours_condition": "年に1回オフサイトミーティングがあり、2024年は7月6日に予定されており、休日出勤が必要となる。振替休日制度がある。"
+    },
+    "remote_work_details": {
+        "remote_type_ids": [
+            "一部リモートOK（出社要）"
+        ],
+        "remote_flag": "True",
+        "remote_day_min": "None",
+        "remote_day_max": "None",
+        "remote_detail": "時短制度が適用条件付きで存在する。リモートワークについての具体的な言及はありませんが、グローバルな事業展開や海外拠点の立ち上げが予定されていることから、柔軟な働き方が求められる可能性があります。"
+    },
+    "smoking_prevention_details": {
+        "smoking_prevention_content_id": "屋内全面禁煙、屋外に喫煙所を設置",
+        "smoking_prevention_flag": "True",
+        "smoking_prevention_detail": "本社オフィスは禁煙です。テクノロジーセンターはオフィス内禁煙で喫煙室があります。東北LIMEX工場と横須賀サーキュラー工場はオフィス内禁煙で屋外に喫煙場所があります。"
+    },
+    "age_and_gender": {
+        "age_genders": "平均年齢38.7歳、女性比率27.9%（2024年4月末時点）"
+    },
+    "recruiment_and_hiring": {
+        "number_hired": "None",
+        "prerequisite": "3年以上の企業法務経験、3年以上の法律事務所経験（企業法務をメイン業務とする）、マネジメント経験",
+        "strictness": "必須スキル・経験として明確に記載されているため、厳格な要件と考えられます。",
+        "selection_process": "応募書類選考、面接（複数回）、オファーの順で実施。SPIテストを選考中に受検（ポジションにより不要の場合あり）。リファレンスチェックを行う可能性あり。",
+        "inexperience_field": "False",
+        "inexperience_job": "False",
+        "english_ids": [
+            "上級（専門的な話題でも会話ができ、複雑な文章もスピーディに読み書きできる）",
+            "中級（ビジネス場面での会話、文章は支障なくやりとりができる）",
+            "初級（日常会話及び文章を読んで要点をつかむことができる）"
+        ]
+    },
+    "holidays_and_leaves": {
+        "holidays_system_id": "完全週休2日制",
+        "holidays": "120",
+        "holidays_breakdown_ids": [
+            "土曜日",
+            "日曜日",
+            "祝日",
+            "年末年始休暇",
+            "特別休暇"
+        ],
+        "holidays_remarks": "土曜日、日曜日、国民の祝日、年末年始（12/28〜1/5）が休日。年間休日は120日。TBM CAMPのための年1回の休日出勤（2024年は7月6日予定）があり、振替休日を取得する。入社時に3日間の特別休暇が付与される制度（取得条件あり）。"
+    },
+    "welfare_insurance": {
+        "insurance_ids": [
+            "健康保険",
+            "厚生年金",
+            "雇用保険",
+            "労災保険"
+        ],
+        "welfare": "家具移転費補助が支給される条件付きの住宅手当、結婚や出産のお祝い事に5万円を支給するMemorial Gift、上限3万円まで支給される通勤手当、毎月実施されるAwardで受賞者に報奨金が支給される表彰制度、社内共用のLibrary、受動喫煙防止措置として各施設でのオフィス内禁煙や一部での屋外喫煙場所・喫煙室の設置があります。"
+    },
+    "employment_type_period": {
+        "employment_type_ids": [
+            "正社員",
+            "契約社員"
+        ],
+        "employment_period_type_id": "雇用期間の定めなし",
+        "employment_type_remarks": "法務部は組織強化のため増員を図っており、長期的な雇用を前提とした正社員としての採用を行っていると推測されます。また、TBM CAMP工場勤務者以外の正社員と契約社員が言及されています。",
+        "employment_period_detail": "具体的な雇用期間の詳細は記載されていませんが、長期的な雇用を前提としていると推測されます。新規事業への法的助言や取締役会運営、コーポレートガバナンスなど、継続的かつ長期的な業務が含まれています。"
+    },
+    "trial_period": {
+        "trial_period_id": "あり",
+        "trial_period_length": "None",
+        "trial_period_working_conditions": "None",
+        "trial_period_memo": "この求人情報には試用期間に関する具体的な情報は記載されていませんが、一般的な企業慣行として存在する可能性があります。"
+    },
+    "contract_renewal": {
+        "contract_renewal_flag": "None",
+        "contract_renewal_detail": "None",
+        "employment_promotion_flag": "None",
+        "contract_renewal_criteria": "None",
+        "contract_renewal_limit_flag": "None",
+        "contract_renewal_limit_detail_day": "None",
+        "contract_renewal_limit_detail_month": "None",
+        "contract_renewal_limit_detail_type": "None",
+        "contract_renewal_limit_detail_year": "None"
+    }
+}

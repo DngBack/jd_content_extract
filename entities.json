@@ -1,10 +1,10 @@
 {
     "salary_informations": {
         "salary_fixed_allowances": [
-            "List all information and elements of salary fixed allowances. Fixed value."
+            "List all entities and elements that related salary fixed allowances. These are the types of allowances that are defined and fixed in advance, usually given to the fixed amount received, the least, the most. Can be defined in numeric or literal form, please pay attention to this for example 結婚や出産のお祝い事に5万円が支給される制度 of Memorial Gift, it have 5万円 it is fixed, so Memorial Gift is in salary_fixed_allowances. And if it NOT HAVE ANY NUMERIC, it will not fixed allowance(example: 管理職に支給される役職手当)."
         ],
         "salary_variable_allowances": [
-            "List all information and elements of salary variable allowances."
+            "List all entities and elements of related variable allowances.These are the types of allowances that the amount received will be achieved through the agreement, usually only general information and no specific number. Some cases need attention, such as the travel allowance will depend on the distance of the house, which sounds unrelated to the variable allownce but it has no data so it belongs to the variable allowance"
         ],
         "salary_type_id": "Type of salary. Choose one in  salary_type_id",
         "min_basic_salary": "string: Interger of min basic salary",

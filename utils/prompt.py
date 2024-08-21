@@ -41,9 +41,9 @@ Your task that will filling the empty variable in target json based on content j
 Filiing all content
 
 -Requirements-
-- Ouput is LIST of dictionary like example
+- Output is only finaly output json format
 - Answer with Japanese. Without transfer_id, transfer_id will answer by English.
-- If you don not fill infor, instead null by "None". 
+- If you don not fill infor, instead null by None. 
 - Using "True" or "False" for boolean
 - Convert all other datatype to string in answer. I mean that integer to string, boolean to string
 - With the attribute that are based on list data, only give the elements not give number id.
@@ -51,24 +51,25 @@ Filiing all content
 - Attributes end with _id, output is only one string
 - Attributes end with _ids, output is list string(even in case only one element)
 - Did not answer ramblingly, to the point. Not fabricated, only based on the information given. \
-With unknown or non-existent information, return "None", not fabricated or inferred.
+With unknown or non-existent information, return None, not fabricated or inferred.
+- Return "None" not null in case of can not any information about attrubutes.
 - In here under attribute is list of dict, that means its have alot of smaller attrubute in dict type. 
-- Return "None" not null in case of can not have any information about attrubutes.
 - Use "None" not use null
 - Only give list of dict, even if it only gives a dictionary
 For example: 
 Input: 
-{
+{ "salary_fixed_allowance":{
   "salary_informations_attributes": [
     "Houing Allowance",
     "Transportation Allowance",
     "Medical Allowance"
   ]
 }
+}
 and a lot of information that are given 
 
 Output: 
-{
+{ "salary_fixed_allowance":{
       "salary_fixed_allowances_attributes": [
         {
           "id": "A",
@@ -89,7 +90,8 @@ Output:
           "fixed_allowance_max": "1000"
         }
       ]
-},
+  }
+}
 
 ######################
 -Real Data-

@@ -77,30 +77,12 @@
     },
     "salary_informations": {
         "salary_fixed_allowances": [
-            {
-                "fixed_allowance_id": "職務手当",
-                "fixed_allowance_memo": "職務手当",
-                "fixed_allowance_min": "74000",
-                "fixed_allowance_max": "74000"
-            },
-            {
-                "fixed_allowance_id": "固定残業代",
-                "fixed_allowance_memo": "固定残業代45時間分",
-                "fixed_allowance_min": "128000",
-                "fixed_allowance_max": "128000"
-            }
+            "職務手当",
+            "固定残業代"
         ],
         "salary_variable_allowances": [
-            {
-                "variable_allowance_id": "表彰制度の報奨金",
-                "variable_allowance_memo": "表彰制度の報奨金",
-                "variable_allowance_content": "毎月実施されるAwardで受賞者に報奨金が支給される制度"
-            },
-            {
-                "variable_allowance_id": "Memorial Gift",
-                "variable_allowance_memo": "Memorial Gift",
-                "variable_allowance_content": "結婚や出産のお祝い事に5万円が支給される制度"
-            }
+            "表彰制度の報奨金",
+            "Memorial Gift"
         ],
         "salary_type_id": "月給制",
         "min_basic_salary": "298000",
@@ -134,14 +116,10 @@
         "salary_model": "基本給、職務手当、固定残業代を含む月給制"
     },
     "job_working_hours": {
-        "working_hours_partterns": {
-            "working_pattern_start": "9",
-            "working_pattern_end": "18",
-            "working_pattern_break_hour": "1",
-            "working_pattern_break_minute": "0",
-            "working_pattern_actual_work_hour": "8",
-            "working_pattern_actual_work_minute": "0"
-        },
+        "working_hours_partterns": [
+            "固定残業制",
+            "時短制度"
+        ],
         "working_hours_type_id": "固定労働時間制",
         "scheduled_working_hours_start": "9",
         "scheduled_working_hours_end": "18",
