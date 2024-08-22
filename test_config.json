@@ -1,0 +1,53 @@
+{
+    "categories": [
+        {
+            "key_name": "location_details",
+            "en_name": "location details",
+            "ja_name": "場所の詳細",
+            "fields": [
+                {
+                    "field_name": "prefecture_ids",
+                    "data_type": "list[int]",
+                    "value": null,
+                    "master_table": "m_prefecture",
+                    "description": "List of location that working."
+                },
+                {
+                    "field_name": "area_details",
+                    "data_type": "string",
+                    "master_table": null,
+                    "value": null,
+                    "description": "Specific details about the area or location of the workplace (e.g., neighborhood, district)."
+                },
+                {
+                    "field_name": "future_workplace_id",
+                    "data_type": "integer",
+                    "value": null,
+                    "master_table": "m_future_workplace",
+                    "description": "Workplace in futur"
+                },
+                {
+                    "field_name": "future_workplace_detail",
+                    "data_type": "string",
+                    "master_table": null,
+                    "value": null,
+                    "description": "Information about potential future workplaces or locations where the employee might be required to work."
+                },
+                {
+                    "field_name": "transfer_id",
+                    "data_type": "integer",
+                    "value": null,
+                    "master_table": "m_transfer",
+                    "description": "Transfer"
+                },
+                {
+                    "field_name": "transfer_detail",
+                    "data_type": "string",
+                    "value": null,
+                    "master_table": null,
+                    "description": "Details regarding the possibility or requirements for transfers, including conditions, frequency, or locations."
+                }
+            ]
+        }
+    ]
+}

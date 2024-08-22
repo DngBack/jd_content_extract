@@ -60,7 +60,7 @@
         "area_details": "string: Specific details about the area or location of the workplace (e.g., neighborhood, district).",
         "future_workplace_id": "Workplace in future. Choose one in future_workplace_id",
         "future_workplace_detail": "string: Information about potential future workplaces or locations where the employee might be required to work.",
-        "transfer_id": "Choose one in transfer_id",
+        "transfer_id": "Tranfer",
         "transfer_detail": "string: Details regarding the possibility or requirements for transfers, including conditions, frequency, or locations."
     },
     "job_working_hours": {

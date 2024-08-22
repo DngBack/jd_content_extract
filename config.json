@@ -1,0 +1,947 @@
+{
+    "categories": [
+        {
+            "key_name": "location_details",
+            "en_name": "location details",
+            "ja_name": "場所の詳細",
+            "fields": [
+                {
+                    "field_name": "prefecture_ids",
+                    "data_type": "list[int]",
+                    "value": null,
+                    "master_table": "m_prefecture",
+                    "description": "List of location that working."
+                },
+                {
+                    "field_name": "area_details",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "Specific details about the area or location of the workplace (e.g., neighborhood, district)."
+                },
+                {
+                    "field_name": "future_workplace_id",
+                    "data_type": "integer",
+                    "master_table": "m_future_workplace",
+                    "description": "Workplace in futur"
+                },
+                {
+                    "field_name": "future_workplace_detail",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "Information about potential future workplaces or locations where the employee might be required to work."
+                },
+                {
+                    "field_name": "transfer_id",
+                    "data_type": "integer",
+                    "master_table": "m_transfer",
+                    "description": "Transfer"
+                },
+                {
+                    "field_name": "transfer_detail",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "Details regarding the possibility or requirements for transfers, including conditions, frequency, or locations."
+                }
+            ]
+        },
+        {
+            "key_name": "remote_work_details",
+            "en_name": "remote work details",
+            "ja_name": "リモートワークの詳細",
+            "fields": [
+                {
+                    "field_name": "remote_type_ids",
+                    "data_type": "list[int]",
+                    "master_table": "m_remote_type",
+                    "description": "Remote type. Choose one or more in remote_type_ids."
+                },
+                {
+                    "field_name": "remote_flag",
+                    "data_type": "boolean",
+                    "master_table": null,
+                    "description": "Indicates whether remote work is allowed or available."
+                },
+                {
+                    "field_name": "remote_day_min",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The minimum number of days per week that remote work is permitted."
+                },
+                {
+                    "field_name": "remote_day_max",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The maximum number of days per week that remote work is permitted."
+                },
+                {
+                    "field_name": "remote_detail",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "Additional details or notes about the remote work policy, including conditions or limitations."
+                }
+            ]
+        },
+        {
+            "key_name": "smoking_prevention_details",
+            "en_name": "smoking prevention details",
+            "ja_name": "喫煙防止の詳細",
+            "fields": [
+                {
+                    "field_name": "smoking_prevention_content_id",
+                    "data_type": "integer",
+                    "master_table": "m_smoking_prevention_content",
+                    "description": "The smoking prevention content."
+                },
+                {
+                    "field_name": "smoking_prevention_flag",
+                    "data_type": "boolean",
+                    "master_table": null,
+                    "description": "Indicates whether there are any smoking prevention measures or policies in place."
+                },
+                {
+                    "field_name": "smoking_prevention_detail",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "Specific details about the smoking prevention policy or measures, such as designated smoking areas or non-smoking premises."
+                }
+            ]
+        },
+        {
+            "key_name": "age_and_gender",
+            "en_name": "age and gender",
+            "ja_name": "年齢と性別",
+            "fields": [
+                {
+                    "field_name": "age_genders",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "Age and gender composition of the department."
+                }
+            ]
+        },
+        {
+            "key_name": "employment_type_period",
+            "en_name": "employment type period",
+            "ja_name": "雇用形態期間",
+            "fields": []
+        },
+        {
+            "key_name": "trial_period",
+            "en_name": "trial period",
+            "ja_name": "試用期間",
+            "fields": [
+                {
+                    "field_name": "employment_type_ids",
+                    "data_type": "list[int]",
+                    "master_table": "m_employment_type",
+                    "description": "List of employment types. Choose one or more in employment_type_ids."
+                },
+                {
+                    "field_name": "employment_period_type_id",
+                    "data_type": "integer",
+                    "master_table": "m_employment_period_type",
+                    "description": "Employment period type. Choose one in employment_period_type_id."
+                },
+                {
+                    "field_name": "employment_type_remarks",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "Additional remarks or notes about the employment type, such as specific terms or conditions."
+                },
+                {
+                    "field_name": "employment_period_detail",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "Details regarding the employment period, including contract length, renewal conditions, or probationary period."
+                }
+            ]
+        },
+        {
+            "key_name": "contract_renewal",
+            "en_name": "contract renewal",
+            "ja_name": "契約更新",
+            "fields": [
+                {
+                    "field_name": "contract_renewal_flag",
+                    "data_type": "boolean",
+                    "master_table": null,
+                    "description": "Indicates whether the contract is eligible for renewal."
+                },
+                {
+                    "field_name": "contract_renewal_detail",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "Additional details about the contract renewal process, such as conditions or timelines."
+                },
+                {
+                    "field_name": "employment_promotion_flag",
+                    "data_type": "boolean",
+                    "master_table": null,
+                    "description": "Indicates whether there is a possibility of promotion to permanent employment upon contract renewal."
+                },
+                {
+                    "field_name": "contract_renewal_criteria",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "Criteria or conditions that must be met for the contract to be renewed, such as performance metrics or company needs."
+                },
+                {
+                    "field_name": "contract_renewal_limit_flag",
+                    "data_type": "boolean",
+                    "master_table": null,
+                    "description": "Indicates whether there is a limit to the number of times the contract can be renewed."
+                },
+                {
+                    "field_name": "contract_renewal_limit_detail_day",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "Specifies the day limit for the contract renewal, if applicable."
+                },
+                {
+                    "field_name": "contract_renewal_limit_detail_month",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "Specifies the month limit for the contract renewal, if applicable."
+                },
+                {
+                    "field_name": "contract_renewal_limit_detail_type",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "Type of limit applied to the contract renewal (e.g., time-based, occurrence-based)."
+                },
+                {
+                    "field_name": "contract_renewal_limit_detail_year",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "Specifies the year limit for the contract renewal, if applicable."
+                }
+            ]
+        },
+        {
+            "key_name": "job_posting",
+            "en_name": "job posting",
+            "ja_name": "求人広告",
+            "fields": [
+                {
+                    "field_name": "confirmation_date",
+                    "data_type": "date",
+                    "master_table": null,
+                    "description": "The date when the job posting or offer was confirmed or finalized."
+                },
+                {
+                    "field_name": "comment",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "Any additional comments or notes related to the job posting, possibly including special instructions or remarks."
+                },
+                {
+                    "field_name": "job_name_main_id",
+                    "data_type": "integer",
+                    "master_table": "m_occupational_category",
+                    "description": "Job categories."
+                },
+                {
+                    "field_name": "occupational_category_ids",
+                    "data_type": "list[int]",
+                    "master_table": "m_occupational_category",
+                    "description": "Different occupational categories or job classifications."
+                },
+                {
+                    "field_name": "position",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "Job title position."
+                },
+                {
+                    "field_name": "position_tail",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "Additional text or detail that may follow the main position title."
+                },
+                {
+                    "field_name": "offer_background",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "Recruitment background."
+                },
+                {
+                    "field_name": "future_job_description_id",
+                    "data_type": "integer",
+                    "master_table": "m_future_workplace",
+                    "description": "Possible future job opportunities."
+                },
+                {
+                    "field_name": "job_description",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "A detailed description of the job responsibilities, duties, and expectations."
+                },
+                {
+                    "field_name": "job_charm_details1",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "A highlight or detail that makes the job attractive or unique."
+                },
+                {
+                    "field_name": "job_charm_details2",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "The second detail highlighting something attractive about the job."
+                },
+                {
+                    "field_name": "job_charm_details3",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "The third detail highlighting something attractive about the job."
+                },
+                {
+                    "field_name": "job_charm1_id",
+                    "data_type": "integer",
+                    "master_table": "m_job_charm",
+                    "description": "Job charm type. "
+                },
+                {
+                    "field_name": "job_charm2_id",
+                    "data_type": "integer",
+                    "master_table": "m_job_charm",
+                    "description": "Job charm type."
+                },
+                {
+                    "field_name": "job_charm3_id",
+                    "data_type": "integer",
+                    "master_table": "m_job_charm",
+                    "description": "Job charm type."
+                },
+                {
+                    "field_name": "future_job_description_detail",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "Details regarding potential future responsibilities, tasks, or growth opportunities that may be associated with the position."
+                }
+            ]
+        },
+        {
+            "key_name": "salary_informations",
+            "en_name": "salary information",
+            "ja_name": "給与情報",
+            "fields": [
+                {
+                    "field_name": "salary_fixed_allowances",
+                    "data_type": "list[SubField]",
+                    "master_table": null,
+                    "description": "List all entities and elements related to salary fixed allowances. These are types of allowances that are defined and fixed in advance, usually given as a fixed amount.",
+                    "value": [
+                        {
+                            "id": {
+                                "name": "fixed_allowance_id",
+                                "data_type": "integer",
+                                "master_table": "m_fixed_allowance",
+                                "description": "Information of Fixed Allowances. Choose one in salary_fixed_allowances."
+                            },
+                            "memo": {
+                                "name": "fixed_allowance_memo",
+                                "data_type": "string",
+                                "master_table": null,
+                                "description": "Record of Uniform (fixed) allowance."
+                            },
+                            "min": {
+                                "name": "fixed_allowance_min",
+                                "data_type": "integer",
+                                "master_table": null,
+                                "description": "An integer representing the minimum uniform (fixed) allowance."
+                            },
+                            "max": {
+                                "name": "fixed_allowance_max",
+                                "data_type": "integer",
+                                "master_table": null,
+                                "description": "An integer representing the maximum uniform (fixed) allowance."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "field_name": "salary_variable_allowances",
+                    "data_type": "list[SubField]",
+                    "master_table": null,
+                    "description": "List all entities and elements related to variable allowances. These are types of allowances where the amount received is variable and not fixed.",
+                    "value": [
+                        {
+                            "id": {
+                                "name": "variable_allowance_id",
+                                "data_type": "integer",
+                                "master_table": "salary_variable_allowances",
+                                "description": "Information of variable allowance. Choose one in salary_variable_allowances."
+                            },
+                            "memo": {
+                                "name": "variable_allowance_memo",
+                                "data_type": "string",
+                                "master_table": null,
+                                "description": "Record of variable allowance."
+                            },
+                            "content": {
+                                "name": "variable_allowance_content",
+                                "data_type": "string",
+                                "master_table": null,
+                                "description": "Content of variable allowance."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "field_name": "salary_type_id",
+                    "data_type": "integer",
+                    "master_table": "m_salary_type",
+                    "description": "Type of salary."
+                },
+                {
+                    "field_name": "min_basic_salary",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "Minimum basic salary."
+                },
+                {
+                    "field_name": "max_basic_salary",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "Maximum basic salary."
+                },
+                {
+                    "field_name": "overtime_salary_id",
+                    "data_type": "integer",
+                    "master_table": "m_overtime_salary",
+                    "description": "overtime salary categories."
+                },
+                {
+                    "field_name": "overtime_salary_min",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "Minimum overtime salary."
+                },
+                {
+                    "field_name": "overtime_salary_max",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "Maximum overtime salary."
+                },
+                {
+                    "field_name": "exceeding_overtime_id",
+                    "data_type": "integer",
+                    "master_table": "m_exceeding_overtime",
+                    "description": "Choose one in exceeding_overtime_id."
+                },
+                {
+                    "field_name": "allowance_flag",
+                    "data_type": "boolean",
+                    "master_table": null,
+                    "description": "Indicates whether any type of allowance is provided (true or false)."
+                },
+                {
+                    "field_name": "allowance_detail",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "Provides specific details about any allowances offered (e.g., type of allowance, conditions)."
+                },
+                {
+                    "field_name": "overtime_excluded_object_id",
+                    "data_type": "integer",
+                    "master_table": "m_overtime_excluded_object",
+                    "description": "Choose one in overtime_excluded_object_id."
+                },
+                {
+                    "field_name": "min_monthly_salary",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The minimum monthly salary offered for a job or employee."
+                },
+                {
+                    "field_name": "max_monthly_salary",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The maximum monthly salary offered for a job or employee."
+                },
+                {
+                    "field_name": "salary_detail",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "Additional details or breakdown of the salary offered, such as components, conditions, or bonuses."
+                },
+                {
+                    "field_name": "salary_payment_method_id",
+                    "data_type": "integer",
+                    "master_table": "m_salary_payment_method",
+                    "description": "Choose one in salary_payment_method_id."
+                },
+                {
+                    "field_name": "salary_payment_method_detail",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "Information on how the salary is paid."
+                },
+                {
+                    "field_name": "daily_salary",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "The amount of salary calculated on a daily basis."
+                },
+                {
+                    "field_name": "hourly_salary",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "The amount of salary calculated on an hourly basis."
+                },
+                {
+                    "field_name": "hybrid_payment_method_memo",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "Notes or details about a mixed or hybrid salary payment method."
+                },
+                {
+                    "field_name": "skip_entry_flag",
+                    "data_type": "boolean",
+                    "master_table": null,
+                    "description": "A boolean flag to indicate whether to skip entry or processing for this record or a specific section."
+                },
+                {
+                    "field_name": "max_annual_income",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The maximum annual income that can be earned."
+                },
+                {
+                    "field_name": "min_annual_income",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The minimum annual income that can be earned."
+                },
+                {
+                    "field_name": "allowance_commute_money_type_id",
+                    "data_type": "integer",
+                    "master_table": "m_allowance_commute_money_type",
+                    "description": "Commuting allowance. Choose one in allowance_commute_money_type_id."
+                },
+                {
+                    "field_name": "allowance_commute_flag",
+                    "data_type": "boolean",
+                    "master_table": null,
+                    "description": "Indicates whether a commuting allowance is provided."
+                },
+                {
+                    "field_name": "allowance_commute_money_value",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The monetary value of the commuting allowance, if provided."
+                },
+                {
+                    "field_name": "allowance_commute_detail",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "Additional details about the commuting allowance."
+                },
+                {
+                    "field_name": "bonus_flag",
+                    "data_type": "boolean",
+                    "master_table": null,
+                    "description": "Indicates whether a bonus is provided."
+                },
+                {
+                    "field_name": "bonus",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "The amount or details of the bonus offered."
+                },
+                {
+                    "field_name": "salary_raise_id",
+                    "data_type": "integer",
+                    "master_table": "m_salary_raise",
+                    "description": "Choose one in salary_raise_id."
+                },
+                {
+                    "field_name": "salary_raise_memo",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "Notes or information about salary increases or raises."
+                },
+                {
+                    "field_name": "salary_model",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "Describes the salary structure or model (e.g., fixed, commission-based, mixed)."
+                }
+            ]
+        },
+        {
+            "key_name": "job_working_hours",
+            "en_name": "job working hour",
+            "ja_name": "仕事の労働時間",
+            "fields": [
+                {
+                    "field_name": "working_hours_patterns",
+                    "data_type": "list[SubField]",
+                    "master_table": null,
+                    "description": "working hours patterns.",
+                    "value": [
+                        {
+                            "start": {
+                                "name": "working_pattern_start",
+                                "data_type": "integer",
+                                "master_table": null,
+                                "description": "The start time of a specific working pattern."
+                            },
+                            "end": {
+                                "name": "working_pattern_end",
+                                "data_type": "integer",
+                                "master_table": null,
+                                "description": "The end time of a specific working pattern."
+                            },
+                            "break_hour": {
+                                "name": "working_pattern_break_hour",
+                                "data_type": "integer",
+                                "master_table": null,
+                                "description": "The number of break hours in the working pattern."
+                            },
+                            "break_minute": {
+                                "name": "working_pattern_break_minute",
+                                "data_type": "integer",
+                                "master_table": null,
+                                "description": "The number of break minutes in the working pattern."
+                            },
+                            "actual_work_hour": {
+                                "name": "working_pattern_actual_work_hour",
+                                "data_type": "integer",
+                                "master_table": null,
+                                "description": "The number of actual working hours in the pattern, excluding breaks."
+                            },
+                            "actual_work_minutes": {
+                                "name": "working_pattern_actual_work_minute",
+                                "data_type": "integer",
+                                "master_table": null,
+                                "description": "The number of actual working minutes in the pattern, excluding breaks."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "field_name": "working_hours_type_id",
+                    "data_type": "integer",
+                    "master_table": "m_working_hours_type",
+                    "description": "the type of working hours."
+                },
+                {
+                    "field_name": "scheduled_working_hours_start",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The scheduled start time of the working hours."
+                },
+                {
+                    "field_name": "scheduled_working_hours_end",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The scheduled end time of the working hours."
+                },
+                {
+                    "field_name": "actual_working_hour",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The actual number of working hours recorded."
+                },
+                {
+                    "field_name": "actual_working_minute",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The actual number of working minutes recorded."
+                },
+                {
+                    "field_name": "break_time_hour",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The number of hours allocated for breaks."
+                },
+                {
+                    "field_name": "break_time_minute",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The number of minutes allocated for breaks."
+                },
+                {
+                    "field_name": "overtime_working_flag",
+                    "data_type": "boolean",
+                    "master_table": null,
+                    "description": "Indicates whether overtime work is required or expected."
+                },
+                {
+                    "field_name": "working_hours_detail",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "Additional details or notes about the working hours, including any special conditions or arrangements."
+                },
+                {
+                    "field_name": "min_ave_month_overtime_hour",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The minimum average number of overtime hours per month."
+                },
+                {
+                    "field_name": "min_ave_month_overtime_minute",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The minimum average number of overtime minutes per month."
+                },
+                {
+                    "field_name": "max_ave_month_overtime_hour",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The maximum average number of overtime hours per month."
+                },
+                {
+                    "field_name": "max_ave_month_overtime_minute",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The maximum average number of overtime minutes per month."
+                },
+                {
+                    "field_name": "discretionary_labor_system_type_id",
+                    "data_type": "integer",
+                    "master_table": "m_discretionary_labor_system_type",
+                    "description": "the discretionary labor system type."
+                },
+                {
+                    "field_name": "deemed_working_hour",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The number of deemed or assumed working hours, used in cases like flexible working arrangements."
+                },
+                {
+                    "field_name": "deemed_working_minute",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The number of deemed or assumed working minutes."
+                },
+                {
+                    "field_name": "office_work_id",
+                    "data_type": "integer",
+                    "master_table": "m_office_work",
+                    "description": "the office work ."
+                },
+                {
+                    "field_name": "variable_working_hours_type_id",
+                    "data_type": "integer",
+                    "master_table": "m_variable_working_hours_type",
+                    "description": "the type of variable working hours."
+                },
+                {
+                    "field_name": "ave_working_hour",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The average number of working hours per period (e.g., week, month)."
+                },
+                {
+                    "field_name": "ave_working_minute",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The average number of working minutes per period."
+                },
+                {
+                    "field_name": "standard_working_hour",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The standard or expected number of working hours per period."
+                },
+                {
+                    "field_name": "standard_working_minute",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The standard or expected number of working minutes per period."
+                },
+                {
+                    "field_name": "core_time_flag",
+                    "data_type": "boolean",
+                    "master_table": null,
+                    "description": "Indicates whether core working hours (mandatory presence hours) are in place."
+                },
+                {
+                    "field_name": "contract_working_hours_system_id",
+                    "data_type": "integer",
+                    "master_table": "m_contract_working_hours_system",
+                    "description": "the contract working hours system"
+                },
+                {
+                    "field_name": "regular_week_working_hour",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The total number of regular working hours in a week."
+                },
+                {
+                    "field_name": "regular_week_working_minute",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The total number of regular working minutes in a week."
+                },
+                {
+                    "field_name": "core_time_hours_start",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The start time of core working hours."
+                },
+                {
+                    "field_name": "core_time_hours_end",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The end time of core working hours."
+                },
+                {
+                    "field_name": "flex_time_hours_start",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The start time of flexible working hours."
+                },
+                {
+                    "field_name": "flex_time_hours_end",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The end time of flexible working hours."
+                },
+                {
+                    "field_name": "second_flex_time_hours_start",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The start time of a second flexible working period, if applicable."
+                },
+                {
+                    "field_name": "second_flex_time_hours_end",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The end time of a second flexible working period, if applicable."
+                },
+                {
+                    "field_name": "overtime_max_hour",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The maximum number of overtime hours allowed."
+                },
+                {
+                    "field_name": "overtime_min_hour",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The minimum number of overtime hours allowed."
+                },
+                {
+                    "field_name": "overtime_max_minute",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The maximum number of overtime minutes allowed."
+                },
+                {
+                    "field_name": "overtime_min_minute",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The minimum number of overtime minutes expected."
+                },
+                {
+                    "field_name": "working_hours_condition",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "Conditions or special circumstances related to working hours, such as seasonal variations, shifts, or special projects."
+                }
+            ]
+        },
+        {
+            "key_name": "recruiment_and_hiring",
+            "en_name": "recruiment and hiring",
+            "ja_name": "採用と雇用",
+            "fields": [
+                {
+                    "field_name": "number_hired",
+                    "data_type": "integer",
+                    "master_table": null,
+                    "description": "The number of positions available for hiring."
+                },
+                {
+                    "field_name": "prerequisite",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "Any prerequisites or required qualifications for the job, such as education or experience."
+                },
+                {
+                    "field_name": "strictness",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "Describes the level of strictness or flexibility in meeting the prerequisites or job requirements."
+                },
+                {
+                    "field_name": "selection_process",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "Details about the recruitment and selection process, including steps such as interviews, tests, or assessments."
+                },
+                {
+                    "field_name": "inexperience_field",
+                    "data_type": "boolean",
+                    "master_table": null,
+                    "description": "Indicates whether candidates with no experience in the field are considered."
+                },
+                {
+                    "field_name": "inexperience_job",
+                    "data_type": "boolean",
+                    "master_table": null,
+                    "description": "Indicates whether candidates with no experience in the specific job role are considered."
+                },
+                {
+                    "field_name": "english_ids",
+                    "data_type": "integer",
+                    "master_table": "m_language_level",
+                    "description": "English level. Choose one in english_ids."
+                }
+            ]
+        },
+        {
+            "key_name": "holidays_and_leaves",
+            "en_name": "holidays and leaves",
+            "ja_name": "休日と休暇",
+            "fields": [
+                {
+                    "field_name": "holidays_system_id",
+                    "data_type": "integer",
+                    "master_table": "m_holidays_system",
+                    "description": "System holidays."
+                },
+                {
+                    "field_name": "holidays",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "Annual holidays of the company."
+                },
+                {
+                    "field_name": "holidays_breakdown_ids",
+                    "data_type": "list[int]",
+                    "master_table": "m_holiday",
+                    "description": "holidays_breakdown_ids."
+                },
+                {
+                    "field_name": "holidays_remarks",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "Holiday vacation details."
+                }
+            ]
+        },
+        {
+            "key_name": "welfare_insurance",
+            "en_name": "welfare insurance",
+            "ja_name": "福祉保険",
+            "fields": [
+                {
+                    "field_name": "insurance_ids",
+                    "data_type": "list[int]",
+                    "master_table": "m_insurance",
+                    "description": "List of insurance options. Choose one or more in insurance_ids."
+                },
+                {
+                    "field_name": "welfare",
+                    "data_type": "string",
+                    "master_table": null,
+                    "description": "Treatment and benefits provided by the company."
+                }
+            ]
+        }
+    ]
+}

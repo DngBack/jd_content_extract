@@ -1,5 +1,5 @@
 from tests.test_groups_entity import groups_entity
-from tests.test_apim import AzureOpenAI
+from test_apim import AzureOpenAI
 from pathlib import Path
 
 import os
