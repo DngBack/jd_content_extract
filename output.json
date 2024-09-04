@@ -1,0 +1,31 @@
+{
+    "user": {
+        "name": "Jane Doe",
+        "age": 25,
+        "address": {
+            "street": "123 Main St",
+            "city": "New York",
+            "zip": "10001"
+        },
+        "hobbies": [
+            "reading",
+            "gaming",
+            "hiking"
+        ]
+    },
+    "active": true,
+    "projects": [
+        {
+            "name": "Project Alpha",
+            "duration": 12
+        },
+        {
+            "name": "Project Beta",
+            "duration": 6,
+            "details": {
+                "team_size": 5,
+                "budget": 10000
+            }
+        }
+    ]
+}
