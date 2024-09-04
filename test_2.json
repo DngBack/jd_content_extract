@@ -1,0 +1,43 @@
+{
+    "UserId": 12345,
+    "Name": "John Doe",
+    "Email": "john.doe@example.com",
+    "Profile": {
+        "Bio": "<p>This is <a href='http://example.com'>John's</a> bio.</p>",
+        "JoinDate": "2024-04-22T10:00:44.000Z",
+        "Website": "http://johndoe.com",
+        "Preferences": {
+            "ReceiveNewsletter": true,
+            "ShowEmail": false,
+            "NotificationId": "ABC123"
+        }
+    },
+    "Posts": [
+        {
+            "PostId": 1,
+            "Title": "Hello World",
+            "Content": "<div><p>This is the first post.</p><img src='http://example.com/image.jpg'/></div>",
+            "CreatedAt": "2024-05-01T12:34:56.000Z",
+            "ExternalLink": "https://external.com/resource",
+            "Tags": [
+                "Welcome",
+                "FirstPost"
+            ]
+        },
+        {
+            "PostId": 2,
+            "Title": "Another Post",
+            "Content": "This is the second post.",
+            "CreatedAt": "2024-05-02T08:20:00.000Z",
+            "ExternalLink": "http://another-example.com",
+            "Tags": [
+                "FollowUp"
+            ]
+        }
+    ],
+    "Settings": {
+        "Theme": "dark",
+        "Language": "en",
+        "DisplayIds": false
+    }
+}
