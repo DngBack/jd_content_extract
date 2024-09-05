@@ -2,6 +2,17 @@ import json
 import re
 from utils.aws_sonet import AwsSonet35
 from datetime import datetime
+import os
+from dotenv import load_dotenv
+load_dotenv(".env")
+
+ACCESS_KEY = os.environ.get('ACCESS_KEY')
+SECRET_KEY = os.environ.get('SECRET_KEY')
+
+model_id = "anthropic.claude-3-5-sonnet-20240620-v1:0"
+# Set up llm 
+llm = AwsSonet35()
+llm.setup(ACCESS_KEY, SECRET_KEY, model_id)
 
 class JsonProcessor:
     def __init__(self, file_path):
@@ -82,8 +93,8 @@ class JsonProcessor:
         else:
             return data
 
-    def json_to_string(self, data=None, indent_level=0, seen_values=None):
-        """Convert JSON data to a formatted string."""
+    def json_to_paragraph(self, data=None):
+        """Convert JSON data into a paragraph format."""
         if data is None:
             data = self.data
         
@@ -98,46 +109,40 @@ class JsonProcessor:
         # Remove boolean values
         data = self.remove_boolean_values(data)
 
-        if seen_values is None:
-            seen_values = set()
+        paragraphs = []
+        
+        def recursive_format(data, prefix=""):
+            if isinstance(data, dict):
+                for key, value in data.items():
+                    if isinstance(value, (dict, list)):
+                        recursive_format(value, f"{prefix}{key}: ")
+                    else:
+                        paragraphs.append(f"{prefix}{key}: {value}")
+            elif isinstance(data, list):
+                for item in data:
+                    recursive_format(item, prefix)
+            else:
+                paragraphs.append(f"{prefix}{data}")
 
-        result = []
-        indent = ' ' * (indent_level * 4)
+        recursive_format(data)
+        
+        return " ".join(paragraphs)
 
-        if isinstance(data, dict):
-            for key, value in data.items():
-                if isinstance(value, (dict, list)):
-                    result.append(f"{indent}{key}:")
-                    result.append(self.json_to_string(value, indent_level + 1, seen_values))
-                else:
-                    if str(value) not in seen_values:
-                        result.append(f"{indent}{key}: {value}")
-                        seen_values.add(str(value))
-        elif isinstance(data, list):
-            for item in data:
-                result.append(self.json_to_string(item, indent_level + 1, seen_values))
-        else:
-            if str(data) not in seen_values:
-                result.append(f"{indent}{data}")
-                seen_values.add(str(data))
-
-        return "\n".join(result)
-
-    def get_formatted_string(self):
-        """Return the formatted JSON data as a string."""
-        return self.json_to_string()
+    def get_paragraph(self):
+        """Return the JSON data formatted as a paragraph."""
+        return self.json_to_paragraph()
 
 # Usage
 file_path = 'test_1.json'
 processor = JsonProcessor(file_path)
 
-# Get the formatted string
-formatted_string = processor.get_formatted_string()
+# Get the paragraph
+paragraph = processor.get_paragraph()
 
-# Print the formatted string
-print(formatted_string)
+# Print the paragraph
+print(paragraph)
 
-# Save the formatted string to a text file
-output_file_path = 'output.txt'
+# Save the paragraph to a text file
+output_file_path = 'output_paragraph.txt'
 with open(output_file_path, 'w', encoding='utf-8') as file:
-    file.write(formatted_string)
+    file.write(paragraph)
