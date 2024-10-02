@@ -4,6 +4,7 @@ from openpyxl.utils import get_column_letter
 def excel_to_markdown_with_merge(file_path):
     wb = load_workbook(file_path, data_only=True)
     markdown_output = ""
+    merged_cells_addresses = []  # List to store merged cell addresses
 
     for sheet_name in wb.sheetnames:
         ws = wb[sheet_name]
@@ -25,6 +26,8 @@ def excel_to_markdown_with_merge(file_path):
                                 bottom_right = f"{get_column_letter(bottom_right_col)}{bottom_right_row}"
                                 address_range = f"{top_left}:{bottom_right}"
                                 row_data.append(f"{value} (Addresses: [{address_range}])")
+                                if address_range not in merged_cells_addresses:
+                                    merged_cells_addresses.append(address_range)  # Add address to list
                                 break
                     else:
                         row_data.append(f"{cell.value} ({position})")
@@ -34,11 +37,12 @@ def excel_to_markdown_with_merge(file_path):
 
         markdown_output += "\n" 
 
-    return markdown_output
+    return markdown_output, merged_cells_addresses  # Return both markdown output and merged addresses
 
 file_path = '318_1_求人票（総務部）2022.11新規ver2 (2).xlsx' 
-markdown_string = excel_to_markdown_with_merge(file_path)
+markdown_string, merged_addresses = excel_to_markdown_with_merge(file_path)
 print(markdown_string)
+print("Merged cell addresses:", merged_addresses)
 
-with open('output_4.md', 'w', encoding='utf-8') as f:
+with open('output_6.md', 'w', encoding='utf-8') as f:
     f.write(markdown_string)

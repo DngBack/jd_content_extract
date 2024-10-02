@@ -1,60 +1,55 @@
-from openpyxl import load_workbook
-from openpyxl.utils import get_column_letter
+from collections import defaultdict
 
-def excel_to_markdown_with_merge_grouped(file_path):
-    wb = load_workbook(file_path, data_only=True)
-    markdown_output = ""
+def parse_range(cell_range):
+    """Parse a range like 'C5:H6' into individual cell coordinates."""
+    start, end = cell_range.split(':')
+    start_col, start_row = start[:1], int(start[1:])
+    end_col, end_row = end[:1], int(end[1:])
+    
+    cols = [chr(c) for c in range(ord(start_col), ord(end_col) + 1)]
+    rows = list(range(start_row, end_row + 1))
+    
+    return [(col, row) for row in rows for col in cols]
 
-    for sheet_name in wb.sheetnames:
-        ws = wb[sheet_name]
-        markdown_output += f"## {sheet_name}\n\n"  # Tiêu đề cho mỗi sheet
+def group_ranges_by_row(merged_ranges):
+    """Group the merged cell ranges based on the horizontal rows."""
+    row_groups = defaultdict(list)
+    
+    for cell_range in merged_ranges:
+        cells = parse_range(cell_range)
+        for col, row in cells:
+            row_groups[row].append(cell_range)
+    
+    return row_groups
 
-        # Duyệt qua từng hàng
-        for row in ws.iter_rows():
-            row_data = []
-            merged_ranges = [merged_cell for merged_cell in ws.merged_cells.ranges]
-            skip_cells = set()
+def find_comprehensive_groups(row_groups):
+    """Identify the most comprehensive range for each row based on coverage."""
+    comprehensive_groups = []
+    
+    for row, ranges in row_groups.items():
+        # Sort ranges by the start column
+        sorted_ranges = sorted(ranges, key=lambda r: parse_range(r)[0])
+        # Choose the largest range (comprehensive coverage) for this row
+        comprehensive_groups.append({
+            "row": row,
+            "ranges": sorted_ranges
+        })
+    
+    return comprehensive_groups
 
-            for cell in row:
-                if cell.coordinate in skip_cells:
-                    continue
+# Sample input
+merged_ranges = ['AV1:AZ1', 'A2:BH2', 'AU3:AX3', 'AY3:AZ3', 'BA3:BB3', 'BC3:BD3', 
+                 'BE3:BF3', 'BG3:BH3', 'A4:B14', 'C4:H4', 'I4:AE4', 'AF4:AK6', 
+                 'AL4:AM4', 'AN4:AP4', 'AR4:AU4', 'C5:H6', 'I5:AE6', 'AL5:BH5',
+                 # Add the rest of the ranges here...
+                 ]
 
-                if cell.value is not None:
-                    is_merged = any(cell.coordinate in merged_cell for merged_cell in merged_ranges)
-                    if is_merged:
-                        for merged_cell in merged_ranges:
-                            if cell.coordinate in merged_cell:
-                                value = ws[merged_cell.start_cell.coordinate].value
-                                top_left = merged_cell.start_cell.coordinate
-                                bottom_right_row = merged_cell.bounds[3]
-                                bottom_right_col = merged_cell.bounds[2]
-                                bottom_right = f"{get_column_letter(bottom_right_col)}{bottom_right_row}"
-                                address_range = f"{top_left}:{bottom_right}"
-                                
-                                # Thêm giá trị và vùng hợp nhất vào kết quả hàng
-                                row_data.append(f"{value} (Addresses: [{address_range}])")
+# Step 1: Group ranges by horizontal row
+row_groups = group_ranges_by_row(merged_ranges)
 
-                                # Thêm tất cả các ô nằm trong vùng hợp nhất vào danh sách cần bỏ qua
-                                for row_idx in range(merged_cell.bounds[1], merged_cell.bounds[3] + 1):
-                                    for col_idx in range(merged_cell.bounds[0], merged_cell.bounds[2] + 1):
-                                        skip_cells.add(f"{get_column_letter(col_idx)}{row_idx}")
-                                break
-                    else:
-                        row_data.append(f"{cell.value} ({cell.coordinate})")
+# Step 2: Find the comprehensive groups
+comprehensive_groups = find_comprehensive_groups(row_groups)
 
-            # Ghi lại dữ liệu của hàng chỉ nếu có dữ liệu
-            if row_data:
-                markdown_output += "| " + " | ".join(row_data) + " |\n"
-
-        markdown_output += "\n"  # Ngắt dòng giữa các sheet
-
-    return markdown_output
-
-# Ví dụ sử dụng
-file_path = '318_1_求人票（総務部）2022.11新規ver2 (2).xlsx'  # Thay thế bằng đường dẫn tới file Excel của bạn
-markdown_string = excel_to_markdown_with_merge_grouped(file_path)
-print(markdown_string)
-
-# Save or print the markdown result
-with open('output_4_grouped.md', 'w', encoding='utf-8') as f:
-    f.write(markdown_string)
+# Output the result
+for group in comprehensive_groups:
+    print(f"Row {group['row']}: {group['ranges']}")
